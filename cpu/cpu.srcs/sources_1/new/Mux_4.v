@@ -21,6 +21,20 @@
 
 
 module Mux_4(
-
+        input [31:0] Ins1,
+        input [31:0] Ins2,
+        input [31:0] Ins3,
+        
+        input [1:0] PCSrc, // ∂‘”¶ PCSrc
+        
+        output reg [31:0] Out
     );
+    always @(Ins1 or Ins2 or Ins3 or PCSrc) begin
+        case (PCSrc)
+            2'b00: Out = Ins1;
+            2'b01: Out = Ins2;
+            2'b10: Out = Ins3;
+            default: Out = Ins1;
+        endcase
+    end
 endmodule

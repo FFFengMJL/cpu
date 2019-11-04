@@ -28,7 +28,7 @@ module IRAM(
         output [31:0] iDataOut
     );
     
-    reg [31:0] Ins [0:60];
+    reg [7:0] Ins [0:255];
    
     assign iDataOut[7:0] = rw == 1 ? Ins[Iaddr + 3] : 8'bz;
     assign iDataOut[15:8] = rw == 1 ? Ins[Iaddr + 2] : 8'bz;

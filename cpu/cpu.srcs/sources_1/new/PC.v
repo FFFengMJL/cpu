@@ -24,6 +24,7 @@ module PC(
         input CLK,
         input Reset,
         input [31:0] Ins,
+        input ExtSel, // 0 代表无拓展，1 代表符号拓展
         
         output reg [31:0] IAddr
     );

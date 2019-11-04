@@ -21,6 +21,12 @@
 
 
 module Adder(
-
+        input [31:0] Ins1,
+        input [31:0] Ins2,
+        
+        output [31:0] Out
     );
+    
+    assign Out = Ins1 + Ins2;
+    
 endmodule

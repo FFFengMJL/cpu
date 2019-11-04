@@ -21,11 +21,11 @@
 
 
 module Mux_2(
-        input [4:0] In1,
-        input [4:0] In2,
-        input flag,
+        input [31:0] In1,
+        input [31:0] In2,
+        input flag, // 用于表示输出哪一个
         
-        output [4:0] Out
+        output [31:0] Out
     );
     
     assign Out = flag == 1 ? In2 : In1;
