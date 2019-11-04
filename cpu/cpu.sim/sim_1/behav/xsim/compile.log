@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Demo/cpu/cpu.srcs/sources_1/new/Storage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Storage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Demo/cpu/cpu.srcs/sim_1/new/Storage_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Storage_sim

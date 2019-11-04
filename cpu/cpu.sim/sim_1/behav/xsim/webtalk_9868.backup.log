@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Fri Oct 11 16:47:33 2019
+# Process ID: 9868
+# Current directory: D:/Demo/cpu/cpu.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Demo/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/alu32_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Demo/cpu/cpu.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Demo/cpu/cpu.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Demo/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/alu32_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Demo/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/alu32_sim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Oct 11 16:47:37 2019. For additional details about this file, please refer to the WebTalk help file at D:/xilink/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 11 16:47:37 2019...
