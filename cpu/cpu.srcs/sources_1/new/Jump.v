@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2019/11/04 09:54:53
+// Create Date: 2019/11/05 20:10:10
 // Design Name: 
-// Module Name: PC
+// Module Name: Jump
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,17 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PC(
-        input CLK,
-        input Reset,
-        input [31:0] Ins,
-        input ExtSel, // 0 代表无拓展，1 代表符号拓展
+module Jump(
+        input [31:0] In1,
+        input [27:2] In2,
         
-        output reg [31:0] IAddr
+        output [31:0] Out
     );
-        
-    always @(posedge CLK) begin
-        if (Reset == 0) IAddr = 8'h00000000;
-        else IAddr = Ins;
-    end
+    
+    assign Out = {In1[31:28], In2, 0'b00};
 endmodule
