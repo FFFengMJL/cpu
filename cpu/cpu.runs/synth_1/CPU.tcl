@@ -22,13 +22,27 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Demo/cpu/cpu.cache/wt [current_project]
-set_property parent.project_path D:/Demo/cpu/cpu.xpr [current_project]
+set_property webtalk.parent_dir D:/cpu/cpu/cpu.cache/wt [current_project]
+set_property parent.project_path D:/cpu/cpu/cpu.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/Demo/cpu/cpu.cache/ip [current_project]
+set_property ip_output_repo d:/cpu/cpu/cpu.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib D:/Demo/cpu/cpu.srcs/sources_1/new/alu32.v
+read_verilog -library xil_defaultlib {
+  D:/cpu/cpu/cpu.srcs/sources_1/new/ALU.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Adder.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/CLU.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Extend.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Jump.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/LeftShift_2.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/PC.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/RAM.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Register.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v
+}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -40,12 +54,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top alu32 -part xc7a35tcpg236-1
+synth_design -top CPU -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef alu32.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file alu32_utilization_synth.rpt -pb alu32_utilization_synth.pb"
+write_checkpoint -force -noxdef CPU.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

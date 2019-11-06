@@ -22,10 +22,10 @@
 
 module Jump(
         input [31:0] In1,
-        input [27:2] In2,
+        input [25:0] In2,
         
         output [31:0] Out
     );
     
-    assign Out = {In1[31:28], In2, 0'b00};
+    assign Out = {In1[31:28], In2, 2'b00};
 endmodule

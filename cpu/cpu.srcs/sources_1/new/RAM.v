@@ -31,7 +31,7 @@ module RAM(
         output [31:0] dataOut
     );
     
-    reg [7:0] data [0:60];
+    reg [7:0] data [0:255];
     
     // assign是新加的
     assign dataOut[7:0] = rd == 0 ? data[daDdr + 3] : 8'bz;

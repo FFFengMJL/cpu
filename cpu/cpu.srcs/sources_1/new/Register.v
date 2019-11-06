@@ -33,6 +33,7 @@ module Register(
     );
     
     reg [31:0] regFile [1:31];
+
     integer i;
     
     assign ReadData1 = ReadReg1 == 0 ? 0 : regFile[ReadReg1];

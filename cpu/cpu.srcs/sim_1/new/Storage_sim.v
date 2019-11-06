@@ -32,8 +32,8 @@ module Storage_sim();
     
     wire [7:0] dataOut;
     
-    Storage uut (
-        .Clk(Clk),
+    Register uut (
+        .CLK(CLK),
         .daDdr(daDdr),
         .dataIn(dataIn),
         .rd(rd),

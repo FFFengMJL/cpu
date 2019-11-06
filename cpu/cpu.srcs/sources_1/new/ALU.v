@@ -29,11 +29,11 @@ module ALU(
     output zero,
     output sign
     );
-    
+        
     assign zero = result == 0 ? 1 : 0;
     assign sign = result[31] == 0 ? 0 : 1;
 
-    always @(ALUOpCode or rega or regb) begin
+    always @(*) begin
         case (ALUOpCode)
             3'b000: result = rega + regb; // A + B
             3'b001: result = rega - regb; // A - B

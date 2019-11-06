@@ -24,13 +24,16 @@ module PC(
         input CLK,
         input Reset,
         input [31:0] Ins,
-        input ExtSel, // 0 代表无拓展，1 代表符号拓展
+        input PCWre, // 写使能
         
         output reg [31:0] IAddr
     );
+    
+    initial IAddr = 8'h00000000;
         
-    always @(posedge CLK) begin
+    always @(negedge CLK) begin
         if (Reset == 0) IAddr = 8'h00000000;
-        else IAddr = Ins;
+        else if (PCWre == 1) IAddr = Ins;
+        else IAddr = IAddr;
     end
 endmodule

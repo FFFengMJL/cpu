@@ -29,6 +29,9 @@ module Mux_4(
         
         output reg [31:0] Out
     );
+    
+    initial Out = 8'h000000;
+    
     always @(Ins1 or Ins2 or Ins3 or PCSrc) begin
         case (PCSrc)
             2'b00: Out = Ins1;

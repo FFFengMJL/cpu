@@ -27,6 +27,6 @@ module Extend(
         output [31:0] Out
     );
     
-    assign Out = ExtSel == 0 ? {{16{0}}, In} : {{16{In[15]}}, In};
+    assign Out = (ExtSel == 0) ? {{16{1'b0}},In} : {{16{In[15]}},In};
     
 endmodule

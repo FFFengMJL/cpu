@@ -42,6 +42,13 @@ module CLU(
 //    assign mWR = OpCode == 6'b100110 ? 1 : 0;
 //    assign mRD = OpCode == 6'b100111 ? 1 : 0;
     
+    initial begin
+//        PCIn = 8'h00000000;
+        PCWre = 0;
+        DBDataSrc = 0;
+        InsMemRW = 1;
+    end    
+    
     always @(*) begin
         case (OpCode)
             6'b000000: begin // add
@@ -55,7 +62,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 1;
                 ExtSel = 1;
-                PCSrc = 00;
+                PCSrc = 2'b00;
                 ALUOp = 3'b000;
             end
             6'b000001: begin // sub
@@ -69,7 +76,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 1;
                 ExtSel = 0;
-                PCSrc = 00;
+                PCSrc = 2'b00;
                 ALUOp = 3'b001;
             end
             6'b000010: begin // addiu
@@ -83,7 +90,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 1;
-                PCSrc = 00;
+                PCSrc = 2'b00;
                 ALUOp = 3'b000;
             end
             6'b010000: begin // andi
@@ -97,7 +104,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 0;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b100;
             end
             6'b010001: begin // and
@@ -111,7 +118,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 1;
                 ExtSel = 0;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b100;
             end
             6'b010010: begin // ori
@@ -125,7 +132,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 0;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b011;
             end
             6'b010011: begin // or
@@ -139,7 +146,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 1;
                 ExtSel = 0;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b011;
             end
             6'b011000: begin // sll “∆Œª÷∏¡Ó
@@ -153,7 +160,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 1;
                 ExtSel = 0;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b010;
             end
             6'b011100: begin // slti
@@ -167,7 +174,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 1;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b101;
             end
             6'b100110: begin // sw
@@ -181,7 +188,7 @@ module CLU(
                 mWR = 1;
                 RegDst = 0;
                 ExtSel = 0;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b000; // £ø£ø£ø
             end
             6'b100111: begin // lw
@@ -195,7 +202,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 1;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b000; // £ø£ø£ø
             end
             6'b110000: begin // beq
@@ -209,10 +216,22 @@ module CLU(
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 1;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b000; // £ø£ø£ø
             end
             6'b110001: begin // bne
+                PCWre = 1;
+                ALUSrcA = 0;
+                ALUSrcB = 0;
+                DBDataSrc = 0;
+                RegWre = 0;
+                InsMemRW = 1;
+                mRD = 0;
+                mWR = 0;
+                RegDst = 0;
+                ExtSel = zero == 0 ? 2'b01 : 2'b00;
+                PCSrc = 2'b00;            
+                ALUOp = 3'b000; // £ø£ø£ø
             end
             6'b110010: begin // bltz
                 PCWre = 1;
@@ -225,7 +244,7 @@ module CLU(
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 1;
-                PCSrc = 00;            
+                PCSrc = sign == 0 ? 2'b00 : 2'b01;            
                 ALUOp = 3'b000; // £ø£ø£ø
             end
             6'b111000: begin // j
@@ -234,12 +253,12 @@ module CLU(
                 ALUSrcB = 0;
                 DBDataSrc = 0;
                 RegWre = 0;
-                InsMemRW = 0;
+                InsMemRW = 1;
                 mRD = 0;
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 0;
-                PCSrc = 10;            
+                PCSrc = 2'b10;            
                 ALUOp = 3'b000; // £ø£ø£ø
             end
             6'b111111: begin // halt
@@ -247,13 +266,13 @@ module CLU(
                 ALUSrcA = 0;
                 ALUSrcB = 0;
                 DBDataSrc = 0;
-                RegWre = 0;
+                RegWre = 1;
                 InsMemRW = 0;
                 mRD = 0;
                 mWR = 0;
                 RegDst = 0;
                 ExtSel = 0;
-                PCSrc = 00;            
+                PCSrc = 2'b00;            
                 ALUOp = 3'b000; // £ø£ø£ø
             end
         endcase
