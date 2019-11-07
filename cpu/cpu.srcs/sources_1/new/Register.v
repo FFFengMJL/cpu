@@ -33,8 +33,12 @@ module Register(
     );
     
     reg [31:0] regFile [1:31];
-
     integer i;
+    
+    initial begin
+        for (i = 1; i < 32; i= i + 1) regFile[i] = {32{1'b0}};
+    end
+
     
     assign ReadData1 = ReadReg1 == 0 ? 0 : regFile[ReadReg1];
     assign ReadData2 = ReadReg2 == 0 ? 0 : regFile[ReadReg2];

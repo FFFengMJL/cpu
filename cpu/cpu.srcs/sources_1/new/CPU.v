@@ -22,21 +22,14 @@
 
 module CPU(
     input CLK,
-    input Reset,
-    
-    output [31:0] PC,
-    output [31:0] ALUout,
-    output CLKO,
-    output [31:0] IDataOut,
-    output [31:0] ReadData1Out,
-    output [31:0] ReadData2Out,
+    input Reset
     );
-    wire zero, sign, PCWre, InsMemRW, RegDst, RegWre, ALUSrcA,ALUSrcB, ExtSel, mRD, mWR, DBDataSrc;
+    wire zero, sign, PCWre, InsMemRW, RegDst, RegWre, ALUSrcA, ALUSrcB, ExtSel, mRD, mWR, DBDataSrc;
     wire [1:0] PCSrc;
     wire [2:0] ALUOp;
-    wire [25:0] jumpIn, jumpOut;
+    wire [25:0] jumpIn;
     wire [31:0] PCIn, PCOut, Extend, iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
-    wire [31:0] WriteReg, ReadData1, ReadData2;
+    wire [31:0] WriteReg, ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
     
     PC pc(
         .CLK(CLK),
@@ -60,8 +53,8 @@ module CPU(
     );
     Mux_2 reg_w_choose(
         .flag(RegDst),
-        .In1(PCOut[20:16]),
-        .In2(PCOut[15:11]),
+        .In1({{27{1'b0}}, iDataOut[20:16]}),
+        .In2({{27{1'b0}}, iDataOut[15:11]}),
         
         .Out(WriteReg)
     );
@@ -85,7 +78,7 @@ module CPU(
     );
     Mux_2 alua_choose(
         .In1(ReadData1),
-        .In2(PCOut[11:6]),
+        .In2({{27{1'b0}},iDataOut[11:6]}),
         .flag(ALUSrcA),
         
         .Out(ALUDataA)
@@ -128,7 +121,7 @@ module CPU(
         .Out(nextPCIn)        
     );
 //    LeftShift_2 addr_shift(
-//        .In(PCOut[25:0]),
+//        .In(PCOut),
         
 //        .Out(jumpIn)
 //    );

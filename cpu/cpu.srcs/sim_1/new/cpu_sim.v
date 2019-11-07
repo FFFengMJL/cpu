@@ -31,12 +31,17 @@ module cpu_sim();
         .Reset(RST)
     );
     integer i;
+    integer test;
     initial begin
         CLK = 0;
         RST = 0;
         RST = 1;
+        test = 1;
         
-        for (i = 0; i < 40; i = i + 1) begin
+        for (i = 0; i <= 30; i = i + 1) begin
+            test <= test << 2;
+            #100;
+            CLK = ~CLK;
             #100;
             CLK = ~CLK;
         end

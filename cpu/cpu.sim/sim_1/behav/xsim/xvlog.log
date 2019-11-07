@@ -6,8 +6,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/C
 INFO: [VRFC 10-311] analyzing module CLU
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2458] undeclared symbol ALUDataA, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:93]
-INFO: [VRFC 10-2458] undeclared symbol ALUDataB, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:100]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/Extend.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Extend
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v" into library xil_defaultlib

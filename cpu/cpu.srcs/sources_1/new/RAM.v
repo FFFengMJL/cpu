@@ -25,22 +25,26 @@ module RAM(
 
         input [31:0]daDdr, // data address
         input [31:0]dataIn, // data
-        input rd, // control write, when rd = 0, read 
-        input wr, // control write, when wr = 0, write
-        
+        input rd, // control write, when rd = 1, read 
+        input wr, // control write, when wr = 1, write
+        // 这里有问题，给的pdf的代码是0是执行，但在doc文档中式1是执行
         output [31:0] dataOut
     );
     
-    reg [7:0] data [0:255];
+    reg [7:0] data [0:60];
+    integer i;
+    initial begin
+        for (i = 0; i < 256; i = i + 1) data[i] = 0;
+    end
     
     // assign是新加的
-    assign dataOut[7:0] = rd == 0 ? data[daDdr + 3] : 8'bz;
-    assign dataOut[15:8] = rd == 0 ? data[daDdr + 2] : 8'bz;
-    assign dataOut[23:16] = rd == 0 ? data[daDdr + 1] : 8'bz;
-    assign dataOut[31:24] = rd == 0 ? data[daDdr] : 8'bz;
+    assign dataOut[7:0] = rd == 1 ? data[daDdr + 3] : 8'bz;
+    assign dataOut[15:8] = rd == 1 ? data[daDdr + 2] : 8'bz;
+    assign dataOut[23:16] = rd == 1 ? data[daDdr + 1] : 8'bz;
+    assign dataOut[31:24] = rd == 1 ? data[daDdr] : 8'bz;
     
     always @(negedge Clk) begin
-        if (wr == 0) begin
+        if (wr == 1) begin
             data[daDdr] <= dataIn[31:24];
             data[daDdr + 1] <= dataIn[23:16];
             data[daDdr + 2] <= dataIn[15:8];
