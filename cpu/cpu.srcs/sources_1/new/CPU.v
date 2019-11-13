@@ -22,7 +22,16 @@
 
 module CPU(
     input CLK,
-    input Reset
+    input Reset,
+    
+    output [31:0] PCNowOut,
+    output [31:0] PC4Out,
+    output [4:0] RsAddr,
+    output [31:0] RsData,
+    output [4:0] RtAddr,
+    output [31:0] RtData,
+    output [31:0] ALUout,
+    output [31:0] DBOut
     );
     wire zero, sign, PCWre, InsMemRW, RegDst, RegWre, ALUSrcA, ALUSrcB, ExtSel, mRD, mWR, DBDataSrc;
     wire [1:0] PCSrc;
@@ -30,6 +39,15 @@ module CPU(
     wire [25:0] jumpIn;
     wire [31:0] PCIn, PCOut, Extend, iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
     wire [31:0] WriteReg, ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
+    
+    assign PCNowOut = nextPCOut;
+    assign PC4Out = PC4;
+    assign RsAddr = iDataOut[25:21];
+    assign RsData = ReadData1;
+    assign RtAddr = iDataOut[20:16];
+    assign RtData = ReadData2;
+    assign ALUout = ALUOut; 
+    assign DBOut = DataOut;
     
     PC pc(
         .CLK(CLK),
