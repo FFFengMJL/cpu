@@ -40,7 +40,7 @@ module CPU(
     wire [31:0] PCIn, PCOut, Extend, iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
     wire [31:0] WriteReg, ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
     
-    assign PCNowOut = nextPCOut;
+    assign PCNowOut = PCOut;
     assign PC4Out = PC4;
     assign RsAddr = iDataOut[25:21];
     assign RsData = ReadData1;
@@ -61,7 +61,7 @@ module CPU(
         .Iaddr(PCOut),
         .iDataOut(iDataOut),
         .rw(InsMemRW),
-        .iDataIn()
+        .iDataIn(8'bz)
     );
     Adder pc4_adder(
         .Ins1({{29{1'b0}},3'b100}),
@@ -96,7 +96,7 @@ module CPU(
     );
     Mux_2 alua_choose(
         .In1(ReadData1),
-        .In2({{27{1'b0}},iDataOut[11:6]}),
+        .In2({{27{1'b0}},iDataOut[10:6]}),
         .flag(ALUSrcA),
         
         .Out(ALUDataA)
@@ -177,7 +177,7 @@ module CPU(
     );
     
     Jump jump(
-        .In1(PC4),
+        .In1(PC4[31:28]),
         .In2(iDataOut[25:0]),
         
         .Out(jumpOut)
