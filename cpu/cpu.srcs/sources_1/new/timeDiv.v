@@ -26,8 +26,8 @@ module timeDiv(
 );
     reg [25:0] div_counter = 0; 
     always @(posedge clk) begin 
-        if(div_counter>=0) begin // 用于 仿真 // 
-//            if(div_counter>=500000000) begin // 用于生成 比特流文件 下载用 
+//        if(div_counter>=0) begin // 用于 仿真 // 
+            if(div_counter>=50000) begin // 用于生成 比特流文件 下载用 
                 clk_sys <= ~clk_sys; // 电平反向 
                 div_counter <= 0; 
             end 

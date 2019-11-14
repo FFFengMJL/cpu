@@ -1,12 +1,12 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-| Date         : Thu Nov 14 00:03:05 2019
-| Host         : LAPTOP-QTCGESHO running 64-bit major release  (build 9200)
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Thu Nov 14 10:19:06 2019
+| Host         : LAPTOP-PC15NQ51 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file basys3_control_sets_placed.rpt
 | Design       : basys3
 | Device       : xc7a35t
---------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 Control Set Information
 
@@ -23,17 +23,33 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     0 |
-| Unused register locations in slices containing registers |     0 |
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    22 |
 +----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
 
 
 2. Histogram
 ------------
 
-+--------+--------------+
-| Fanout | Control Sets |
-+--------+--------------+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     6 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
 
 
 3. Flip-Flop Distribution
@@ -42,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | No                     |               2 |            2 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           17 |
+| Yes          | No                    | No                     |               8 |            3 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -54,8 +70,15 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------+---------------+------------------+------------------+----------------+
-| Clock Signal | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+--------------+---------------+------------------+------------------+----------------+
++---------------------+------------------------+-------------------------+------------------+----------------+
+|     Clock Signal    |      Enable Signal     |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++---------------------+------------------------+-------------------------+------------------+----------------+
+|  BasysCLK_IBUF_BUFG |                        |                         |                1 |              1 |
+| ~clk_sys_BUFG       |                        |                         |                1 |              1 |
+| ~CPUCLK_IBUF_BUFG   |                        | cpu/pc/IAddr[7]_i_1_n_0 |                2 |              7 |
+| ~clk_sys_BUFG       | timeMux/Out[3]_i_1_n_0 |                         |                3 |              8 |
+|  BasysCLK_IBUF_BUFG |                        | time_div/clear          |                7 |             26 |
+| ~clk_sys_BUFG       |                        | timeMux/i[31]_i_1_n_0   |                8 |             31 |
++---------------------+------------------------+-------------------------+------------------+----------------+
 
 

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SegLED
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_4_r
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basys3
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_r2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/timeDiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timeDiv
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sim_1/new/basys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basys_sim

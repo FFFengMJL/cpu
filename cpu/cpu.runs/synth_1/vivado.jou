@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2018.3.1 (64-bit)
-# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
-# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Thu Nov 14 00:00:28 2019
-# Process ID: 273640
-# Current directory: D:/cpu/cpu/cpu.runs/synth_1
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Thu Nov 14 10:17:30 2019
+# Process ID: 22268
+# Current directory: F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/synth_1
 # Command line: vivado.exe -log basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3.tcl
-# Log file: D:/cpu/cpu/cpu.runs/synth_1/basys3.vds
-# Journal file: D:/cpu/cpu/cpu.runs/synth_1\vivado.jou
+# Log file: F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/synth_1/basys3.vds
+# Journal file: F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source basys3.tcl -notrace

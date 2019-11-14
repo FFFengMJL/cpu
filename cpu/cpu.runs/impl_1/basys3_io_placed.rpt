@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
----------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
-| Date                      : Thu Nov 14 00:03:05 2019
-| Host                      : LAPTOP-QTCGESHO running 64-bit major release  (build 9200)
+-------------------------------------------------------------------------------------------------
+| Tool Version              : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date                      : Thu Nov 14 10:19:06 2019
+| Host                      : LAPTOP-PC15NQ51 running 64-bit major release  (build 9200)
 | Command                   : report_io -file basys3_io_placed.rpt
 | Design                    : basys3
 | Device                    : xc7a35t
@@ -10,7 +10,7 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 | Package                   : cpg236
 | Package Version           : FINAL 2014-02-19
 | Package Pin Delay Version : VERS. 2.0 2014-02-19
----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 
 IO Information
 

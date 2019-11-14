@@ -37,7 +37,6 @@ module Mux_4(
             2'b00: Out = Ins1;
             2'b01: Out = Ins2;
             2'b10: Out = Ins3;
-            default: Out = Ins1;
         endcase
     end
 endmodule

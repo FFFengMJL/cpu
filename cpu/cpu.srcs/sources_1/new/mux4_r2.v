@@ -37,19 +37,19 @@ module mux4_r2(
         case (i)
             0: begin
                 Out = In[15:12];
-                bit = 4'b1000;
+                bit = ~4'b0001;
             end
             1: begin
                 Out = In[11:8];
-                bit = 4'b0100;
+                bit = ~4'b0010;
             end
             2: begin
                 Out = In[7:4];
-                bit = 4'b0010;
+                bit = ~4'b0100;
             end
             3: begin
                 Out = In[3:0];
-                bit = 4'b0001;
+                bit = ~4'b1000;
             end
         endcase
         i = i == 3 ? 0 : i + 1;
