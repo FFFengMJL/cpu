@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,6 +28,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo f:/Learning/CPU/GitHub/cpu/cpu/cpu.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+read_mem F:/Learning/CPU/GitHub/cpu/cpu/Instructuons.mem
 read_verilog -library xil_defaultlib {
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/ALU.v
@@ -46,6 +45,7 @@ read_verilog -library xil_defaultlib {
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/PC.v
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/RAM.v
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Register.v
+  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/keyboard_clk.v
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/timeDiv.v
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v
@@ -69,7 +69,7 @@ synth_design -top basys3 -part xc7a35tcpg236-1
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef basys3.dcp
+write_checkpoint -force -noxdef -incremental_synth basys3.dcp
 create_report "synth_1_synth_report_utilization_0" "report_utilization -file basys3_utilization_synth.rpt -pb basys3_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

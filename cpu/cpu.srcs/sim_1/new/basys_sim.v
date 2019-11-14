@@ -24,12 +24,12 @@ module basys_sim(
 
     );
     reg CLK, RST;
-    reg CPUCLK;
+    reg CLKButton;
     reg [1:0] SW;
     
     basys3 test(
         .BasysCLK(CLK),
-        .CPUCLK(CPUCLK),
+        .CLKButton(CLKButton),
         .SW_in(SW),
         .RST(RST),
         
@@ -41,13 +41,13 @@ module basys_sim(
     initial begin
         CLK = 0;
         RST = 1;
-        CPUCLK = 0;
+        CLKButton = 0;
         SW = 2'b00;
         for (i = 0; i < 100; i = i + 1) begin
             #100;
             CLK = ~CLK;
 //            #10;
-            if (i % 15 == 0) CPUCLK = ~CPUCLK;
+            if (i % 15 == 0) CLKButton = ~CLKButton;
         end
 
        

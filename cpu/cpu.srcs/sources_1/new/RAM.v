@@ -31,10 +31,10 @@ module RAM(
         output [31:0] dataOut
     );
     
-    reg [7:0] data [0:60];
+    (*MARK_DEBUG="TRUE"*) (* dont_touch = "true" *) reg [7:0] data [0:60];
     integer i;
     initial begin
-        for (i = 0; i < 256; i = i + 1) data[i] = 0;
+        for (i = 0; i <= 60; i = i + 1) data[i] = 8'b0;
     end
     
     // assign是新加的

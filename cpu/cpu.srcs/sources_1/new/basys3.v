@@ -21,7 +21,7 @@
 
 
 module basys3(
-        input CPUCLK,
+        input CLKButton,
         input BasysCLK,
         input RST,
         input [1:0] SW_in,
@@ -30,12 +30,19 @@ module basys3(
         output [3:0] bits
     );
     
-    
-    wire [31:0] PCNowOut, PC4Out, RsData, RtData, ALUout, DBOut;
+    wire [31:0] PCNowOut, PC4Out, RsData, RtData, ALUout;
+    wire [31:0] DBOut;
     wire [4:0] RsAddr, RtAddr;
     wire [3:0] segIn;
     wire [15:0] muxOut;
     wire CLK_r;
+    (*MARK_DEBUG="TRUE"*) wire CPUCLK;
+    
+    keyboard_clk keyboard_clk(
+        .Button(CLKButton),
+        .BasysCLK(BasysCLK),
+        .CPUCLK(CPUCLK)
+    );    
     
     timeDiv time_div(
         .clk(BasysCLK),

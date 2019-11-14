@@ -28,7 +28,7 @@ module IRAM(
     );
     
     reg [7:0] Ins [0:127];
-    initial $readmemh("D:/cpu/cpu/cpu.sim/sim_1/behav/xsim/Instructuons.mem", Ins);    
+    initial $readmemh("Instructuons.mem", Ins);    
    
     assign iDataOut[7:0] = rw == 1 ? Ins[Iaddr + 3] : 8'bz;
     assign iDataOut[15:8] = rw == 1 ? Ins[Iaddr + 2] : 8'bz;

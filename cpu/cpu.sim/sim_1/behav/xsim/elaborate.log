@@ -9,6 +9,7 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.keyboard_clk
 Compiling module xil_defaultlib.timeDiv
 Compiling module xil_defaultlib.PC
 Compiling module xil_defaultlib.IRAM

@@ -26,19 +26,19 @@ module CPU(
     
     output [31:0] PCNowOut,
     output [31:0] PC4Out,
-    output [4:0] RsAddr,
+    (*MARK_DEBUG="TRUE"*) output [4:0] RsAddr,
     output [31:0] RsData,
-    output [4:0] RtAddr,
+    (*MARK_DEBUG="TRUE"*) output [4:0] RtAddr,
     output [31:0] RtData,
-    output [31:0] ALUout,
+    (*MARK_DEBUG="TRUE"*) output [31:0] ALUout,
     output [31:0] DBOut
     );
     wire zero, sign, PCWre, InsMemRW, RegDst, RegWre, ALUSrcA, ALUSrcB, ExtSel, mRD, mWR, DBDataSrc;
     wire [1:0] PCSrc;
     wire [2:0] ALUOp;
     wire [25:0] jumpIn;
-    wire [31:0] PCIn, PCOut, Extend, iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
-    wire [31:0] WriteReg, ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
+    (* dont_touch = "true" *) wire [31:0] PCIn, PCOut, Extend, iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
+    (*MARK_DEBUG="TRUE"*) wire [31:0] WriteReg, ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
     
     assign PCNowOut = PCOut;
     assign PC4Out = PC4;
