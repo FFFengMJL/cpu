@@ -61,7 +61,5 @@ module keyboard_clk(
         delayed_button_previous_state <= delayed_button_current_state;
     end
     
-    // assign CPUCLK = delayed_button_previous_state & (~delayed_button_current_state);
-    // assign CPUCLK = Button;
-    assign CPUCLK = button_edge;
+    assign CPUCLK = delayed_button_previous_state & (~delayed_button_current_state);
 endmodule

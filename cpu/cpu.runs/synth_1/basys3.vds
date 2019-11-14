@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Thu Nov 14 19:41:37 2019
-# Process ID: 27904
+# Start of session at: Thu Nov 14 22:42:08 2019
+# Process ID: 28836
 # Current directory: F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/synth_1
 # Command line: vivado.exe -log basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3.tcl
 # Log file: F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/synth_1/basys3.vds
@@ -16,29 +16,21 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9052 
+INFO: Helper process launched with PID 10896 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 835.977 ; gain = 233.945
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 835.391 ; gain = 234.520
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'basys3' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:23]
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:39]
 INFO: [Synth 8-6157] synthesizing module 'keyboard_clk' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/keyboard_clk.v:23]
-WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/keyboard_clk.v:49]
-WARNING: [Synth 8-6014] Unused sequential element delayed_button_current_state_reg was removed.  [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/keyboard_clk.v:59]
-WARNING: [Synth 8-6014] Unused sequential element delayed_button_previous_state_reg was removed.  [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/keyboard_clk.v:61]
 INFO: [Synth 8-6155] done synthesizing module 'keyboard_clk' (1#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/keyboard_clk.v:23]
 INFO: [Synth 8-6157] synthesizing module 'timeDiv' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/timeDiv.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'timeDiv' (2#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/timeDiv.v:23]
 INFO: [Synth 8-6157] synthesizing module 'CPU' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:23]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:29]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:31]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:33]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:40]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:41]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:42]
 INFO: [Synth 8-6157] synthesizing module 'PC' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/PC.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/PC.v:23]
 INFO: [Synth 8-6157] synthesizing module 'IRAM' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:23]
-WARNING: [Synth 8-2898] ignoring malformed $readmem task: invalid memory name [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:31]
 INFO: [Synth 8-6155] done synthesizing module 'IRAM' (4#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Adder' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Adder.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Adder' (5#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Adder.v:23]
@@ -53,7 +45,6 @@ INFO: [Synth 8-226] default block is never used [F:/Learning/CPU/GitHub/cpu/cpu/
 INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/ALU.v:23]
 INFO: [Synth 8-6157] synthesizing module 'RAM' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/RAM.v:23]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/RAM.v:34]
-INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/RAM.v:34]
 WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/RAM.v:34]
 WARNING: [Synth 8-4767] Trying to implement RAM 'data_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
@@ -72,14 +63,6 @@ INFO: [Synth 8-155] case statement is not full and has no default [F:/Learning/C
 INFO: [Synth 8-6155] done synthesizing module 'CLU' (13#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CLU.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Jump' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Jump.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Jump' (14#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Jump.v:23]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alu'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:111]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'reg_w_choose'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:72]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'regfile'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:79]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alua_choose'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:97]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'datamem'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:120]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alub_choose'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:104]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'jump'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:179]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'nextpc_choose'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:152]
 INFO: [Synth 8-6155] done synthesizing module 'CPU' (15#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:23]
 INFO: [Synth 8-6157] synthesizing module 'SegLED' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v:22]
 INFO: [Synth 8-226] default block is never used [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v:28]
@@ -90,9 +73,10 @@ INFO: [Synth 8-6157] synthesizing module 'mux4_r2' [F:/Learning/CPU/GitHub/cpu/c
 INFO: [Synth 8-155] case statement is not full and has no default [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v:37]
 INFO: [Synth 8-6155] done synthesizing module 'mux4_r2' (18#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v:23]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'keyboard_clk'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:41]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cpu'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:52]
 INFO: [Synth 8-6155] done synthesizing module 'basys3' (19#1) [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 931.242 ; gain = 329.211
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 930.586 ; gain = 329.715
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -105,117 +89,345 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 932.457 ; gain = 330.426
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 930.586 ; gain = 329.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 932.457 ; gain = 330.426
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 930.586 ; gain = 329.715
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.112 . Memory (MB): peak = 942.211 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 930.586 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc]
-WARNING: [Vivado 12-507] No nets matched 'ALUout[9]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_45'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:59]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[11]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:94]
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_39'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_35'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_46'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'ALUout[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/Ins2[26]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_27'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_39'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_52'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[16]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[26]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_81'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_38'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_61'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[25]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:94]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:94]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[15]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:95]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[16]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_45'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:96]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:96]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[26]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:97]
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_80'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:97]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:97]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[10]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:98]
+WARNING: [Vivado 12-507] No nets matched 'cpu/n_0_2045_BUFG'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:98]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:98]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[8]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:100]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_20'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:99]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[14]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:101]
+WARNING: [Vivado 12-507] No nets matched 'cpu/Ins2[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:107]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[17]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:102]
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_39'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:108]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[20]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:103]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[21]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:104]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:104]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[23]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:105]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:105]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[28]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:106]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:106]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[12]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:109]
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_20'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:109]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:109]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[13]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:110]
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_44'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:110]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:110]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[18]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:111]
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_56'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:111]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:111]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[19]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:112]
+WARNING: [Vivado 12-507] No nets matched 'ALUout[26]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:112]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:112]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[29]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:113]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:113]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[30]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:114]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:114]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[22]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:117]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:117]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[24]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:118]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:118]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[25]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:119]
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_76'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:119]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:119]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:120]
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_36'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:120]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:120]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'ALUout[31]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:121]
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_42'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:121]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[1]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_55'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[23]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'segOut_OBUF[3]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_46'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_41'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_49'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_49'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/Ins2[5]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[31]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_58'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_9'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[28]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_10'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:165]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:165]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_33'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'ALUout[11]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[15]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/Ins2[25]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_47'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_61'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_54'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[30]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[20]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/Ins2[28]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_22'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_27'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/n_0_2045_BUFG_inst_n_1'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_6'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[12]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[8]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_64'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_33'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_85'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_45'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'ALUout[17]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[22]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[29]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_9'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_79'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_35'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'Out[2]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'BasysCLK_IBUF_BUFG'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_31'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_56'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_42'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_39'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'Out[3]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'SW_in_IBUF[1]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:230]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:230]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_32'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:235]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:235]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_23'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:236]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:236]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_3'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:238]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[9]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:245]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:245]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/Ins2[20]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:247]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:247]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_11'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:248]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:248]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_43'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:249]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:249]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_14'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[9]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_28'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:258]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:258]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_67'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:259]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/pc4_adder_n_25'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:260]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:260]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_8'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:261]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[19]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_16'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:270]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_60'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_19'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/regfile_n_13'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'ALUout[9]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/Ins2[17]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:276]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:276]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'segOut_OBUF[1]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:279]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:279]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_5'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:283]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:283]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_42'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:284]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:284]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:284]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basys3_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1058.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1045.984 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1058.336 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1045.984 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1058.336 ; gain = 456.305
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1045.984 ; gain = 445.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1058.336 ; gain = 456.305
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1045.984 ; gain = 445.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property MARK_DEBUG = true for cpu/ALUout[2]. (constraint file  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc, line 72).
-Applied set_property MARK_DEBUG = true for DBOut[0]. (constraint file  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc, line 82).
-Applied set_property MARK_DEBUG = true for ALUout[0]. (constraint file  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc, line 90).
+WARNING: set_property MARK_DEBUG could not find object (constraint file  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc, line 88).
+WARNING: set_property MARK_DEBUG could not find object (constraint file  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc, line 354).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1058.336 ; gain = 456.305
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1045.984 ; gain = 445.113
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "PCWre" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ALUSrcA" won't be mapped to RAM because it is too sparse
@@ -225,110 +437,109 @@ INFO: [Synth 8-5546] ROM "RegWre" won't be mapped to RAM because it is too spars
 INFO: [Synth 8-5546] ROM "PCSrc" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5587] ROM size for "ALUOp" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "ExtSel" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux'. This will prevent further optimization [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:71]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[0]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[1]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[2]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[3]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[4]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[5]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[6]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[7]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[8]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[9]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[10]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[11]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[12]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[13]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[14]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[15]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[16]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[17]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[18]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[19]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[20]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[21]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[22]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[23]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[24]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[25]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[26]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[27]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[28]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[29]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[30]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[31]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[32]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[33]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[34]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[35]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[36]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[37]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[38]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[39]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[40]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[41]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[42]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[43]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[44]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[45]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[46]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[47]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[48]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[49]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[50]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[51]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[52]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[53]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[54]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[55]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[56]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[57]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[58]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[59]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[60]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[61]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[62]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[63]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[64]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[65]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[66]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[67]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[68]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[69]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[70]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[71]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[72]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[73]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[74]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[75]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[76]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[77]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[78]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[79]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[80]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[81]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[82]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[83]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[84]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[85]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[86]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[87]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[88]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[89]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[90]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[91]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[92]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[93]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[94]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[95]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[96]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[97]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[98]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[99]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[0]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[1]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[2]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[3]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[4]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[5]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[6]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[7]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[8]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[9]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[10]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[11]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[12]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[13]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[14]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[15]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[16]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[17]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[18]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[19]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[20]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[21]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[22]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[23]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[24]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[25]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[26]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[27]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[28]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[29]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[30]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[31]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[32]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[33]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[34]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[35]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[36]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[37]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[38]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[39]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[40]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[41]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[42]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[43]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[44]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[45]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[46]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[47]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[48]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[49]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[50]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[51]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[52]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[53]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[54]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[55]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[56]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[57]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[58]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[59]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[60]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[61]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[62]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[63]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[64]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[65]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[66]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[67]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[68]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[69]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[70]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[71]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[72]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[73]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[74]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[75]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[76]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[77]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[78]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[79]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[80]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[81]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[82]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[83]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[84]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[85]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[86]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[87]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[88]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[89]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[90]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[91]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[92]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[93]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[94]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[95]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[96]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[97]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[98]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
+WARNING: [Synth 8-327] inferring latch for variable 'Ins_reg[99]' [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:119]
 INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1058.336 ; gain = 456.305
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1045.984 ; gain = 445.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -349,7 +560,7 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 33    
 	                8 Bit    Registers := 61    
 	                4 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 6     
 	   4 Input     32 Bit        Muxes := 1     
@@ -375,7 +586,7 @@ Hierarchical RTL Component report
 Module keyboard_clk 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
 Module timeDiv 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -502,311 +713,311 @@ WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[9]
 WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[8]
 WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[7]
 WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[6]
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[127][0]' (LD) to 'cpu/InsRegister/Ins_reg[127][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[126][0]' (LD) to 'cpu/InsRegister/Ins_reg[126][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[125][0]' (LD) to 'cpu/InsRegister/Ins_reg[125][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[124][0]' (LD) to 'cpu/InsRegister/Ins_reg[124][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[123][0]' (LD) to 'cpu/InsRegister/Ins_reg[123][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[122][0]' (LD) to 'cpu/InsRegister/Ins_reg[122][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[121][0]' (LD) to 'cpu/InsRegister/Ins_reg[121][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[120][0]' (LD) to 'cpu/InsRegister/Ins_reg[120][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[119][0]' (LD) to 'cpu/InsRegister/Ins_reg[119][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[118][0]' (LD) to 'cpu/InsRegister/Ins_reg[118][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[117][0]' (LD) to 'cpu/InsRegister/Ins_reg[117][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[116][0]' (LD) to 'cpu/InsRegister/Ins_reg[116][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[115][0]' (LD) to 'cpu/InsRegister/Ins_reg[115][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[114][0]' (LD) to 'cpu/InsRegister/Ins_reg[114][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[113][0]' (LD) to 'cpu/InsRegister/Ins_reg[113][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[112][0]' (LD) to 'cpu/InsRegister/Ins_reg[112][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[111][0]' (LD) to 'cpu/InsRegister/Ins_reg[111][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[110][0]' (LD) to 'cpu/InsRegister/Ins_reg[110][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[109][0]' (LD) to 'cpu/InsRegister/Ins_reg[109][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[108][0]' (LD) to 'cpu/InsRegister/Ins_reg[108][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[107][0]' (LD) to 'cpu/InsRegister/Ins_reg[107][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[106][0]' (LD) to 'cpu/InsRegister/Ins_reg[106][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[105][0]' (LD) to 'cpu/InsRegister/Ins_reg[105][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[104][0]' (LD) to 'cpu/InsRegister/Ins_reg[104][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[103][0]' (LD) to 'cpu/InsRegister/Ins_reg[103][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[102][0]' (LD) to 'cpu/InsRegister/Ins_reg[102][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[101][0]' (LD) to 'cpu/InsRegister/Ins_reg[101][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[100][0]' (LD) to 'cpu/InsRegister/Ins_reg[100][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[99][0]' (LD) to 'cpu/InsRegister/Ins_reg[99][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[98][0]' (LD) to 'cpu/InsRegister/Ins_reg[98][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[97][0]' (LD) to 'cpu/InsRegister/Ins_reg[97][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[96][0]' (LD) to 'cpu/InsRegister/Ins_reg[96][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[95][0]' (LD) to 'cpu/InsRegister/Ins_reg[95][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[94][0]' (LD) to 'cpu/InsRegister/Ins_reg[94][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[93][0]' (LD) to 'cpu/InsRegister/Ins_reg[93][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[92][0]' (LD) to 'cpu/InsRegister/Ins_reg[92][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[91][0]' (LD) to 'cpu/InsRegister/Ins_reg[91][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[90][0]' (LD) to 'cpu/InsRegister/Ins_reg[90][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[89][0]' (LD) to 'cpu/InsRegister/Ins_reg[89][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[88][0]' (LD) to 'cpu/InsRegister/Ins_reg[88][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[87][0]' (LD) to 'cpu/InsRegister/Ins_reg[87][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[86][0]' (LD) to 'cpu/InsRegister/Ins_reg[86][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[85][0]' (LD) to 'cpu/InsRegister/Ins_reg[85][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[84][0]' (LD) to 'cpu/InsRegister/Ins_reg[84][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[83][0]' (LD) to 'cpu/InsRegister/Ins_reg[83][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[82][0]' (LD) to 'cpu/InsRegister/Ins_reg[82][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[81][0]' (LD) to 'cpu/InsRegister/Ins_reg[81][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[80][0]' (LD) to 'cpu/InsRegister/Ins_reg[80][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[79][0]' (LD) to 'cpu/InsRegister/Ins_reg[79][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[78][0]' (LD) to 'cpu/InsRegister/Ins_reg[78][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[77][0]' (LD) to 'cpu/InsRegister/Ins_reg[77][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[76][0]' (LD) to 'cpu/InsRegister/Ins_reg[76][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[75][0]' (LD) to 'cpu/InsRegister/Ins_reg[75][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[74][0]' (LD) to 'cpu/InsRegister/Ins_reg[74][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[73][0]' (LD) to 'cpu/InsRegister/Ins_reg[73][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[72][0]' (LD) to 'cpu/InsRegister/Ins_reg[72][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[71][0]' (LD) to 'cpu/InsRegister/Ins_reg[71][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[70][0]' (LD) to 'cpu/InsRegister/Ins_reg[70][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[69][0]' (LD) to 'cpu/InsRegister/Ins_reg[69][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[68][0]' (LD) to 'cpu/InsRegister/Ins_reg[68][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[67][0]' (LD) to 'cpu/InsRegister/Ins_reg[67][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[66][0]' (LD) to 'cpu/InsRegister/Ins_reg[66][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[65][0]' (LD) to 'cpu/InsRegister/Ins_reg[65][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[64][0]' (LD) to 'cpu/InsRegister/Ins_reg[64][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[63][0]' (LD) to 'cpu/InsRegister/Ins_reg[63][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[62][0]' (LD) to 'cpu/InsRegister/Ins_reg[62][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[61][0]' (LD) to 'cpu/InsRegister/Ins_reg[61][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[60][0]' (LD) to 'cpu/InsRegister/Ins_reg[60][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[59][0]' (LD) to 'cpu/InsRegister/Ins_reg[59][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[58][0]' (LD) to 'cpu/InsRegister/Ins_reg[58][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[57][0]' (LD) to 'cpu/InsRegister/Ins_reg[57][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[56][0]' (LD) to 'cpu/InsRegister/Ins_reg[56][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[55][0]' (LD) to 'cpu/InsRegister/Ins_reg[55][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[54][0]' (LD) to 'cpu/InsRegister/Ins_reg[54][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[53][0]' (LD) to 'cpu/InsRegister/Ins_reg[53][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[52][0]' (LD) to 'cpu/InsRegister/Ins_reg[52][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[51][0]' (LD) to 'cpu/InsRegister/Ins_reg[51][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[50][0]' (LD) to 'cpu/InsRegister/Ins_reg[50][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[49][0]' (LD) to 'cpu/InsRegister/Ins_reg[49][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[48][0]' (LD) to 'cpu/InsRegister/Ins_reg[48][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[47][0]' (LD) to 'cpu/InsRegister/Ins_reg[47][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[46][0]' (LD) to 'cpu/InsRegister/Ins_reg[46][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[45][0]' (LD) to 'cpu/InsRegister/Ins_reg[45][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[44][0]' (LD) to 'cpu/InsRegister/Ins_reg[44][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[43][0]' (LD) to 'cpu/InsRegister/Ins_reg[43][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[42][0]' (LD) to 'cpu/InsRegister/Ins_reg[42][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[41][0]' (LD) to 'cpu/InsRegister/Ins_reg[41][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[40][0]' (LD) to 'cpu/InsRegister/Ins_reg[40][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[39][0]' (LD) to 'cpu/InsRegister/Ins_reg[39][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[38][0]' (LD) to 'cpu/InsRegister/Ins_reg[38][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[37][0]' (LD) to 'cpu/InsRegister/Ins_reg[37][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[36][0]' (LD) to 'cpu/InsRegister/Ins_reg[36][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[35][0]' (LD) to 'cpu/InsRegister/Ins_reg[35][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[34][0]' (LD) to 'cpu/InsRegister/Ins_reg[34][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[33][0]' (LD) to 'cpu/InsRegister/Ins_reg[33][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[32][0]' (LD) to 'cpu/InsRegister/Ins_reg[32][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[31][0]' (LD) to 'cpu/InsRegister/Ins_reg[31][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[30][0]' (LD) to 'cpu/InsRegister/Ins_reg[30][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[29][0]' (LD) to 'cpu/InsRegister/Ins_reg[29][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[28][0]' (LD) to 'cpu/InsRegister/Ins_reg[28][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[0][5]' (LD) to 'cpu/InsRegister/Ins_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[127][5]' (LD) to 'cpu/InsRegister/Ins_reg[127][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[126][5]' (LD) to 'cpu/InsRegister/Ins_reg[126][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[125][5]' (LD) to 'cpu/InsRegister/Ins_reg[125][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[124][5]' (LD) to 'cpu/InsRegister/Ins_reg[124][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[123][5]' (LD) to 'cpu/InsRegister/Ins_reg[123][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[122][5]' (LD) to 'cpu/InsRegister/Ins_reg[122][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[121][5]' (LD) to 'cpu/InsRegister/Ins_reg[121][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[120][5]' (LD) to 'cpu/InsRegister/Ins_reg[120][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[119][5]' (LD) to 'cpu/InsRegister/Ins_reg[119][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[118][5]' (LD) to 'cpu/InsRegister/Ins_reg[118][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[117][5]' (LD) to 'cpu/InsRegister/Ins_reg[117][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[116][5]' (LD) to 'cpu/InsRegister/Ins_reg[116][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[115][5]' (LD) to 'cpu/InsRegister/Ins_reg[115][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[114][5]' (LD) to 'cpu/InsRegister/Ins_reg[114][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[113][5]' (LD) to 'cpu/InsRegister/Ins_reg[113][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[112][5]' (LD) to 'cpu/InsRegister/Ins_reg[112][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[111][5]' (LD) to 'cpu/InsRegister/Ins_reg[111][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[110][5]' (LD) to 'cpu/InsRegister/Ins_reg[110][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[109][5]' (LD) to 'cpu/InsRegister/Ins_reg[109][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[108][5]' (LD) to 'cpu/InsRegister/Ins_reg[108][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[107][5]' (LD) to 'cpu/InsRegister/Ins_reg[107][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[106][5]' (LD) to 'cpu/InsRegister/Ins_reg[106][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[105][5]' (LD) to 'cpu/InsRegister/Ins_reg[105][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[104][5]' (LD) to 'cpu/InsRegister/Ins_reg[104][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[103][5]' (LD) to 'cpu/InsRegister/Ins_reg[103][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[102][5]' (LD) to 'cpu/InsRegister/Ins_reg[102][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[101][5]' (LD) to 'cpu/InsRegister/Ins_reg[101][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[100][5]' (LD) to 'cpu/InsRegister/Ins_reg[100][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[99][5]' (LD) to 'cpu/InsRegister/Ins_reg[99][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[98][5]' (LD) to 'cpu/InsRegister/Ins_reg[98][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[97][5]' (LD) to 'cpu/InsRegister/Ins_reg[97][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[96][5]' (LD) to 'cpu/InsRegister/Ins_reg[96][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[95][5]' (LD) to 'cpu/InsRegister/Ins_reg[95][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[94][5]' (LD) to 'cpu/InsRegister/Ins_reg[94][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[93][5]' (LD) to 'cpu/InsRegister/Ins_reg[93][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[92][5]' (LD) to 'cpu/InsRegister/Ins_reg[92][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[91][5]' (LD) to 'cpu/InsRegister/Ins_reg[91][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[90][5]' (LD) to 'cpu/InsRegister/Ins_reg[90][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[89][5]' (LD) to 'cpu/InsRegister/Ins_reg[89][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[88][5]' (LD) to 'cpu/InsRegister/Ins_reg[88][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[87][5]' (LD) to 'cpu/InsRegister/Ins_reg[87][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[86][5]' (LD) to 'cpu/InsRegister/Ins_reg[86][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[85][5]' (LD) to 'cpu/InsRegister/Ins_reg[85][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[84][5]' (LD) to 'cpu/InsRegister/Ins_reg[84][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[83][5]' (LD) to 'cpu/InsRegister/Ins_reg[83][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[82][5]' (LD) to 'cpu/InsRegister/Ins_reg[82][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[81][5]' (LD) to 'cpu/InsRegister/Ins_reg[81][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[80][5]' (LD) to 'cpu/InsRegister/Ins_reg[80][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[79][5]' (LD) to 'cpu/InsRegister/Ins_reg[79][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[78][5]' (LD) to 'cpu/InsRegister/Ins_reg[78][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[77][5]' (LD) to 'cpu/InsRegister/Ins_reg[77][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[76][5]' (LD) to 'cpu/InsRegister/Ins_reg[76][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[75][5]' (LD) to 'cpu/InsRegister/Ins_reg[75][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[74][5]' (LD) to 'cpu/InsRegister/Ins_reg[74][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[73][5]' (LD) to 'cpu/InsRegister/Ins_reg[73][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[72][5]' (LD) to 'cpu/InsRegister/Ins_reg[72][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[71][5]' (LD) to 'cpu/InsRegister/Ins_reg[71][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[70][5]' (LD) to 'cpu/InsRegister/Ins_reg[70][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[69][5]' (LD) to 'cpu/InsRegister/Ins_reg[69][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[68][5]' (LD) to 'cpu/InsRegister/Ins_reg[68][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[67][5]' (LD) to 'cpu/InsRegister/Ins_reg[67][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[66][5]' (LD) to 'cpu/InsRegister/Ins_reg[66][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[65][5]' (LD) to 'cpu/InsRegister/Ins_reg[65][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[64][5]' (LD) to 'cpu/InsRegister/Ins_reg[64][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[63][5]' (LD) to 'cpu/InsRegister/Ins_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[62][5]' (LD) to 'cpu/InsRegister/Ins_reg[62][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[61][5]' (LD) to 'cpu/InsRegister/Ins_reg[61][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[60][5]' (LD) to 'cpu/InsRegister/Ins_reg[60][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[59][5]' (LD) to 'cpu/InsRegister/Ins_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[58][5]' (LD) to 'cpu/InsRegister/Ins_reg[58][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[57][5]' (LD) to 'cpu/InsRegister/Ins_reg[57][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[56][5]' (LD) to 'cpu/InsRegister/Ins_reg[56][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[55][5]' (LD) to 'cpu/InsRegister/Ins_reg[55][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[54][5]' (LD) to 'cpu/InsRegister/Ins_reg[54][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[53][5]' (LD) to 'cpu/InsRegister/Ins_reg[53][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[52][5]' (LD) to 'cpu/InsRegister/Ins_reg[52][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[51][5]' (LD) to 'cpu/InsRegister/Ins_reg[51][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[50][5]' (LD) to 'cpu/InsRegister/Ins_reg[50][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[49][5]' (LD) to 'cpu/InsRegister/Ins_reg[49][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[48][5]' (LD) to 'cpu/InsRegister/Ins_reg[48][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[47][5]' (LD) to 'cpu/InsRegister/Ins_reg[47][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[46][5]' (LD) to 'cpu/InsRegister/Ins_reg[46][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[45][5]' (LD) to 'cpu/InsRegister/Ins_reg[45][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[44][5]' (LD) to 'cpu/InsRegister/Ins_reg[44][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[43][5]' (LD) to 'cpu/InsRegister/Ins_reg[43][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[42][5]' (LD) to 'cpu/InsRegister/Ins_reg[42][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[41][5]' (LD) to 'cpu/InsRegister/Ins_reg[41][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[40][5]' (LD) to 'cpu/InsRegister/Ins_reg[40][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[39][5]' (LD) to 'cpu/InsRegister/Ins_reg[39][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[38][5]' (LD) to 'cpu/InsRegister/Ins_reg[38][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[37][5]' (LD) to 'cpu/InsRegister/Ins_reg[37][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[36][5]' (LD) to 'cpu/InsRegister/Ins_reg[36][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[35][5]' (LD) to 'cpu/InsRegister/Ins_reg[35][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[34][5]' (LD) to 'cpu/InsRegister/Ins_reg[34][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[33][5]' (LD) to 'cpu/InsRegister/Ins_reg[33][4]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[32][5]' (LD) to 'cpu/InsRegister/Ins_reg[32][6]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[31][5]' (LD) to 'cpu/InsRegister/Ins_reg[31][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[30][5]' (LD) to 'cpu/InsRegister/Ins_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'cpu/InsRegister/Ins_reg[29][5]' (LD) to 'cpu/InsRegister/Ins_reg[29][7]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[67][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[59][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[47][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[31][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[80][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[52][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[48][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[10][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[75][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[36][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[32][3] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpu/\control_unit/InsMemRW_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[127][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[126][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[125][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[124][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[123][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[122][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[121][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[120][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[119][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[118][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[117][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[116][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[115][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[114][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[113][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[112][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[111][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[110][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[109][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[108][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[107][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[106][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[105][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[104][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[103][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[102][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[101][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[100][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[99][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[98][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[97][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[96][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[95][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[94][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[93][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[92][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[91][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[90][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[89][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[88][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[87][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[86][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[85][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[84][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[83][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[82][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[81][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[80][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[79][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[78][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[77][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[76][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[75][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[74][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[73][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[72][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[71][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[70][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[69][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[68][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[67][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[66][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[65][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[64][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[63][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[62][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[61][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[60][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[59][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[58][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[57][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[56][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[55][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[54][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[53][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[52][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[51][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[50][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[49][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[48][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[47][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[46][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[45][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[44][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[43][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[42][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[41][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[40][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[39][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[38][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[37][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[36][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[35][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[34][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[33][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[32][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[31][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[30][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[29][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[127][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[126][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[125][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[124][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[123][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[122][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[121][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[120][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[119][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[118][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[117][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[116][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[115][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[114][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[113][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[112][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[111][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[110][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[109][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[108][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[107][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[106][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[105][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[104][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[103][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[102][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[101][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[100][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[99][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[98][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[97][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[96][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[95][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[94][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[93][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[92][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[91][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[90][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[89][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[88][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[87][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[86][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[85][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[84][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[83][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[82][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[81][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[79][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[78][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[77][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[76][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[74][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[73][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[72][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[71][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[70][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[69][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[68][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[65][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[64][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[63][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[62][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[61][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[60][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[57][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[56][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[55][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[54][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[53][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[51][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[50][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[49][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[45][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[44][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[43][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[42][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[41][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[40][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[39][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[38][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[37][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[35][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[34][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[33][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[29][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[28][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/InsRegister/\Ins_reg[27][4] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[0][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[1][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[2][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[3][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[4][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[5][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[6][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[7][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[8][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[9][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[10][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[11][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[12][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[13][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[14][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[15][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[16][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[17][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[18][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[19][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[20][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[21][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[22][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[23][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[24][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[25][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[26][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[27][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[28][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[29][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[30][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[31][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[32][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[33][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[34][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[35][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[36][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[37][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[38][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[39][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[40][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[41][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[42][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[43][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[44][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[45][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[46][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[47][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[48][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[49][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[50][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[51][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[52][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[53][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[54][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[55][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[56][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[57][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[58][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[59][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[60][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[61][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[62][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[63][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[64][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[65][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[66][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[67][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[68][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[69][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[70][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[71][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[72][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[73][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[74][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[75][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[76][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[77][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[78][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[79][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[80][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[81][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[82][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[83][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[84][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[85][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[86][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[87][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[88][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[89][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[90][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[91][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[92][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[93][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[94][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[95][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[96][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[97][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[98][7]) is unused and will be removed from module IRAM.
-WARNING: [Synth 8-3332] Sequential element (Ins_reg[99][7]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[0][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[1][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[2][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[3][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[4][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[5][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[6][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[7][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[8][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[9][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[10][2]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[11][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[12][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[13][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[14][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[15][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[16][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[17][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[18][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[19][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[20][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[21][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[22][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[23][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[24][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[25][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[26][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[27][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[28][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[29][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[31][0]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[32][3]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[33][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[34][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[35][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[36][3]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[37][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[38][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[39][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[40][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[41][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[42][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[43][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[44][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[45][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[47][0]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[48][2]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[49][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[50][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[51][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[52][1]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[53][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[54][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[55][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[56][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[57][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[59][0]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[60][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[61][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[62][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[63][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[64][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[65][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[67][0]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[68][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[69][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[70][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[71][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[72][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[73][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[74][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[75][3]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[76][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[77][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[78][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[79][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[80][1]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[81][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[82][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[83][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[84][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[85][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[86][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[87][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[88][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[89][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[90][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[91][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[92][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[93][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[94][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[95][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[96][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[97][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[98][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[99][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[100][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[101][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[102][4]) is unused and will be removed from module IRAM.
+WARNING: [Synth 8-3332] Sequential element (Ins_reg[103][4]) is unused and will be removed from module IRAM.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1058.336 ; gain = 456.305
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1045.984 ; gain = 445.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -818,13 +1029,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1058.336 ; gain = 456.305
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1045.984 ; gain = 445.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1058.336 ; gain = 456.305
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:38 . Memory (MB): peak = 1045.984 ; gain = 445.113
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -836,7 +1047,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1058.336 ; gain = 456.305
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1088.195 ; gain = 487.324
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -859,47 +1070,15 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[31] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[30] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[29] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[28] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[27] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[26] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[25] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[24] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[23] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[22] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[21] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[20] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[19] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[18] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[17] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[16] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[15] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[14] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[13] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[12] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[11] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[10] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[9] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[8] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin iDataIn_inferred:in0[0] to constant 0
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Register.v:43]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1060.637 ; gain = 458.605
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1102.035 ; gain = 501.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1060.637 ; gain = 458.605
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1102.035 ; gain = 501.164
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -918,25 +1097,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1060.637 ; gain = 458.605
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1102.035 ; gain = 501.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1060.637 ; gain = 458.605
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 1102.035 ; gain = 501.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1060.637 ; gain = 458.605
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 1102.035 ; gain = 501.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1060.637 ; gain = 458.605
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 1102.035 ; gain = 501.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -953,17 +1132,17 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     3|
-|2     |CARRY4 |    51|
-|3     |LUT1   |   267|
-|4     |LUT2   |   179|
-|5     |LUT3   |   101|
-|6     |LUT4   |   104|
-|7     |LUT5   |   328|
-|8     |LUT6   |  1470|
-|9     |MUXF7  |   480|
-|10    |MUXF8  |    64|
+|2     |CARRY4 |    57|
+|3     |LUT1   |    63|
+|4     |LUT2   |   107|
+|5     |LUT3   |    93|
+|6     |LUT4   |   150|
+|7     |LUT5   |   334|
+|8     |LUT6   |  1525|
+|9     |MUXF7  |   512|
+|10    |MUXF8  |   175|
 |11    |FDCE   |   992|
-|12    |FDRE   |   589|
+|12    |FDRE   |   612|
 |13    |LD     |    44|
 |14    |IBUF   |     5|
 |15    |OBUF   |    12|
@@ -973,50 +1152,47 @@ Report Instance Areas:
 +------+------------------+-------------+------+
 |      |Instance          |Module       |Cells |
 +------+------------------+-------------+------+
-|1     |top               |             |  4689|
-|2     |  keyboard_clk    |keyboard_clk |     3|
-|3     |  cpu             |CPU          |  4537|
-|4     |    reg_w_choose  |Mux_2__2     |     5|
-|5     |    regfile       |Register     |  1856|
-|6     |    alua_choose   |Mux_2__3     |    32|
-|7     |    alub_choose   |Mux_2        |    32|
-|8     |    alu           |ALU          |   318|
-|9     |    datamem       |RAM          |  1817|
-|10    |    nextpc_choose |Mux_4        |    66|
-|11    |    control_unit  |CLU          |    33|
-|12    |    db_choose     |Mux_2__4     |    32|
-|13    |    nextpc        |Adder        |    40|
-|14    |    pc            |PC           |    33|
-|15    |    pc4_adder     |Adder_0      |     9|
-|16    |  mux             |MUX_4_r      |    16|
-|17    |  LED             |SegLED       |     7|
-|18    |  timeMux         |mux4_r2      |    66|
-|19    |  time_div        |timeDiv      |    41|
+|1     |top               |             |  4684|
+|2     |  keyboard_clk    |keyboard_clk |    39|
+|3     |  cpu             |CPU          |  4487|
+|4     |    alu           |ALU          |    12|
+|5     |    control_unit  |CLU          |   193|
+|6     |    datamem       |RAM          |  1372|
+|7     |    nextpc        |Adder        |     8|
+|8     |    nextpc_choose |Mux_4        |    80|
+|9     |    pc            |PC           |    32|
+|10    |    pc4_adder     |Adder_0      |    39|
+|11    |    regfile       |Register     |  2735|
+|12    |  LED             |SegLED       |     7|
+|13    |  timeMux         |mux4_r2      |    91|
+|14    |  time_div        |timeDiv      |    41|
 +------+------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1060.637 ; gain = 458.605
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 1102.035 ; gain = 501.164
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 327 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1060.637 ; gain = 332.727
-Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1060.637 ; gain = 458.605
+Synthesis finished with 0 errors, 0 critical warnings and 291 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:41 ; elapsed = 00:01:51 . Memory (MB): peak = 1102.035 ; gain = 385.766
+Synthesis Optimization Complete : Time (s): cpu = 00:01:50 ; elapsed = 00:01:54 . Memory (MB): peak = 1102.035 ; gain = 501.164
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1068.688 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 639 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1102.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 788 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1068.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1102.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 44 instances were transformed.
   LD => LDCE: 44 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-285 Infos, 289 Warnings, 24 Critical Warnings and 0 Errors encountered.
+273 Infos, 329 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1068.688 ; gain = 761.914
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1068.688 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:02:00 . Memory (MB): peak = 1102.035 ; gain = 796.414
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1102.035 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/synth_1/basys3.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file basys3_utilization_synth.rpt -pb basys3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 19:42:39 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 22:44:13 2019...

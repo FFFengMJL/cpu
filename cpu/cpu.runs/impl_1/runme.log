@@ -9,33 +9,332 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source basys3.tcl -notrace
-Command: open_checkpoint F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/basys3.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 296.613 ; gain = 0.000
+Command: link_design -top basys3 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 603.102 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 595 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 603.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 744 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1200.918 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1200.918 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1200.918 ; gain = 0.000
+Parsing XDC File [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[8]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[9]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[10]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[11]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[12]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[13]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[14]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[15]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[16]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[17]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[18]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[19]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[20]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[21]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[22]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[23]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[24]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[25]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[26]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[28]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[29]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[30]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/DBOut[31]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:49]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[0]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[1]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[2]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[3]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[4]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[5]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[6]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[7]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[8]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[9]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[10]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[11]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[12]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[13]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[14]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[15]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[16]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[17]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[18]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[19]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[20]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[21]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[22]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[23]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[24]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[25]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[26]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[28]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[29]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[30]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PCNowOut[31]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:51]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[0]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[8]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[9]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[10]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[11]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[12]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[13]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[14]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[15]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[16]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[17]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[18]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[19]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[20]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[21]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[22]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[23]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[24]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[25]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[26]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[28]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[29]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[30]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/PC4Out[31]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUDataA[31]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_39'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'ALUout[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[27]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'muxOut[14]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUDataB[18]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/datamem_n_27'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'DBOut[16]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUDataB[12]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[26]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_81'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched '<const0>'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUDataB[15]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUOut[25]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUout[31]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_45'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/InsRegister_n_80'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/n_0_2045_BUFG'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'cpu/ALUDataB[19]'. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:104]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:174]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:192]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:220]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:231]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:233]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:235]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:236]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:245]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:246]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:248]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:254]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:258]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:269]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:283]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:284]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:293]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc:293]
+Finished Parsing XDC File [F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 718.938 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-INFO: [Project 1-604] Checkpoint was created with Vivado v2019.2 (64-bit) build 2700185
-open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1200.918 ; gain = 904.305
+9 Infos, 100 Warnings, 103 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 722.945 ; gain = 412.113
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -46,98 +345,64 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.551 . Memory (MB): peak = 1209.777 ; gain = 8.859
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.660 . Memory (MB): peak = 743.293 ; gain = 20.348
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 196c04ed0
+Ending Cache Timing Information Task | Checksum: 4bf69112
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1297.781 ; gain = 88.004
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1288.559 ; gain = 545.266
 
 Starting Logic Optimization Task
 
-Phase 1 Generate And Synthesize Debug Cores
-INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
-INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
-INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
-INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "6801d77a25ce53d2".
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:10]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-1548] Command failed: can't read "wr_clk_period": no such variable
- [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:12]
-CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
- [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:19]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value": no such variable
- [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-1548] Command failed: can't read "rd_clk_period_2": no such variable
- [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'get_property' expects at least one object. [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:32]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
- [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:33]
-CRITICAL WARNING: [Common 17-1548] Command failed: can't read "skew_value_2": no such variable
- [f:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/.Xil/Vivado-8868-LAPTOP-PC15NQ51/dbg_hub_CV.0/out/xsdbm_cc_late_late.xdc:36]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.440 . Memory (MB): peak = 1659.566 ; gain = 0.000
-Phase 1 Generate And Synthesize Debug Cores | Checksum: 16c9bd41b
-
-Time (s): cpu = 00:00:15 ; elapsed = 00:04:14 . Memory (MB): peak = 1659.566 ; gain = 177.285
-
-Phase 2 Retarget
+Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 2 Retarget | Checksum: 152514a9d
+Phase 1 Retarget | Checksum: 16987e78e
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:04:15 . Memory (MB): peak = 1659.566 ; gain = 177.285
-INFO: [Opt 31-389] Phase Retarget created 8 cells and removed 47 cells
-INFO: [Opt 31-1021] In phase Retarget, 236 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1479.238 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 43 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
-Phase 3 Constant propagation
+Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 3 Constant propagation | Checksum: 1f6842cd8
+Phase 2 Constant propagation | Checksum: 118e921e6
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:04:15 . Memory (MB): peak = 1659.566 ; gain = 177.285
-INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 16 cells
-INFO: [Opt 31-1021] In phase Constant propagation, 283 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.229 . Memory (MB): peak = 1479.238 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 16 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
-Phase 4 Sweep
-Phase 4 Sweep | Checksum: 1d10246d9
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 98be29e4
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:04:15 . Memory (MB): peak = 1659.566 ; gain = 177.285
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 46 cells
-INFO: [Opt 31-1021] In phase Sweep, 1714 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.333 . Memory (MB): peak = 1479.238 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 104 cells
+INFO: [Opt 31-1021] In phase Sweep, 96 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
-Phase 5 BUFG optimization
-INFO: [Opt 31-194] Inserted BUFG keyboard_clk/CPUCLK_BUFG_inst to drive 1514 load(s) on clock net keyboard_clk/CPUCLK_BUFG
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG keyboard_clk/CPUCLK_BUFG_inst to drive 1489 load(s) on clock net keyboard_clk/CPUCLK_BUFG
 INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
 INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
 INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
-Phase 5 BUFG optimization | Checksum: 1c789593a
+Phase 4 BUFG optimization | Checksum: 12ea408fe
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:04:16 . Memory (MB): peak = 1659.566 ; gain = 177.285
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.427 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
 
-Phase 6 Shift Register Optimization
+Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 6 Shift Register Optimization | Checksum: 1c789593a
+Phase 5 Shift Register Optimization | Checksum: 12ea408fe
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:04:16 . Memory (MB): peak = 1659.566 ; gain = 177.285
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.474 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
-Phase 7 Post Processing Netlist
-Phase 7 Post Processing Netlist | Checksum: 1c789593a
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 12ea408fe
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:04:16 . Memory (MB): peak = 1659.566 ; gain = 177.285
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.495 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
-INFO: [Opt 31-1021] In phase Post Processing Netlist, 230 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
 =========================
 
@@ -145,72 +410,56 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               8  |              47  |                                            236  |
-|  Constant propagation         |               0  |              16  |                                            283  |
-|  Sweep                        |               0  |              46  |                                           1714  |
+|  Retarget                     |               0  |              43  |                                              1  |
+|  Constant propagation         |               0  |               0  |                                             16  |
+|  Sweep                        |               0  |             104  |                                             96  |
 |  BUFG optimization            |               1  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
-|  Post Processing Netlist      |               0  |               0  |                                            230  |
+|  Post Processing Netlist      |               0  |               0  |                                              1  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1659.566 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 162ff3e92
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1018c7a1c
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:04:17 . Memory (MB): peak = 1659.566 ; gain = 177.285
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.635 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=27.891 | TNS=0.000 |
-Running Vector-less Activity Propagation...
+Ending Power Optimization Task | Checksum: 1018c7a1c
 
-Finished Running Vector-less Activity Propagation
-
-
-Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 9 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 9 newly gated: 0 Total Ports: 18
-Ending PowerOpt Patch Enables Task | Checksum: f46835b9
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Ending Power Optimization Task | Checksum: f46835b9
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1892.648 ; gain = 233.082
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: f46835b9
+Ending Final Cleanup Task | Checksum: 1018c7a1c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 159b1fa9e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1018c7a1c
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-60 Infos, 2 Warnings, 10 Critical Warnings and 0 Errors encountered.
+36 Infos, 100 Warnings, 103 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:33 ; elapsed = 00:04:26 . Memory (MB): peak = 1892.648 ; gain = 691.730
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1892.648 ; gain = 0.000
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1479.238 ; gain = 756.293
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/basys3_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1892.648 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file basys3_drc_opted.rpt -pb basys3_drc_opted.pb -rpx basys3_drc_opted.rpx
 Command: report_drc -file basys3_drc_opted.rpt -pb basys3_drc_opted.pb -rpx basys3_drc_opted.rpx
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/basys3_drc_opted.rpt.
 report_drc completed successfully
@@ -220,15 +469,14 @@ INFO: [Vivado 12-8268] Incremental flow is being run with directive 'RuntimeOpti
 Starting Incremental read checkpoint Task
 
 Phase 1 Process Reference Checkpoint Netlist
-INFO: [Netlist 29-17] Analyzing 2381 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 615 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 1479.238 ; gain = 0.000
 WARNING: [Project 1-964] Cell Matching & Net Matching is less than the threshold needed to run Incremental flow. Switching to default Implementation flow
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.319 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
-INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -246,185 +494,132 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 68d539eb
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 68d96f26
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c5278f42
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d5a5ed72
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.825 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: e0e61f66
+Phase 1.3 Build Placer Netlist Model | Checksum: 1907ab89f
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.946 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: e0e61f66
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1907ab89f
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: e0e61f66
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.951 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1907ab89f
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.954 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1494515ab
+Phase 2.1 Floorplanning | Checksum: 1907ab89f
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.961 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 2.2 Global Placement Core
+WARNING: [Place 46-29] place_design is not in timing mode. Skip physical synthesis in placer
+Phase 2.2 Global Placement Core | Checksum: 19fe7f707
 
-Phase 2.2.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1018] Found 423 candidate LUT instances to create LUTNM shape
-INFO: [Physopt 32-775] End 1 Pass. Optimized 66 nets or cells. Created 0 new cell, deleted 66 existing cells and moved 0 existing cell
-INFO: [Physopt 32-65] No nets found for high-fanout optimization.
-INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
-INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
-INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
-INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
-INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
-INFO: [Physopt 32-949] No candidate nets found for HD net replication
-INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 19fe7f707
 
-Summary of Physical Synthesis Optimizations
-============================================
-
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
------------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |             66  |                    66  |           0  |           1  |  00:00:00  |
-|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
-|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
-|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
-|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
-|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |             66  |                    66  |           0  |           3  |  00:00:00  |
------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Phase 2.2.1 Physical Synthesis In Placer | Checksum: 233b8a52b
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 2.2 Global Placement Core | Checksum: 228844234
-
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 228844234
-
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 24625c4ef
+Phase 3.1 Commit Multi Column Macros | Checksum: 19fe7f707
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a78190f7
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 11c9eb568
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1b5d1f220
+Phase 3.3 Area Swap Optimization | Checksum: 166770523
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 147f36046
+Phase 3.4 Pipeline Register Optimization | Checksum: 166770523
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 165876e9f
 
-Phase 3.5.1 Place Remaining
-Phase 3.5.1 Place Remaining | Checksum: 1d10fca5c
-
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 3.5 Small Shape Detail Placement | Checksum: 1d10fca5c
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 16897012c
+Phase 3.6 Re-assign LUT pins | Checksum: 165876e9f
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: fe7593e6
+Phase 3.7 Pipeline Register Optimization | Checksum: 165876e9f
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: fe7593e6
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 165876e9f
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:22 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
-INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 4.1 Post Commit Optimization | Checksum: 165876e9f
 
-Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1387e3120
-
-Phase 4.1.1.1 BUFG Insertion
-INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1387e3120
-
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 1892.648 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=27.381. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: e82d2a76
-
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: e82d2a76
-
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: e82d2a76
+Phase 4.2 Post Placement Cleanup | Checksum: 165876e9f
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: e82d2a76
+Phase 4.3 Placer Reporting | Checksum: 165876e9f
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 4.4 Final Placement Cleanup | Checksum: 176c70eb6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 16ef99fbf
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 176c70eb6
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 16ef99fbf
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Ending Placer Task | Checksum: c8abc9a8
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Ending Placer Task | Checksum: 12a635c4a
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-95 Infos, 3 Warnings, 10 Critical Warnings and 0 Errors encountered.
+58 Infos, 102 Warnings, 103 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1892.648 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1479.238 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1479.238 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.354 . Memory (MB): peak = 1483.809 ; gain = 4.570
 INFO: [Common 17-1381] The checkpoint 'F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/basys3_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file basys3_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1892.648 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1483.809 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file basys3_utilization_placed.rpt -pb basys3_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file basys3_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1892.648 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1483.809 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -436,120 +631,82 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 19564f7a ConstDB: 0 ShapeSum: af557a2e RouteDB: 0
+Checksum: PlaceDB: 6e0b0450 ConstDB: 0 ShapeSum: bc5857fa RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 119495e6a
+Phase 1 Build RT Design | Checksum: 8a2c683e
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1892.648 ; gain = 0.000
-Post Restoration Checksum: NetGraph: f51e249e NumContArr: 242b39cc Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1594.664 ; gain = 91.863
+Post Restoration Checksum: NetGraph: 6040fb16 NumContArr: 29eb6d28 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
 
-Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 119495e6a
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 8a2c683e
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1600.645 ; gain = 97.844
 
-Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 119495e6a
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 8a2c683e
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1892.648 ; gain = 0.000
-
-Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 119495e6a
-
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1892.648 ; gain = 0.000
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1600.645 ; gain = 97.844
  Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 7cdb7471
 
-Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 158db6bc4
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1915.629 ; gain = 22.980
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=27.394 | TNS=0.000  | WHS=-0.161 | THS=-17.854|
-
-Phase 2 Router Initialization | Checksum: 1da25b1af
-
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1929.453 ; gain = 36.805
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1610.477 ; gain = 107.676
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.000797257 %
-  Global Horizontal Routing Utilization  = 0.000650703 %
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 13607
+  Number of Failed Nets               = 3159
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 13606
-  Number of Partially Routed Nets     = 1
-  Number of Node Overlaps             = 6
+  Number of Unrouted Nets             = 3159
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
 
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 103fa3be0
+Phase 3 Initial Routing | Checksum: 115bc9871
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 1929.746 ; gain = 37.098
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1610.574 ; gain = 107.773
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 1487
- Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 638
+ Number of Nodes with overlaps = 17
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=26.898 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Phase 4.1 Global Iteration 0 | Checksum: fb9836d8
 
-Phase 4.1 Global Iteration 0 | Checksum: 18191160b
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1610.574 ; gain = 107.773
+Phase 4 Rip-up And Reroute | Checksum: fb9836d8
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=26.898 | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: 1cc7bb69f
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
-Phase 4 Rip-up And Reroute | Checksum: 1cc7bb69f
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1610.574 ; gain = 107.773
 
 Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: fb9836d8
 
-Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 1cc7bb69f
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
-
-Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1cc7bb69f
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
-Phase 5 Delay and Skew Optimization | Checksum: 1cc7bb69f
-
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1610.574 ; gain = 107.773
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: fb9836d8
 
-Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 206146166
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1610.574 ; gain = 107.773
+Phase 6 Post Hold Fix | Checksum: fb9836d8
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=26.977 | TNS=0.000  | WHS=0.096  | THS=0.000  |
-
-Phase 6.1 Hold Fix Iter | Checksum: 2285b7c1c
-
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
-Phase 6 Post Hold Fix | Checksum: 2285b7c1c
-
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1610.574 ; gain = 107.773
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 6.20896 %
-  Global Horizontal Routing Utilization  = 6.7146 %
+  Global Vertical Routing Utilization    = 1.22451 %
+  Global Horizontal Routing Utilization  = 1.58043 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -559,47 +716,64 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 13b216f90
+Congestion Report
+North Dir 1x1 Area, Max Cong = 46.8468%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 42.3423%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 55.8824%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 54.4118%, No Congested Regions.
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: fb9836d8
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1610.574 ; gain = 107.773
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 13b216f90
+Phase 8 Verifying routed nets | Checksum: fb9836d8
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:30 . Memory (MB): peak = 1929.746 ; gain = 37.098
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1610.578 ; gain = 107.777
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 7677f8c8
+Phase 9 Depositing Routes | Checksum: 19fde5ab4
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:32 . Memory (MB): peak = 1929.746 ; gain = 37.098
-
-Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=26.977 | TNS=0.000  | WHS=0.096  | THS=0.000  |
-
-INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 7677f8c8
-
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:32 . Memory (MB): peak = 1929.746 ; gain = 37.098
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1610.578 ; gain = 107.777
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:32 . Memory (MB): peak = 1929.746 ; gain = 37.098
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1610.578 ; gain = 107.777
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-113 Infos, 3 Warnings, 10 Critical Warnings and 0 Errors encountered.
+71 Infos, 102 Warnings, 103 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1929.746 ; gain = 37.098
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1929.746 ; gain = 0.000
+route_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1610.578 ; gain = 126.770
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1610.578 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 1937.496 ; gain = 7.750
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.455 . Memory (MB): peak = 1620.434 ; gain = 9.855
 INFO: [Common 17-1381] The checkpoint 'F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/basys3_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1937.496 ; gain = 7.750
 INFO: [runtcl-4] Executing : report_drc -file basys3_drc_routed.rpt -pb basys3_drc_routed.pb -rpx basys3_drc_routed.rpx
 Command: report_drc -file basys3_drc_routed.rpt -pb basys3_drc_routed.pb -rpx basys3_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -612,26 +786,28 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/basys3_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1976.398 ; gain = 19.344
 INFO: [runtcl-4] Executing : report_power -file basys3_power_routed.rpt -pb basys3_power_summary_routed.pb -rpx basys3_power_routed.rpx
 Command: report_power -file basys3_power_routed.rpt -pb basys3_power_summary_routed.pb -rpx basys3_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-125 Infos, 3 Warnings, 10 Critical Warnings and 0 Errors encountered.
+83 Infos, 103 Warnings, 103 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file basys3_route_status.rpt -pb basys3_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file basys3_timing_summary_routed.rpt -pb basys3_timing_summary_routed.pb -rpx basys3_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
 INFO: [runtcl-4] Executing : report_incremental_reuse -file basys3_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
 INFO: [runtcl-4] Executing : report_clock_utilization -file basys3_clock_utilization_routed.rpt
 INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file basys3_bus_skew_routed.rpt -pb basys3_bus_skew_routed.pb -rpx basys3_bus_skew_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 20:07:03 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 22:45:33 2019...
 
 *** Running vivado
     with args -log basys3.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source basys3.tcl -notrace
@@ -647,11 +823,11 @@ Command: open_checkpoint basys3_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 297.035 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 307.273 ; gain = 0.000
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.452 . Memory (MB): peak = 656.613 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 3071 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 603.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 732 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Timing 38-478] Restoring timing data from binary archive.
@@ -661,18 +837,15 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1404.953 ; gain = 6.516
-Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1404.953 ; gain = 6.516
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1404.953 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.448 . Memory (MB): peak = 1291.148 ; gain = 15.527
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.449 . Memory (MB): peak = 1291.148 ; gain = 15.527
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1291.148 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1658 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 1620 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 32 instances
+No Unisim elements were transformed.
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2019.2 (64-bit) build 2700185
-open_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1404.953 ; gain = 1107.918
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1291.148 ; gain = 983.875
 Command: write_bitstream -force basys3.bit -bin_file
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -693,13 +866,12 @@ Refer to the device configuration user guide for more information.
 WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/ALUOp_reg[2]_i_2_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/ALUOp_reg[2]_i_2/O, cell cpu/control_unit/ALUOp_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/ALUSrcA_reg_i_2_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/ALUSrcA_reg_i_2/O, cell cpu/control_unit/ALUSrcA_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/ALUSrcB_reg_i_2_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/ALUSrcB_reg_i_2/O, cell cpu/control_unit/ALUSrcB_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/DBDataSrc_reg_i_1_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/DBDataSrc_reg_i_1/O, cell cpu/control_unit/DBDataSrc_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/DBDataSrc_reg_i_2_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/DBDataSrc_reg_i_2/O, cell cpu/control_unit/DBDataSrc_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/ExtSel_reg_i_2_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/ExtSel_reg_i_2/O, cell cpu/control_unit/ExtSel_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/PCSrc_reg[1]_i_2_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/PCSrc_reg[1]_i_2/O, cell cpu/control_unit/PCSrc_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/PCWre_reg_i_2_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/PCWre_reg_i_2/O, cell cpu/control_unit/PCWre_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net cpu/control_unit/RegWre_reg_i_2_n_1 is a gated clock net sourced by a combinational pin cpu/control_unit/RegWre_reg_i_2/O, cell cpu/control_unit/RegWre_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC RTSTAT-10] No routable loads: 53 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], cpu/iDataIn[31:0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, u_ila_0/inst/trig_in_reg... and (the first 15 of 20 listed).
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 10 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 9 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -712,9 +884,8 @@ Writing bitstream ./basys3.bit...
 Writing bitstream ./basys3.bin...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'F:/Learning/CPU/GitHub/cpu/cpu/cpu.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Nov 14 20:12:16 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-23 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+22 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1915.871 ; gain = 510.918
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 20:12:17 2019...
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1756.270 ; gain = 465.121
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 14 22:46:42 2019...

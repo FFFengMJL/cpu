@@ -65,7 +65,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
   open_checkpoint basys3_routed.dcp
   set_property webtalk.parent_dir F:/Learning/CPU/GitHub/cpu/cpu/cpu.cache/wt [current_project]
   catch { write_mem_info -force basys3.mmi }

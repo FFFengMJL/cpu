@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date         : Thu Nov 14 20:05:32 2019
+| Date         : Thu Nov 14 22:44:57 2019
 | Host         : LAPTOP-PC15NQ51 running 64-bit major release  (build 9200)
 | Command      : report_drc -file basys3_drc_opted.rpt -pb basys3_drc_opted.pb -rpx basys3_drc_opted.rpx
 | Design       : basys3
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_basys3
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
