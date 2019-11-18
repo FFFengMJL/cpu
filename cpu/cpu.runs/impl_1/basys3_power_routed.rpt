@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date             : Thu Nov 14 22:45:32 2019
+| Date             : Sun Nov 17 14:29:57 2019
 | Host             : LAPTOP-PC15NQ51 running 64-bit major release  (build 9200)
 | Command          : report_power -file basys3_power_routed.rpt -pb basys3_power_summary_routed.pb -rpx basys3_power_routed.rpx
 | Design           : basys3
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 13.312 (Junction temp exceeded!) |
-| Design Power Budget (W)  | Unspecified*                     |
-| Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 13.105                           |
-| Device Static (W)        | 0.206                            |
-| Effective TJA (C/W)      | 5.0                              |
-| Max Ambient (C)          | 18.5                             |
-| Junction Temperature (C) | 91.5                             |
-| Confidence Level         | Low                              |
-| Setting File             | ---                              |
-| Simulation Activity File | ---                              |
-| Design Nets Matched      | NA                               |
-+--------------------------+----------------------------------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 9.043        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 8.917        |
+| Device Static (W)        | 0.126        |
+| Effective TJA (C/W)      | 5.0          |
+| Max Ambient (C)          | 39.8         |
+| Junction Temperature (C) | 70.2         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     5.043 |     4538 |       --- |             --- |
-|   LUT as Logic |     4.821 |     2048 |     20800 |            9.85 |
-|   CARRY4       |     0.099 |       45 |      8150 |            0.55 |
-|   BUFG         |     0.053 |        4 |        32 |           12.50 |
-|   F7/F8 Muxes  |     0.044 |      687 |     32600 |            2.11 |
-|   Register     |     0.026 |     1602 |     41600 |            3.85 |
-|   Others       |     0.000 |       17 |       --- |             --- |
-| Signals        |     8.046 |     3164 |       --- |             --- |
+| Slice Logic    |     3.464 |     4612 |       --- |             --- |
+|   LUT as Logic |     3.243 |     2107 |     20800 |           10.13 |
+|   CARRY4       |     0.096 |       57 |      8150 |            0.70 |
+|   BUFG         |     0.054 |        4 |        32 |           12.50 |
+|   F7/F8 Muxes  |     0.044 |      638 |     32600 |            1.96 |
+|   Register     |     0.028 |     1649 |     41600 |            3.96 |
+|   Others       |     0.000 |       16 |       --- |             --- |
+| Signals        |     5.437 |     3362 |       --- |             --- |
 | I/O            |     0.016 |       17 |       106 |           16.04 |
-| Static Power   |     0.206 |          |           |                 |
-| Total          |    13.312 |          |           |                 |
+| Static Power   |     0.126 |          |           |                 |
+| Total          |     9.043 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,8 +72,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    13.224 |      13.105 |      0.119 |
-| Vccaux    |       1.800 |     0.025 |       0.000 |      0.025 |
+| Vccint    |       1.000 |     8.971 |       8.917 |      0.055 |
+| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -81,7 +81,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.003 |       0.000 |      0.003 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -139,15 +139,16 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| basys3           |    13.105 |
-|   cpu            |    12.464 |
-|     alu          |     0.176 |
-|     control_unit |     0.260 |
-|     datamem      |     4.160 |
-|     regfile      |     7.868 |
-|   keyboard_clk   |     0.115 |
-|   timeMux        |     0.363 |
-|   time_div       |     0.034 |
+| basys3           |     8.917 |
+|   cpu            |     8.252 |
+|     alub_choose  |     0.073 |
+|     control_unit |     0.291 |
+|     datamem      |     1.298 |
+|     db_choose    |     2.069 |
+|     regfile      |     4.522 |
+|   keyboard_clk   |     0.118 |
+|   timeMux        |     0.335 |
+|   time_div       |     0.036 |
 +------------------+-----------+
 
 

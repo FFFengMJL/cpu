@@ -31,7 +31,7 @@ module RAM(
         output [31:0] dataOut
     );
     
-    (* dont_touch = "true" *) reg [7:0] data [0:60];
+    reg [7:0] data [0:60];
     integer i;
     initial begin
         for (i = 0; i <= 60; i = i + 1) data[i] = 8'b0;

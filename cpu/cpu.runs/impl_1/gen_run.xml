@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573742662" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/impl_1/basys3_routed.dcp">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1573972125" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/impl_1/basys3_routed.dcp">
+  <File Type="OPT-HWDEF" Name="basys3.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="basys3_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="basys3.dcp"/>
   <File Type="BITSTR-BMM" Name="basys3_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="basys3_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="basys3_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="basys3_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="basys3_reports.tcl"/>
   <File Type="OPT-DRC" Name="basys3_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="basys3.hwdef"/>
   <File Type="PWROPT-DCP" Name="basys3_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="basys3_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="basys3_timing_summary_pwropted.rpt"/>
@@ -48,7 +50,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="basys3_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="basys3_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="basys3_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="basys3_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="basys3_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="basys3_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="basys3_postroute_physopt.dcp"/>
@@ -210,8 +211,10 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/Instructuons.mem">
+    <File Path="$PSRCDIR/sources_1/imports/CPU/Instructions.mem">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Instructions.mem"/>
+        <Attr Name="ImportTime" Val="1573714544"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -240,7 +243,7 @@
     <File Path="$PSRCDIR/utils_1/imports/impl_1/basys3_routed.dcp">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PRUNDIR/impl_1/basys3_routed.dcp"/>
-        <Attr Name="ImportTime" Val="1573742524"/>
+        <Attr Name="ImportTime" Val="1573962635"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="impl_1"/>

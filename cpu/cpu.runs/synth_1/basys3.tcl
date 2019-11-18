@@ -17,9 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -31,7 +31,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo f:/Learning/CPU/GitHub/cpu/cpu/cpu.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_mem F:/Learning/CPU/GitHub/cpu/cpu/Instructuons.mem
+read_mem F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/imports/CPU/Instructions.mem
 read_verilog -library xil_defaultlib {
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v
   F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/ALU.v

@@ -191,8 +191,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/Instructuons.mem">
+      <File Path="$PSRCDIR/sources_1/imports/CPU/Instructions.mem">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Instructions.mem"/>
+          <Attr Name="ImportTime" Val="1573714544"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -276,7 +278,7 @@
       <File Path="$PSRCDIR/utils_1/imports/impl_1/basys3_routed.dcp">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PRUNDIR/impl_1/basys3_routed.dcp"/>
-          <Attr Name="ImportTime" Val="1573742524"/>
+          <Attr Name="ImportTime" Val="1573962635"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedInSteps" Val="impl_1"/>

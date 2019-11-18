@@ -36,7 +36,7 @@ module basys3(
     wire [3:0] segIn;
     wire [15:0] muxOut;
     wire CLK_r;
-    (*MARK_DEBUG="TRUE"*) wire CPUCLK;
+    wire CPUCLK;
     
     keyboard_clk keyboard_clk(
         .Button(CLKButton),
