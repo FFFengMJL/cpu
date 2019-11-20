@@ -12,41 +12,523 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="10000000001fs"></ZoomEndTime>
-      <Cursor1Time time="10000000000fs"></Cursor1Time>
+      <ZoomEndTime time="13350001fs"></ZoomEndTime>
+      <Cursor1Time time="7600000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="197"></NameColumnWidth>
-      <ValueColumnWidth column_width="219"></ValueColumnWidth>
+      <ValueColumnWidth column_width="207"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
-   <wvobject fp_name="/basys_sim/CLK" type="logic">
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/basys_sim/test/cpu/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
-   <wvobject fp_name="/basys_sim/CPUCLK" type="logic">
-      <obj_property name="ElementShortName">CPUCLK</obj_property>
-      <obj_property name="ObjectShortName">CPUCLK</obj_property>
+   <wvobject fp_name="/basys_sim/test/cpu/PCNowOut" type="array">
+      <obj_property name="ElementShortName">PCNowOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCNowOut[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/basys_sim/test/LED/display_data" type="array">
-      <obj_property name="ElementShortName">display_data[3:0]</obj_property>
-      <obj_property name="ObjectShortName">display_data[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/basys_sim/test/cpu/pc/Ins" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Ins[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Ins[31:0]</obj_property>
+      <obj_property name="label">PCNext[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/basys_sim/test/cpu/InsRegister/iDataOut" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">iDataOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">iDataOut[31:0]</obj_property>
+      <obj_property name="label">Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group663" type="group">
+      <obj_property name="label">Control Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/OpCode" type="array">
+         <obj_property name="ElementShortName">OpCode[31:26]</obj_property>
+         <obj_property name="ObjectShortName">OpCode[31:26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/Reset" type="logic">
+         <obj_property name="ElementShortName">Reset</obj_property>
+         <obj_property name="ObjectShortName">Reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/PCWre" type="logic">
+         <obj_property name="ElementShortName">PCWre</obj_property>
+         <obj_property name="ObjectShortName">PCWre</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/ALUSrcA" type="logic">
+         <obj_property name="ElementShortName">ALUSrcA</obj_property>
+         <obj_property name="ObjectShortName">ALUSrcA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/ALUSrcB" type="logic">
+         <obj_property name="ElementShortName">ALUSrcB</obj_property>
+         <obj_property name="ObjectShortName">ALUSrcB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/DBDataSrc" type="logic">
+         <obj_property name="ElementShortName">DBDataSrc</obj_property>
+         <obj_property name="ObjectShortName">DBDataSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/RegWre" type="logic">
+         <obj_property name="ElementShortName">RegWre</obj_property>
+         <obj_property name="ObjectShortName">RegWre</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/InsMemRW" type="logic">
+         <obj_property name="ElementShortName">InsMemRW</obj_property>
+         <obj_property name="ObjectShortName">InsMemRW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/mRD" type="logic">
+         <obj_property name="ElementShortName">mRD</obj_property>
+         <obj_property name="ObjectShortName">mRD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/mWR" type="logic">
+         <obj_property name="ElementShortName">mWR</obj_property>
+         <obj_property name="ObjectShortName">mWR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/RegDst" type="logic">
+         <obj_property name="ElementShortName">RegDst</obj_property>
+         <obj_property name="ObjectShortName">RegDst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/ExtSel" type="logic">
+         <obj_property name="ElementShortName">ExtSel</obj_property>
+         <obj_property name="ObjectShortName">ExtSel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/PCSrc" type="array">
+         <obj_property name="ElementShortName">PCSrc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">PCSrc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/control_unit/ALUOp" type="array">
+         <obj_property name="ElementShortName">ALUOp[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUOp[2:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/basys_sim/test/timeMux/bit" type="array">
-      <obj_property name="ElementShortName">bit[3:0]</obj_property>
-      <obj_property name="ObjectShortName">bit[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="group837" type="group">
+      <obj_property name="label">Regster Read</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/basys_sim/test/cpu/RsAddr" type="array">
+         <obj_property name="ElementShortName">RsAddr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RsAddr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/RsData" type="array">
+         <obj_property name="ElementShortName">RsData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RsData[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/RtAddr" type="array">
+         <obj_property name="ElementShortName">RtAddr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RtAddr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/RtData" type="array">
+         <obj_property name="ElementShortName">RtData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RtData[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/basys_sim/test/time_div/clk_sys" type="logic">
-      <obj_property name="ElementShortName">clk_sys</obj_property>
-      <obj_property name="ObjectShortName">clk_sys</obj_property>
+   <wvobject fp_name="group838" type="group">
+      <obj_property name="label">Register Write</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/RegWre" type="logic">
+         <obj_property name="ElementShortName">RegWre</obj_property>
+         <obj_property name="ObjectShortName">RegWre</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/WriteReg" type="array">
+         <obj_property name="ElementShortName">WriteReg[4:0]</obj_property>
+         <obj_property name="ObjectShortName">WriteReg[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/WriteData" type="array">
+         <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/basys_sim/test/LED/dispcode" type="array">
-      <obj_property name="ElementShortName">dispcode[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dispcode[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="group710" type="group">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group731" type="group">
+         <obj_property name="label">Unused</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[12]" type="array">
+            <obj_property name="ElementShortName">[12][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[13]" type="array">
+            <obj_property name="ElementShortName">[13][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[14]" type="array">
+            <obj_property name="ElementShortName">[14][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[15]" type="array">
+            <obj_property name="ElementShortName">[15][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[16]" type="array">
+            <obj_property name="ElementShortName">[16][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[17]" type="array">
+            <obj_property name="ElementShortName">[17][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[18]" type="array">
+            <obj_property name="ElementShortName">[18][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[19]" type="array">
+            <obj_property name="ElementShortName">[19][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[20]" type="array">
+            <obj_property name="ElementShortName">[20][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[21]" type="array">
+            <obj_property name="ElementShortName">[21][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[22]" type="array">
+            <obj_property name="ElementShortName">[22][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[23]" type="array">
+            <obj_property name="ElementShortName">[23][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[24]" type="array">
+            <obj_property name="ElementShortName">[24][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[24][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[25]" type="array">
+            <obj_property name="ElementShortName">[25][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[25][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[26]" type="array">
+            <obj_property name="ElementShortName">[26][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[26][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[27]" type="array">
+            <obj_property name="ElementShortName">[27][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[27][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[28]" type="array">
+            <obj_property name="ElementShortName">[28][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[29]" type="array">
+            <obj_property name="ElementShortName">[29][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[30]" type="array">
+            <obj_property name="ElementShortName">[30][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/regfile/regFile[31]" type="array">
+            <obj_property name="ElementShortName">[31][31:0]</obj_property>
+            <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group793" type="group">
+      <obj_property name="label">Data Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/basys_sim/test/cpu/datamem/daDdr" type="array">
+         <obj_property name="ElementShortName">daDdr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">daDdr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/datamem/data[12]" type="array">
+         <obj_property name="ElementShortName">[12][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/datamem/data[13]" type="array">
+         <obj_property name="ElementShortName">[13][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/datamem/data[14]" type="array">
+         <obj_property name="ElementShortName">[14][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/basys_sim/test/cpu/datamem/data[15]" type="array">
+         <obj_property name="ElementShortName">[15][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group794" type="group">
+         <obj_property name="label">Unused</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[0]" type="array">
+            <obj_property name="ElementShortName">[0][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[1]" type="array">
+            <obj_property name="ElementShortName">[1][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[2]" type="array">
+            <obj_property name="ElementShortName">[2][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[3]" type="array">
+            <obj_property name="ElementShortName">[3][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[4]" type="array">
+            <obj_property name="ElementShortName">[4][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[5]" type="array">
+            <obj_property name="ElementShortName">[5][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[6]" type="array">
+            <obj_property name="ElementShortName">[6][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[7]" type="array">
+            <obj_property name="ElementShortName">[7][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[8]" type="array">
+            <obj_property name="ElementShortName">[8][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[9]" type="array">
+            <obj_property name="ElementShortName">[9][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[10]" type="array">
+            <obj_property name="ElementShortName">[10][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[11]" type="array">
+            <obj_property name="ElementShortName">[11][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[16]" type="array">
+            <obj_property name="ElementShortName">[16][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[16][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[17]" type="array">
+            <obj_property name="ElementShortName">[17][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[17][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[18]" type="array">
+            <obj_property name="ElementShortName">[18][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[18][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[19]" type="array">
+            <obj_property name="ElementShortName">[19][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[19][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[20]" type="array">
+            <obj_property name="ElementShortName">[20][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[20][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[21]" type="array">
+            <obj_property name="ElementShortName">[21][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[21][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[22]" type="array">
+            <obj_property name="ElementShortName">[22][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[22][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[23]" type="array">
+            <obj_property name="ElementShortName">[23][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[23][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[24]" type="array">
+            <obj_property name="ElementShortName">[24][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[24][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[25]" type="array">
+            <obj_property name="ElementShortName">[25][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[25][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[26]" type="array">
+            <obj_property name="ElementShortName">[26][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[26][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[27]" type="array">
+            <obj_property name="ElementShortName">[27][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[27][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[28]" type="array">
+            <obj_property name="ElementShortName">[28][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[28][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[29]" type="array">
+            <obj_property name="ElementShortName">[29][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[29][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[30]" type="array">
+            <obj_property name="ElementShortName">[30][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[30][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[31]" type="array">
+            <obj_property name="ElementShortName">[31][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[31][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[32]" type="array">
+            <obj_property name="ElementShortName">[32][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[32][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[33]" type="array">
+            <obj_property name="ElementShortName">[33][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[33][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[34]" type="array">
+            <obj_property name="ElementShortName">[34][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[34][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[35]" type="array">
+            <obj_property name="ElementShortName">[35][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[35][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[36]" type="array">
+            <obj_property name="ElementShortName">[36][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[36][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[37]" type="array">
+            <obj_property name="ElementShortName">[37][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[37][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[38]" type="array">
+            <obj_property name="ElementShortName">[38][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[38][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[39]" type="array">
+            <obj_property name="ElementShortName">[39][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[39][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[40]" type="array">
+            <obj_property name="ElementShortName">[40][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[40][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[41]" type="array">
+            <obj_property name="ElementShortName">[41][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[41][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[42]" type="array">
+            <obj_property name="ElementShortName">[42][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[42][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[43]" type="array">
+            <obj_property name="ElementShortName">[43][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[43][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[44]" type="array">
+            <obj_property name="ElementShortName">[44][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[44][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[45]" type="array">
+            <obj_property name="ElementShortName">[45][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[45][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[46]" type="array">
+            <obj_property name="ElementShortName">[46][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[46][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[47]" type="array">
+            <obj_property name="ElementShortName">[47][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[47][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[48]" type="array">
+            <obj_property name="ElementShortName">[48][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[48][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[49]" type="array">
+            <obj_property name="ElementShortName">[49][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[49][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[50]" type="array">
+            <obj_property name="ElementShortName">[50][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[50][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[51]" type="array">
+            <obj_property name="ElementShortName">[51][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[51][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[52]" type="array">
+            <obj_property name="ElementShortName">[52][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[52][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[53]" type="array">
+            <obj_property name="ElementShortName">[53][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[53][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[54]" type="array">
+            <obj_property name="ElementShortName">[54][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[54][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[55]" type="array">
+            <obj_property name="ElementShortName">[55][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[55][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[56]" type="array">
+            <obj_property name="ElementShortName">[56][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[56][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[57]" type="array">
+            <obj_property name="ElementShortName">[57][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[57][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[58]" type="array">
+            <obj_property name="ElementShortName">[58][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[58][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[59]" type="array">
+            <obj_property name="ElementShortName">[59][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[59][7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/basys_sim/test/cpu/datamem/data[60]" type="array">
+            <obj_property name="ElementShortName">[60][7:0]</obj_property>
+            <obj_property name="ObjectShortName">[60][7:0]</obj_property>
+         </wvobject>
+      </wvobject>
    </wvobject>
 </wave_config>

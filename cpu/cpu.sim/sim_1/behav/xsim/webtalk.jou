@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Webtalk v2018.3.1 (64-bit)
-# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
-# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
-# Start of session at: Wed Nov 13 22:19:39 2019
-# Process ID: 296060
-# Current directory: D:/cpu/cpu/cpu.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/cpu/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/basys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: D:/cpu/cpu/cpu.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: D:/cpu/cpu/cpu.sim/sim_1/behav/xsim\webtalk.jou
+# Webtalk v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Wed Nov 20 14:28:46 2019
+# Process ID: 2912
+# Current directory: F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/basys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/cpu/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/basys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+source F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/basys_sim_behav/webtalk/xsim_webtalk.tcl -notrace

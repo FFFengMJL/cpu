@@ -2,11 +2,11 @@
 # Webtalk v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Mon Nov 11 22:29:06 2019
-# Process ID: 22440
+# Start of session at: Wed Nov 20 14:27:14 2019
+# Process ID: 19824
 # Current directory: F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/Storage_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/basys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/Storage_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+source F:/Learning/CPU/GitHub/cpu/cpu/cpu.sim/sim_1/behav/xsim/xsim.dir/basys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
