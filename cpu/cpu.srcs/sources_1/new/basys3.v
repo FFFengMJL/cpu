@@ -30,9 +30,12 @@ module basys3(
         output [3:0] bits
     );
     
-    wire [31:0] PCNowOut, PC4Out, RsData, RtData, ALUout;
+    wire [31:0] PCNowOut, PC4Out, ALUout;
+    (* MARK_DEBUG="TRUE" *) wire [31:0] RsData, RtData;
+//    wire [31:0] RsData, RtData;
     wire [31:0] DBOut;
-    wire [4:0] RsAddr, RtAddr;
+    (* MARK_DEBUG="TRUE" *) wire [4:0] RsAddr, RtAddr;
+//    wire [4:0] RsAddr, RtAddr;
     wire [3:0] segIn;
     wire [15:0] muxOut;
     wire CLK_r;

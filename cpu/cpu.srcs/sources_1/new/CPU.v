@@ -64,7 +64,7 @@ module CPU(
         .Iaddr(PCOut),
         .iDataOut(iDataOut),
         .rw(InsMemRW),
-        .iDataIn(8'bz)
+        .iDataIn(32'bz)
     );
     Adder pc4_adder(
         .Ins1({{29{1'b0}},3'b100}),

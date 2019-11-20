@@ -21,8 +21,8 @@
   </ObjectList>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7a35t_0" gui_info="">
-      <Properties Property="FULL_PROBES.FILE" value=""/>
-      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/basys3.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/basys3.ltx"/>
       <Properties Property="PROGRAM.HW_BITSTREAM" value=""/>
       <Properties Property="PROGRAM.HW_CFGMEM_PART" value="s25fl032p-spi-x1_x2_x4"/>
       <Properties Property="SLR.COUNT" value="1"/>
@@ -297,6 +297,160 @@
       </probeOptions>
       <nets>
         <net name="RST_IBUF"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq5&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value=""/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="RsAddr[4]"/>
+        <net name="RsAddr[3]"/>
+        <net name="RsAddr[2]"/>
+        <net name="RsAddr[1]"/>
+        <net name="RsAddr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value=""/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="RsData[31]"/>
+        <net name="RsData[30]"/>
+        <net name="RsData[29]"/>
+        <net name="RsData[28]"/>
+        <net name="RsData[27]"/>
+        <net name="RsData[26]"/>
+        <net name="RsData[25]"/>
+        <net name="RsData[24]"/>
+        <net name="RsData[23]"/>
+        <net name="RsData[22]"/>
+        <net name="RsData[21]"/>
+        <net name="RsData[20]"/>
+        <net name="RsData[19]"/>
+        <net name="RsData[18]"/>
+        <net name="RsData[17]"/>
+        <net name="RsData[16]"/>
+        <net name="RsData[15]"/>
+        <net name="RsData[14]"/>
+        <net name="RsData[13]"/>
+        <net name="RsData[12]"/>
+        <net name="RsData[11]"/>
+        <net name="RsData[10]"/>
+        <net name="RsData[9]"/>
+        <net name="RsData[8]"/>
+        <net name="RsData[7]"/>
+        <net name="RsData[6]"/>
+        <net name="RsData[5]"/>
+        <net name="RsData[4]"/>
+        <net name="RsData[3]"/>
+        <net name="RsData[2]"/>
+        <net name="RsData[1]"/>
+        <net name="RsData[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq5&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value=""/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq5&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="RtAddr[4]"/>
+        <net name="RtAddr[3]"/>
+        <net name="RtAddr[2]"/>
+        <net name="RtAddr[1]"/>
+        <net name="RtAddr[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="u_ila_0"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value=""/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="RtData[31]"/>
+        <net name="RtData[30]"/>
+        <net name="RtData[29]"/>
+        <net name="RtData[28]"/>
+        <net name="RtData[27]"/>
+        <net name="RtData[26]"/>
+        <net name="RtData[25]"/>
+        <net name="RtData[24]"/>
+        <net name="RtData[23]"/>
+        <net name="RtData[22]"/>
+        <net name="RtData[21]"/>
+        <net name="RtData[20]"/>
+        <net name="RtData[19]"/>
+        <net name="RtData[18]"/>
+        <net name="RtData[17]"/>
+        <net name="RtData[16]"/>
+        <net name="RtData[15]"/>
+        <net name="RtData[14]"/>
+        <net name="RtData[13]"/>
+        <net name="RtData[12]"/>
+        <net name="RtData[11]"/>
+        <net name="RtData[10]"/>
+        <net name="RtData[9]"/>
+        <net name="RtData[8]"/>
+        <net name="RtData[7]"/>
+        <net name="RtData[6]"/>
+        <net name="RtData[5]"/>
+        <net name="RtData[4]"/>
+        <net name="RtData[3]"/>
+        <net name="RtData[2]"/>
+        <net name="RtData[1]"/>
+        <net name="RtData[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">

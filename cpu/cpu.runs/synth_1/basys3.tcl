@@ -17,41 +17,41 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
+set_param tcl.collectionResultDisplayLimit 0
+set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir F:/Learning/CPU/GitHub/cpu/cpu/cpu.cache/wt [current_project]
-set_property parent.project_path F:/Learning/CPU/GitHub/cpu/cpu/cpu.xpr [current_project]
+set_property webtalk.parent_dir D:/cpu/cpu/cpu.cache/wt [current_project]
+set_property parent.project_path D:/cpu/cpu/cpu.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo f:/Learning/CPU/GitHub/cpu/cpu/cpu.cache/ip [current_project]
+set_property ip_output_repo d:/cpu/cpu/cpu.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_mem F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/imports/CPU/Instructions.mem
+read_mem D:/cpu/cpu/cpu.srcs/sources_1/imports/CPU/Instructions.mem
 read_verilog -library xil_defaultlib {
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/ALU.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Adder.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CLU.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/CPU.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Extend.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Jump.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/LeftShift_2.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/PC.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/RAM.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/Register.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/keyboard_clk.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/timeDiv.v
-  F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/sources_1/new/basys3.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/ALU.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Adder.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/CLU.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Extend.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Jump.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/LeftShift_2.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/PC.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/RAM.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Register.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/keyboard_clk.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/timeDiv.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/basys3.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -61,8 +61,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc
-set_property used_in_implementation false [get_files F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc]
+read_xdc D:/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc
+set_property used_in_implementation false [get_files D:/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

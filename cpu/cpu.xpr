@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="F:/Learning/CPU/GitHub/cpu/cpu/cpu.xpr">
+<Project Version="7" Minor="44" Path="D:/cpu/cpu/cpu.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4682e309e1a541558b70be6b9d098c3c"/>
@@ -29,7 +29,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="370"/>
+    <Option Name="WTXSimLaunchSim" Val="382"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -279,7 +279,7 @@
       <File Path="$PSRCDIR/utils_1/imports/impl_1/basys3_routed.dcp">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PRUNDIR/impl_1/basys3_routed.dcp"/>
-          <Attr Name="ImportTime" Val="1573962635"/>
+          <Attr Name="ImportTime" Val="1574259515"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedInSteps" Val="impl_1"/>

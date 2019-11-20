@@ -36,3 +36,35 @@ set_property PACKAGE_PIN V5 [get_ports {segOut[5]}]
 
 set_property PACKAGE_PIN T17 [get_ports CLKButton]
 set_property IOSTANDARD LVCMOS33 [get_ports CLKButton]
+
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list BasysCLK_IBUF_BUFG]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {RtData[0]} {RtData[1]} {RtData[2]} {RtData[3]} {RtData[4]} {RtData[5]} {RtData[6]} {RtData[7]} {RtData[8]} {RtData[9]} {RtData[10]} {RtData[11]} {RtData[12]} {RtData[13]} {RtData[14]} {RtData[15]} {RtData[16]} {RtData[17]} {RtData[18]} {RtData[19]} {RtData[20]} {RtData[21]} {RtData[22]} {RtData[23]} {RtData[24]} {RtData[25]} {RtData[26]} {RtData[27]} {RtData[28]} {RtData[29]} {RtData[30]} {RtData[31]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {RsData[0]} {RsData[1]} {RsData[2]} {RsData[3]} {RsData[4]} {RsData[5]} {RsData[6]} {RsData[7]} {RsData[8]} {RsData[9]} {RsData[10]} {RsData[11]} {RsData[12]} {RsData[13]} {RsData[14]} {RsData[15]} {RsData[16]} {RsData[17]} {RsData[18]} {RsData[19]} {RsData[20]} {RsData[21]} {RsData[22]} {RsData[23]} {RsData[24]} {RsData[25]} {RsData[26]} {RsData[27]} {RsData[28]} {RsData[29]} {RsData[30]} {RsData[31]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 5 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {RtAddr[0]} {RtAddr[1]} {RtAddr[2]} {RtAddr[3]} {RtAddr[4]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 5 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {RsAddr[0]} {RsAddr[1]} {RsAddr[2]} {RsAddr[3]} {RsAddr[4]}]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets BasysCLK_IBUF_BUFG]

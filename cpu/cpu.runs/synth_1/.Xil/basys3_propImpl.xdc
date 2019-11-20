@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:F:/Learning/CPU/GitHub/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc rfile:../../../cpu.srcs/constrs_1/new/001.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/cpu/cpu/cpu.srcs/constrs_1/new/001.xdc rfile:../../../cpu.srcs/constrs_1/new/001.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports BasysCLK]
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
