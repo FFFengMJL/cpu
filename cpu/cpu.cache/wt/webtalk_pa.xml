@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Nov 20 23:37:11 2019">
+<application name="pa" timeStamp="Thu Nov 21 00:03:46 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="64399993421b4a3f9cf119a1aa27ba60" type="ProjectID"/>
 <property name="ProjectIteration" value="122" type="ProjectIteration"/>
@@ -71,7 +71,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SimulationClose" value="1" type="JavaHandler"/>
 <property name="SimulationRelaunch" value="152" type="JavaHandler"/>
 <property name="SimulationRestart" value="13" type="JavaHandler"/>
-<property name="SimulationRun" value="65" type="JavaHandler"/>
+<property name="SimulationRun" value="66" type="JavaHandler"/>
 <property name="SimulationRunAll" value="134" type="JavaHandler"/>
 <property name="SimulationRunForTime" value="28" type="JavaHandler"/>
 <property name="StopTrigger" value="13" type="JavaHandler"/>
@@ -99,9 +99,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="1" type="GuiHandlerData"/>
 <property name="AlertSetupDebugDialog_SET_UP_DEBUG" value="1" type="GuiHandlerData"/>
 <property name="BaseDialog_APPLY" value="3" type="GuiHandlerData"/>
-<property name="BaseDialog_CANCEL" value="113" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="114" type="GuiHandlerData"/>
 <property name="BaseDialog_NO" value="5" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="544" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="545" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="46" type="GuiHandlerData"/>
 <property name="BaseReportTab_RERUN" value="1" type="GuiHandlerData"/>
 <property name="BaseWorkspace_RESTORE" value="1" type="GuiHandlerData"/>
@@ -136,11 +136,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE" value="2" type="GuiHandlerData"/>
 <property name="ExportPortsDialog_EXPORT_IO_PORTS" value="2" type="GuiHandlerData"/>
 <property name="FPGAChooser_FPGA_TABLE" value="1" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="878" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="913" type="GuiHandlerData"/>
 <property name="FileSetPanel_MESSAGES" value="3" type="GuiHandlerData"/>
 <property name="FilterToolBar_SHOW_ALL" value="2" type="GuiHandlerData"/>
 <property name="FindAndPickNetsDialog_NETS_TREE_TABLE_PANEL" value="68" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="462" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="463" type="GuiHandlerData"/>
 <property name="GeneratedClockTablePanel_TABLE" value="1" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiHandlerData"/>
@@ -267,7 +267,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_SIMULATION_RELAUNCH" value="157" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_RESET" value="6" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_RUN" value="58" type="GuiHandlerData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="66" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="67" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_TASK" value="4" type="GuiHandlerData"/>
 <property name="PACommandNames_SRC_REPLACE_FILE" value="2" type="GuiHandlerData"/>
@@ -276,11 +276,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_TOGGLE_VIEW_NAV" value="18" type="GuiHandlerData"/>
 <property name="PACommandNames_UNMARK_DEBUG_NET" value="6" type="GuiHandlerData"/>
 <property name="PACommandNames_WRITE_CONFIG_MEMORY_FILE" value="2" type="GuiHandlerData"/>
-<property name="PAViews_CODE" value="74" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="75" type="GuiHandlerData"/>
 <property name="PAViews_DASHBOARD" value="6" type="GuiHandlerData"/>
 <property name="PAViews_DEVICE" value="3" type="GuiHandlerData"/>
 <property name="PAViews_PACKAGE" value="1" type="GuiHandlerData"/>
-<property name="PAViews_PROJECT_SUMMARY" value="74" type="GuiHandlerData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="75" type="GuiHandlerData"/>
 <property name="PAViews_TIMING_CONSTRAINTS" value="2" type="GuiHandlerData"/>
 <property name="PickClockDomainNetDialog_CLOCK_DOMAIN_NETS_TREE" value="32" type="GuiHandlerData"/>
 <property name="PickClockDomainNetDialog_SEARCH_HIERARCHICALLY" value="2" type="GuiHandlerData"/>
@@ -322,8 +322,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SettingsDialog_PROJECT_TREE" value="12" type="GuiHandlerData"/>
 <property name="SignalTreePanel_SIGNAL_TREE_TABLE" value="240" type="GuiHandlerData"/>
 <property name="SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS" value="5" type="GuiHandlerData"/>
-<property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="133" type="GuiHandlerData"/>
-<property name="SimulationScopesPanel_SIMULATE_SCOPE_TABLE" value="211" type="GuiHandlerData"/>
+<property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="137" type="GuiHandlerData"/>
+<property name="SimulationScopesPanel_SIMULATE_SCOPE_TABLE" value="212" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="11" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE" value="14" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_CHANGE_SOURCE_PROPERTIES" value="1" type="GuiHandlerData"/>
@@ -338,10 +338,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_SET_FILE_TYPE" value="4" type="GuiHandlerData"/>
 <property name="StaleRunDialog_YES" value="1" type="GuiHandlerData"/>
 <property name="StateMonitor_RESET_RUN" value="2" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="23" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="24" type="GuiHandlerData"/>
 <property name="SyntheticaStateMonitor_CANCEL" value="9" type="GuiHandlerData"/>
 <property name="SysMonSensorTablePanel_SYSTEM_MONITOR_SENSOR_TABLE" value="1" type="GuiHandlerData"/>
-<property name="TaskBanner_CLOSE" value="26" type="GuiHandlerData"/>
+<property name="TaskBanner_CLOSE" value="28" type="GuiHandlerData"/>
 <property name="TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE" value="6" type="GuiHandlerData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="30" type="GuiHandlerData"/>
 <property name="TclObjectTreeTable_TREETABLE" value="8" type="GuiHandlerData"/>
@@ -357,9 +357,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XPowerSettingsDialog_CANCEL" value="1" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="28" type="GuiMode"/>
+<property name="GuiMode" value="29" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="24" type="TclMode"/>
+<property name="TclMode" value="25" type="TclMode"/>
 </item>
 </section>
 </application>
