@@ -34,7 +34,7 @@ module CPU(
     output [31:0] DBOut
     );
     wire zero, sign, PCWre, InsMemRW, RegDst;
-    wire RegWre;
+    wire RegWre, IRWre;
     wire ALUSrcA, ALUSrcB, ExtSel, mRD, mWR, DBDataSrc;
     wire [1:0] PCSrc;
     wire [2:0] ALUOp;
@@ -42,6 +42,7 @@ module CPU(
     (* dont_touch = "true" *) wire [31:0] PCIn, PCOut, Extend;
     wire [31:0] iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
     wire [31:0] WriteReg, ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
+    wire [31:0] IRIn, IROut, DRIn1, DROut1, DRIn2, DROut2, DRIn3, DROut3;
     
     assign PCNowOut = PCOut;
     assign PC4Out = PC4;
@@ -185,4 +186,30 @@ module CPU(
         
         .Out(jumpOut)
     );
+    
+    IR InsReg(
+        .IRIn(IRIn),
+        .IROut(IROut),
+        .CLK(CLK),
+        .IRWre(IRWre)
+    );
+    
+    DR ADR(
+        .DRIn(ReadData1),
+        .DROut(ADROut),
+        .CLK(CLK)
+    );
+    
+    DR BDR(
+        .DRIn(ReadData2),
+        .DROut(BDROut),
+        .CLK(CLK)
+    );
+    
+    DR ALUDR(
+        .DRIn(ALUOut),
+        .DROut(ALUDROut),
+        .CLK(CLK)
+    );
+    
 endmodule
