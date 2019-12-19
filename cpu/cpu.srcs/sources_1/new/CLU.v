@@ -35,9 +35,9 @@ module CLU(
         output reg InsMemRW,//0Ð´IRAM£¬1¶ÁIRAM
         output reg WrRegDSrc,
         output reg IRWre,
-        output reg RrRegDSrc,
-        output mRD,
-        output mWR,
+        output reg WrRegDSrc,
+        output reg mRD,
+        output reg mWR,
         output reg RegDst,//Ð´REGµÄrt£¬Ð´REGµÄrd
         output reg ExtSel,// 0ÍØÕ¹£¬1·ûºÅÍØÕ¹
         output reg [1:0] PCSrc,
@@ -64,19 +64,35 @@ module CLU(
     
     always@(OpCode or zero or sign) begin
         PCWre = (OpCode == 6'b000000) ? 0 : 1;
-        ALUSrcA = (OpCode == 6'b011000) ? 1 : 0; // sll 1;
-        ALUSrcB = (OpCode == 6'b000010 || OpCode == 6'b010001 ||
-                   OpCode == 6'b010010 || OpCode == 6'b010011 || 
-                   OpCode == 6'b100110 || OpCode == 6'b110000 ||
-                   OpCode == 6'b110001) ? 1 : 0;
-                   // addiu¡¢andi¡¢ori¡¢xori¡¢slti¡¢lw¡¢sw 1
-        DBDataSrc = (OpCode == 6'b110001) ? 1 : 0; // lw 1
-        RegWre = (OpCode == 6'b110100 || OpCode == 6'b110101 ||
-                  OpCode == 6'b110110 || OpCode == 6'b110000 ||
-                  OpCode == 6'b111001 || OpCode == 6'b111000 ||
-                  OpCode == 6'b111111) ? 0 : 1;
-        // beq¡¢bne¡¢bltz¡¢j¡¢sw¡¢jr¡¢halt 0
-        RrRegDSrc = (OpCode == 6'b111010) ? 0 : 1; // jal 0
+        ALUSrcA = (OpCode == 6'b011000 && statusOut == 3'b110) ? 1 : 0; // sll 1;
+        ALUSrcB = ((OpCode == 6'b000010 || OpCode == 6'b010001 ||
+                    OpCode == 6'b010010 || OpCode == 6'b010011 || 
+                    OpCode == 6'b100110) && (statusOut == 3'b110)) || 
+                   ((OpCode == 6'b110000 || OpCode == 6'b110001) && 
+                    (statusOut == 3'b010)) ? 1 : 0;
+                   // addiu¡¢andi¡¢ori¡¢xori¡¢slti¡¢lw¡¢sw
+        DBDataSrc = (OpCode == 6'b110001) && (statusOut == 3'b011 || statusOut == 3'b100) ? 1 : 0; // lw 1
+        RegWre = (OpCode == 6'b111010 && statusOut == 3'b001) ||
+                 (statusOut == 3'b111 || statusOut == 3'b100) ? 1 : 0;
+        WrRegDSrc = (OpCode == 6'b111010 && statusOut == 3'b001) ? 0 : 1; // jal
+        mRD = (OpCode == 6'b110001) ? 1 : 0; // lw 1
+        mWR = (OpCode == 6'b110000) ? 1 : 0; // sw 1
+        IRWre = (statusOut == 3'b000) ? 1 : 0;
+        ExtSel = (statusOut == 3'b101 || statusOut == 3'b010) ||
+                 (statusOut == 3'b110 && (OpCode == 6'b000010 || OpCode == 6'b100110)) ? 1 : 0;
+        // ((addiu || slti) && 110) || 101 || 010 
+        PCSrc = (statusOut == 3'b101) ? 2'b01 : 
+                ((statusOut == 3'b011) ? (OpCode == 6'b111001 ? 2'b10 : 2'b11) : 2'b00);
+        // 101 -> 01
+        // (j || jal) && 001 -> 11
+        // jr && 001 -> 10
+        RegDst = statusOut == 3'b111 ? 
+                 ((OpCode == 6'b010000 || OpCode == 6'b011000 || OpCode == 6'b100110) ? 2'b10 : 2'b01 ): 
+                 (statusOut == 3'b100 ? 2'b01 : (statusOut == 3'b111 ? 2'b10 : 2'b00));
+        // 111 -> 10
+        // 100 -> 01
+        // 111 -> sll || slt || and -> 10
+        //        otherwise -> 01
         //TODO
     end
     
