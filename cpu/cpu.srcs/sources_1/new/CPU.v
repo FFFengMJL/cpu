@@ -63,7 +63,7 @@ module CPU(
     
     IRAM InsRegister(
         .Iaddr(PCOut),
-        .iDataOut(iDataOut),
+        .iDataOut(IRIn),
         .rw(InsMemRW),
         .iDataIn(32'bz)
     );
@@ -99,14 +99,14 @@ module CPU(
         .Out(Extend)
     );
     Mux_2 alua_choose(
-        .In1(ReadData1),
+        .In1(ADROut),
         .In2({{27{1'b0}},iDataOut[10:6]}),
         .flag(ALUSrcA),
         
         .Out(ALUDataA)
     );
     Mux_2 alub_choose(
-        .In1(ReadData2),
+        .In1(BDROut),
         .In2(Extend),
         .flag(ALUSrcB),
         
@@ -133,7 +133,7 @@ module CPU(
     Mux_2 db_choose(
         .flag(DBDataSrc),
         .In1(ALUOut),
-        .In2(DataOut),
+        .In2(DBDRIn),
         
         .Out(DB)
     );
@@ -156,7 +156,8 @@ module CPU(
     Mux_4 nextpc_choose(
         .Ins1(PC4),
         .Ins2(nextPCOut),
-        .Ins3(jumpOut),
+        .Ins3(ReadData1),
+        .Ins4(jumpOut),
         .PCSrc(PCSrc),
         
         .Out(PCIn)
@@ -165,6 +166,7 @@ module CPU(
         .OpCode(iDataOut[31:26]),
         .zero(zero),
         .sign(sign),
+        .CLK(CLK),
         
         .PCWre(PCWre),
         .ExtSel(ExtSel),
@@ -177,7 +179,9 @@ module CPU(
         .mRD(mRD),
         .mWR(mWR),
         .DBDataSrc(DBDataSrc),
-        .InsMemRW(InsMemRW)
+        .InsMemRW(InsMemRW),
+        .WrRegDSrc(WrRegDSrc),
+        .IRWre(IRWre)
     );
     
     Jump jump(
@@ -189,7 +193,7 @@ module CPU(
     
     IR InsReg(
         .IRIn(IRIn),
-        .IROut(IROut),
+        .IROut(iDataOut),
         .CLK(CLK),
         .IRWre(IRWre)
     );
@@ -209,6 +213,12 @@ module CPU(
     DR ALUDR(
         .DRIn(ALUOut),
         .DROut(ALUDROut),
+        .CLK(CLK)
+    );
+    
+    DR DBDR(
+        .DRIn(DBDRIn),
+        .DROut(DB),
         .CLK(CLK)
     );
     

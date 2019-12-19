@@ -26,8 +26,10 @@ module NextStatus(
         output reg [2:0] nextStatus
     );
     
-    always@(*) begin
-        case (OpCode)
+    initial nextStatus = 3'b000;
+    
+    always@(thisStatus) begin
+        case (thisStatus)
             3'b000: nextStatus = 3'b001;
 //            3'b111: nextStatus = 3'b000;
             3'b001:
@@ -39,6 +41,7 @@ module NextStatus(
                              OpCode == 6'b110110) nextStatus = 3'b101;
                     else if (OpCode == 6'b110000 || OpCode == 6'b110001)
                         nextStatus = 3'b010;
+                    else nextStatus = 3'b110;
                 end
             3'b010: nextStatus = 3'b011;
             3'b011:

@@ -23,12 +23,12 @@
 module IR(
         input CLK,
         input IRWre,
-        input [31:0] iDataOut,
+        input [31:0] IRIn,
         output reg [31:0] IROut
     );
     
     always@(posedge CLK) begin
-        if (IRWre == 1) IROut <= iDataOut;
+        if (IRWre == 1) IROut = IRIn;
     end
     
 endmodule

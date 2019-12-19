@@ -31,7 +31,7 @@ module PC(
     
     initial IAddr = 8'h00000000;
         
-    always @(negedge CLK) begin
+    always @(posedge CLK) begin
         if (Reset == 0) IAddr = 8'h00000000;
         else if (PCWre == 1) IAddr = Ins;
         else IAddr = IAddr;

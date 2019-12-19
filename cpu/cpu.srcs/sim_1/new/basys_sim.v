@@ -47,7 +47,7 @@ module basys_sim(
             #100;
             CLK = ~CLK;
 //            #10;
-            if (i % 15 == 0) CLKButton = ~CLKButton;
+            if (i % 10 == 0) CLKButton = ~CLKButton;
         end
 
        

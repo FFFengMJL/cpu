@@ -5,13 +5,17 @@ verilog xil_defaultlib  \
 "../../../../cpu.srcs/sources_1/new/Adder.v" \
 "../../../../cpu.srcs/sources_1/new/CLU.v" \
 "../../../../cpu.srcs/sources_1/new/CPU.v" \
+"../../../../cpu.srcs/sources_1/new/DR.v" \
+"../../../../cpu.srcs/sources_1/new/Dtrigger.v" \
 "../../../../cpu.srcs/sources_1/new/Extend.v" \
+"../../../../cpu.srcs/sources_1/new/IR.v" \
 "../../../../cpu.srcs/sources_1/new/IRAM.v" \
 "../../../../cpu.srcs/sources_1/new/Jump.v" \
 "../../../../cpu.srcs/sources_1/new/LeftShift_2.v" \
 "../../../../cpu.srcs/sources_1/new/MUX_4_r.v" \
 "../../../../cpu.srcs/sources_1/new/Mux_2.v" \
 "../../../../cpu.srcs/sources_1/new/Mux_4.v" \
+"../../../../cpu.srcs/sources_1/new/NextStatus.v" \
 "../../../../cpu.srcs/sources_1/new/PC.v" \
 "../../../../cpu.srcs/sources_1/new/RAM.v" \
 "../../../../cpu.srcs/sources_1/new/Register.v" \

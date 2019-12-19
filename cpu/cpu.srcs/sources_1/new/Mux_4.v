@@ -24,6 +24,7 @@ module Mux_4(
         input [31:0] Ins1,
         input [31:0] Ins2,
         input [31:0] Ins3,
+        input [31:0] Ins4,
         
         input [1:0] PCSrc, // ∂‘”¶ PCSrc
         
@@ -37,7 +38,7 @@ module Mux_4(
             2'b00: Out = Ins1;
             2'b01: Out = Ins2;
             2'b10: Out = Ins3;
-            2'b11: begin end
+            2'b11: Out = Ins4;
         endcase
     end
 endmodule

@@ -27,6 +27,8 @@ module Dtrigger(
         output reg [2:0] DOut
     );
     
+    initial DOut = 3'b000;
+    
     always@(posedge CLK) begin
         if (RST == 0) DOut = 3'b000;
         else DOut = DIn; 
