@@ -23,17 +23,17 @@
 module PC(
         input CLK,
         input Reset,
-        input [31:0] Ins,
+        input [31:0] PCIn,
         input PCWre, // Ð´Ê¹ÄÜ
         
-        output reg [31:0] IAddr
+        output reg [31:0] PCOut
     );
     
-    initial IAddr = 8'h00000000;
+    initial PCOut = 8'h00000000;
         
     always @(posedge CLK) begin
-        if (Reset == 0) IAddr = 8'h00000000;
-        else if (PCWre == 1) IAddr = Ins;
-        else IAddr = IAddr;
+        if (Reset == 0) PCOut = 8'h00000000;
+        else if (PCWre == 1) PCOut = PCIn;
+        else PCOut = PCOut;
     end
 endmodule

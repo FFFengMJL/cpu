@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2019/12/19 10:05:19
+// Create Date: 2019/12/22 23:46:29
 // Design Name: 
-// Module Name: IR
+// Module Name: Mux_3
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,21 +20,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module IR(
-        input CLK,
-        input IRWre,
-        input [31:0] IRIn,
-        output reg [31:0] IROut
+module Mux_3(
+        input [4:0] In1,
+        input [4:0] In2,
+        input [4:0] In3,
+        input [1:0] RegDst,
+        
+        output reg Out
     );
     
-//    reg [31:0] mid;
-//    initial mid = 8'h00000000;
-    
-    always@(posedge CLK) begin
-        if (IRWre == 1) begin
-            IROut = IRIn;
-//            mid <= IRIn;
-        end
+    always@(*) begin
+        case(RegDst)
+            2'b00:Out = In1;
+            2'b01:Out = In2;
+            2'b10:Out=In3;
+            default:; 
+        endcase
     end
     
 endmodule

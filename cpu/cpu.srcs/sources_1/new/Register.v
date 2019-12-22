@@ -43,7 +43,7 @@ module Register(
     assign ReadData1 = ReadReg1 == 0 ? 0 : regFile[ReadReg1];
     assign ReadData2 = ReadReg2 == 0 ? 0 : regFile[ReadReg2];
     
-    always @ (posedge CLK or negedge  Reset) begin
+    always @ (negedge CLK) begin
         if (Reset == 0) begin
             for (i = 1; i < 32; i = i + 1) regFile[i] <= 0;
         end

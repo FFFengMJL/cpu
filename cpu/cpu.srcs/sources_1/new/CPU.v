@@ -33,16 +33,17 @@ module CPU(
     output [31:0] ALUout,
     output [31:0] DBOut
     );
-    wire zero, sign, PCWre, InsMemRW, RegDst;
+    wire zero, sign, PCWre, InsMemRW;
     wire RegWre, IRWre;
     wire ALUSrcA, ALUSrcB, ExtSel, mRD, mWR, DBDataSrc;
-    wire [1:0] PCSrc;
+    wire [1:0] PCSrc, RegDst;
     wire [2:0] ALUOp;
     wire [25:0] jumpIn;
     (* dont_touch = "true" *) wire [31:0] PCIn, PCOut, Extend;
     wire [31:0] iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
-    wire [31:0] WriteReg, ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
-    wire [31:0] IRIn, IROut, DRIn1, DROut1, DRIn2, DROut2, DRIn3, DROut3;
+    wire [31:0]  ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
+    wire [31:0] AIRIn, AIROut, BDRIn, BDROut, DBDRIn, DBDROut, ALUDRIn, ALUDROut, WriteData;
+    wire [4:0] WriteReg;
     
     assign PCNowOut = PCOut;
     assign PCNextOut = PCIn;
@@ -57,8 +58,8 @@ module CPU(
         .CLK(CLK),
         .Reset(Reset),
         .PCWre(PCWre),
-        .Ins(PCIn),
-        .IAddr(PCOut)
+        .PCIn(PCIn),
+        .PCOut(PCOut)
     );
     
     IRAM InsRegister(
@@ -73,21 +74,32 @@ module CPU(
         
         .Out(PC4)
     );
-    Mux_2 reg_w_choose(
-        .flag(RegDst),
-        .In1({{27{1'b0}}, iDataOut[20:16]}),
-        .In2({{27{1'b0}}, iDataOut[15:11]}),
+    
+    Mux_3 mux3(
+        .RegDst(RegDst),
+        .In1(5'b11111),
+        .In2(iDataOut[20:16]),
+        .In3(iDataOut[15:11]),
         
         .Out(WriteReg)
     );
+    
+//    MUX_4_r reg_w_choose(
+//        .mode(RegDst),
+//        .In1(8'h0000001f),
+//        .In2({{27{1'b0}}, iDataOut[20:16]}),
+//        .In3({{27{1'b0}}, iDataOut[15:11]}),
+//        .In4(8'h00000000),
+//        .DataOut(WriteReg)
+//    );
     Register regfile(
         .CLK(CLK),
         .Reset(Reset),
         .RegWre(RegWre),
         .ReadReg1(iDataOut[25:21]),
         .ReadReg2(iDataOut[20:16]),
-        .WriteReg(WriteReg[4:0]),
-        .WriteData(DB),
+        .WriteReg(WriteReg),
+        .WriteData(WriteData),
         
         .ReadData1(ReadData1),
         .ReadData2(ReadData2)
@@ -123,8 +135,8 @@ module CPU(
     );
     RAM datamem(
         .Clk(CLK),
-        .daDdr(ALUOut),
-        .dataIn(ReadData2),
+        .daDdr(ALUDROut),
+        .dataIn(BDROut),
         .rd(mRD),
         .wr(mWR),
         
@@ -133,9 +145,9 @@ module CPU(
     Mux_2 db_choose(
         .flag(DBDataSrc),
         .In1(ALUOut),
-        .In2(DBDRIn),
+        .In2(DataOut),
         
-        .Out(DB)
+        .Out(DBDRIn)
     );
     LeftShift_2 after_imm_extend(
         .In(Extend),
@@ -149,12 +161,12 @@ module CPU(
 //    );
     Adder nextpc(
         .Ins1(PC4),
-        .Ins2(nextPCIn),
+        .Ins2(Extend << 2),
         
         .Out(nextPCOut)
     );
     Mux_4 nextpc_choose(
-        .PCWre(PCWre),
+//        .PCWre(PCSrc),
         .PC(PCOut),
         .Ins1(PC4),
         .Ins2(nextPCOut),
@@ -220,8 +232,16 @@ module CPU(
     
     DR DBDR(
         .DRIn(DBDRIn),
-        .DROut(DB),
+        .DROut(DBDROut),
         .CLK(CLK)
+    );
+    
+    Mux_2 WrReg(
+        .In1(PC4),
+        .In2(DBDROut),
+        .flag(WrRegDSrc),
+        
+        .Out(WriteData)
     );
     
 endmodule

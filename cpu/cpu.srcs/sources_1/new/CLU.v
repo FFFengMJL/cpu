@@ -38,7 +38,7 @@ module CLU(
         output reg IRWre,
         output reg mRD,
         output reg mWR,
-        output reg RegDst,//写REG的rt，写REG的rd
+        output reg [1:0] RegDst,//写REG的rt，写REG的rd
         output reg ExtSel,// 0拓展，1符号拓展
         output reg [1:0] PCSrc,
         output reg [2:0] ALUOp
@@ -65,7 +65,16 @@ module CLU(
     initial PCSrc = 2'b00;
     
     always@(OpCode or zero or sign or statusOut or PC) begin
-        PCWre = (OpCode != 6'b111111 && statusOut == 3'b000) ? 1 : 0;
+        PCWre = (statusIn == 3'b000) ? 1 : 0;
+        IRWre = (statusOut == 3'b000) ? 1 : 0;
+
+//        if (statusOut == 3'b000 || statusOut == 3'b010 || statusOut == 3'b110)
+//            PCWre = 0;
+//        else if (statusOut == 3'b111 || statusOut == 3'b100 || statusOut == 3'b101)
+//            PCWre = 1;
+//        else if (statusOut == 3'b011 && (OpCode == 6'b110000)) PCWre = 1;
+//        else if (statusOut == 3'b001 && (OpCode == 6'b111xxx && OpCode != 6'b111111)) PCWre = 1;
+//        else PCWre = 0;
         ALUSrcA = (OpCode == 6'b011000 && statusOut == 3'b110) ? 1 : 0; // sll 1;
         ALUSrcB = ((OpCode == 6'b000010 || OpCode == 6'b010001 ||
                     OpCode == 6'b010010 || OpCode == 6'b010011 || 
@@ -73,30 +82,36 @@ module CLU(
                     (statusOut == 3'b010) ? 1 : 0;
                    // ((addiu || andi || ori || xori || slti) && 110) || 010 -> 1
         DBDataSrc = (OpCode == 6'b110001) ? 1 : 0; // lw 1
-        RegWre = (OpCode == 6'b111010 && statusOut == 3'b001) ||
-                 (statusOut == 3'b111 || statusOut == 3'b100) ? 1 : 0;
+        RegWre = ((OpCode == 6'b111010 && statusOut == 3'b001) ||
+                  statusOut == 3'b111 || statusOut == 3'b100) ? 1 : 0;
         WrRegDSrc = (OpCode == 6'b111010 && statusOut == 3'b001) ? 0 : 1; // jal
         mRD = (OpCode == 6'b110001) ? 1 : 0; // lw 1
-        mWR = (OpCode == 6'b110000) ? 1 : 0; // sw 1
-        IRWre = (statusOut == 3'b000) ? 1 : 0;
+        mWR = (statusOut == 3'b011) ? ((OpCode == 6'b110000) ? 1 : 0) : 0; // sw 1
         
         // ExtSel
-        ExtSel = (statusOut == 3'b101 || statusOut == 3'b010) ||
-                 (statusOut == 3'b110 && (OpCode == 6'b000010 || OpCode == 6'b100110)) ? 1 : 0;
+        ExtSel = (OpCode == 6'b010000 || OpCode == 6'b010001 || OpCode == 6'b010010 ||
+                  OpCode == 6'b010011 || OpCode == 6'b011000) ? 0 : 1;
         // ((addiu || slti) && 110) || 101 || 010 
         
         //PCSrc
-        PCSrc = (statusOut == 3'b101) ? 2'b01 : 
-                ((statusOut == 3'b001) ? (OpCode == 6'b111001 ? 2'b10 : ((OpCode == 6'b111000 || OpCode == 6'b111010) ? 2'b11 : PCSrc)) : 
-                 (statusOut == 3'b010 || statusOut == 3'b110) ? 2'b00 : PCSrc);
+        PCSrc[1] = (OpCode == 6'b111000 || OpCode == 6'b111001 || OpCode == 6'b111010) ? 1 : 0;
+        PCSrc[0] = ((OpCode == 6'b110100 && zero == 1) || 
+                    (OpCode == 6'b110101 && zero == 0) ||
+                    (OpCode == 6'b110110 && sign == 1) ||
+                    OpCode == 6'b111000 || OpCode == 6'b111010) ?
+                    1 : 0;
         // 101 -> 01
         // (j || jal) && 001 -> 11
         // jr && 001 -> 10
         
         // RegDst
-        RegDst = statusOut == 3'b111 ? 
-                 ((OpCode == 6'b010000 || OpCode == 6'b011000 || OpCode == 6'b100110) ? 2'b10 : 2'b01 ): 
-                 (statusOut == 3'b100 ? 2'b01 : (statusOut == 3'b111 ? 2'b10 : 2'b00));
+        RegDst[1] = (OpCode == 6'b000010 || OpCode == 6'b010001 || OpCode == 6'b010010 ||
+                     OpCode == 6'b010011 || OpCode == 6'b100110 || 
+                     OpCode == 6'b110001 || OpCode == 6'b111010) ? 0 : 1;
+                     
+        RegDst[0] = (OpCode == 6'b000010 || OpCode == 6'b010001 || OpCode == 6'b010010 ||
+                     OpCode == 6'b010011 || OpCode == 6'b100110 || 
+                     OpCode == 6'b110001 || OpCode == 6'b111010) ? 1 : 0;
         
         // ALUOP
         if (statusOut == 3'b010 || 
@@ -117,6 +132,9 @@ module CLU(
         // 100 -> 01
         // 111 -> sll || slt || and -> 10
         //        otherwise -> 01
+        if (OpCode == 6'b111111) begin
+            PCWre = 0;
+        end
     end
     
 endmodule
