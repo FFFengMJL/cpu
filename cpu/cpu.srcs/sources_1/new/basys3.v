@@ -57,7 +57,7 @@ module basys3(
         .Reset(RST),
         
         .PCNowOut(PCNowOut),
-        .PC4Out(PC4Out),
+        .PCNextOut(PC4Out),
         .RsData(RsData),
         .RtData(RtData),
         .RsAddr(RsAddr),

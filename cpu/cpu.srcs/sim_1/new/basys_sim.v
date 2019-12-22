@@ -43,11 +43,11 @@ module basys_sim(
         RST = 1;
         CLKButton = 0;
         SW = 2'b00;
-        for (i = 0; i < 1000; i = i + 1) begin
+        for (i = 0; i < 1500; i = i + 1) begin
             #100;
             CLK = ~CLK;
 //            #10;
-            if (i % 10 == 0) CLKButton = ~CLKButton;
+            if (i % 5 == 0) CLKButton = ~CLKButton;
         end
 
        

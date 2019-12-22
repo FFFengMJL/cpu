@@ -11,8 +11,8 @@ INFO: [VRFC 10-311] analyzing module CPU
 INFO: [VRFC 10-2458] undeclared symbol ADROut, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:102]
 INFO: [VRFC 10-2458] undeclared symbol BDROut, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:109]
 INFO: [VRFC 10-2458] undeclared symbol DBDRIn, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:136]
-INFO: [VRFC 10-2458] undeclared symbol WrRegDSrc, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:183]
-INFO: [VRFC 10-2458] undeclared symbol ALUDROut, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:215]
+INFO: [VRFC 10-2458] undeclared symbol WrRegDSrc, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:185]
+INFO: [VRFC 10-2458] undeclared symbol ALUDROut, assumed default net type wire [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:217]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/DR.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DR
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/Dtrigger.v" into library xil_defaultlib

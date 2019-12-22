@@ -25,6 +25,8 @@ module Mux_4(
         input [31:0] Ins2,
         input [31:0] Ins3,
         input [31:0] Ins4,
+        input [31:0] PC,
+        input PCWre,
         
         input [1:0] PCSrc, // ∂‘”¶ PCSrc
         
@@ -33,7 +35,7 @@ module Mux_4(
     
     initial Out = 8'h000000;
     
-    always @(Ins1 or Ins2 or Ins3 or PCSrc) begin
+    always @(PC) begin
         case (PCSrc)
             2'b00: Out = Ins1;
             2'b01: Out = Ins2;

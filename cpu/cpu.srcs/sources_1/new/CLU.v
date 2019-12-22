@@ -26,6 +26,7 @@ module CLU(
         input zero,
         input CLK,
         input RST,
+        input [31:0] PC,
         
         output reg PCWre,// 0PC不更改（halt），1PC接受新地址
         output reg ALUSrcA,
@@ -60,17 +61,18 @@ module CLU(
     
     initial IRWre = 1;
     initial InsMemRW = 1;
+    initial PCWre = 0;
+    initial PCSrc = 2'b00;
     
-    always@(OpCode or zero or sign or statusOut) begin
-        PCWre = (OpCode == 6'b111111) ? 0 : 1;
+    always@(OpCode or zero or sign or statusOut or PC) begin
+        PCWre = (OpCode != 6'b111111 && statusOut == 3'b000) ? 1 : 0;
         ALUSrcA = (OpCode == 6'b011000 && statusOut == 3'b110) ? 1 : 0; // sll 1;
         ALUSrcB = ((OpCode == 6'b000010 || OpCode == 6'b010001 ||
                     OpCode == 6'b010010 || OpCode == 6'b010011 || 
-                    OpCode == 6'b100110) && (statusOut == 3'b110)) || 
-                   ((OpCode == 6'b110000 || OpCode == 6'b110001) && 
-                    (statusOut == 3'b010)) ? 1 : 0;
-                   // addiu、andi、ori、xori、slti、lw、sw
-        DBDataSrc = (OpCode == 6'b110001) && (statusOut == 3'b011 || statusOut == 3'b100) ? 1 : 0; // lw 1
+                    OpCode == 6'b100110) && (statusOut == 3'b110)) ||  
+                    (statusOut == 3'b010) ? 1 : 0;
+                   // ((addiu || andi || ori || xori || slti) && 110) || 010 -> 1
+        DBDataSrc = (OpCode == 6'b110001) ? 1 : 0; // lw 1
         RegWre = (OpCode == 6'b111010 && statusOut == 3'b001) ||
                  (statusOut == 3'b111 || statusOut == 3'b100) ? 1 : 0;
         WrRegDSrc = (OpCode == 6'b111010 && statusOut == 3'b001) ? 0 : 1; // jal
@@ -85,7 +87,8 @@ module CLU(
         
         //PCSrc
         PCSrc = (statusOut == 3'b101) ? 2'b01 : 
-                ((statusOut == 3'b001) ? (OpCode == 6'b111001 ? 2'b10 : 2'b11) : 2'b00);
+                ((statusOut == 3'b001) ? (OpCode == 6'b111001 ? 2'b10 : ((OpCode == 6'b111000 || OpCode == 6'b111010) ? 2'b11 : PCSrc)) : 
+                 (statusOut == 3'b010 || statusOut == 3'b110) ? 2'b00 : PCSrc);
         // 101 -> 01
         // (j || jal) && 001 -> 11
         // jr && 001 -> 10
@@ -110,12 +113,10 @@ module CLU(
         else if (statusOut == 3'b110 && (OpCode == 6'b100111 || OpCode == 6'b100110))
             ALUOp = 3'b110; // (slt || slti) && 110 -> 110
         else ALUOp = 3'b111;
-            
         // 111 -> 10
         // 100 -> 01
         // 111 -> sll || slt || and -> 10
         //        otherwise -> 01
-        //TODO
     end
     
 endmodule

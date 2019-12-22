@@ -25,7 +25,7 @@ module CPU(
     input Reset,
     
     output [31:0] PCNowOut,
-    output [31:0] PC4Out,
+    output [31:0] PCNextOut,
     output [4:0] RsAddr,
     output [31:0] RsData,
     output [4:0] RtAddr,
@@ -45,7 +45,7 @@ module CPU(
     wire [31:0] IRIn, IROut, DRIn1, DROut1, DRIn2, DROut2, DRIn3, DROut3;
     
     assign PCNowOut = PCOut;
-    assign PC4Out = PC4;
+    assign PCNextOut = PCIn;
     assign RsAddr = iDataOut[25:21];
     assign RsData = ReadData1;
     assign RtAddr = iDataOut[20:16];
@@ -154,6 +154,8 @@ module CPU(
         .Out(nextPCOut)
     );
     Mux_4 nextpc_choose(
+        .PCWre(PCWre),
+        .PC(PCOut),
         .Ins1(PC4),
         .Ins2(nextPCOut),
         .Ins3(ReadData1),
