@@ -26,7 +26,7 @@ module Mux_3(
         input [4:0] In3,
         input [1:0] RegDst,
         
-        output reg Out
+        output reg [4:0] Out
     );
     
     always@(*) begin
@@ -34,7 +34,7 @@ module Mux_3(
             2'b00:Out = In1;
             2'b01:Out = In2;
             2'b10:Out=In3;
-            default:; 
+            default: Out = In3; 
         endcase
     end
     

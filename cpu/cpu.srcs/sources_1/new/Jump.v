@@ -21,7 +21,7 @@
 
 
 module Jump(
-        input [31:28] In1,
+        input [31:0] In1,
         input [25:0] In2,
         
         output [31:0] Out

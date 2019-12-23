@@ -42,7 +42,7 @@ module CPU(
     (* dont_touch = "true" *) wire [31:0] PCIn, PCOut, Extend;
     wire [31:0] iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
     wire [31:0]  ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
-    wire [31:0] AIRIn, AIROut, BDRIn, BDROut, DBDRIn, DBDROut, ALUDRIn, ALUDROut, WriteData;
+    wire [31:0] AIRIn, AIROut, BDRIn, BDROut, DBDRIn, DBDROut, ALUDRIn, ALUDROut, WriteData, IRIn, IROut;
     wire [4:0] WriteReg;
     
     assign PCNowOut = PCOut;
@@ -149,27 +149,21 @@ module CPU(
         
         .Out(DBDRIn)
     );
-    LeftShift_2 after_imm_extend(
-        .In(Extend),
+//    LeftShift_2 after_imm_extend(
+//        .In(Extend),
         
-        .Out(nextPCIn)        
-    );
+//        .Out(nextPCIn)        
+//    );
 //    LeftShift_2 addr_shift(
 //        .In(PCOut),
         
 //        .Out(jumpIn)
 //    );
-    Adder nextpc(
-        .Ins1(PC4),
-        .Ins2(Extend << 2),
-        
-        .Out(nextPCOut)
-    );
     Mux_4 nextpc_choose(
 //        .PCWre(PCSrc),
         .PC(PCOut),
-        .Ins1(PC4),
-        .Ins2(nextPCOut),
+        .Ins1(PCOut + 4),
+        .Ins2(PCOut + (Extend << 2) + 4),
         .Ins3(ReadData1),
         .Ins4(jumpOut),
         .PCSrc(PCSrc),
@@ -199,7 +193,7 @@ module CPU(
     );
     
     Jump jump(
-        .In1(PC4[31:28]),
+        .In1(PCOut),
         .In2(iDataOut[25:0]),
         
         .Out(jumpOut)

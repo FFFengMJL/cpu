@@ -32,8 +32,8 @@ module PC(
     initial PCOut = 8'h00000000;
         
     always @(posedge CLK) begin
-        if (Reset == 0) PCOut = 8'h00000000;
-        else if (PCWre == 1) PCOut = PCIn;
-        else PCOut = PCOut;
+        if (Reset == 0) PCOut <= 8'h00000000;
+        else if (PCWre == 1) PCOut <= PCIn;
+        else PCOut <= PCOut;
     end
 endmodule

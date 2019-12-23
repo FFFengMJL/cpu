@@ -47,7 +47,7 @@ module Register(
         if (Reset == 0) begin
             for (i = 1; i < 32; i = i + 1) regFile[i] <= 0;
         end
-        else if (RegWre == 1 && WriteReg != 0) regFile[WriteReg] <= WriteData;
+        if (RegWre == 1 && WriteReg != 0) regFile[WriteReg] <= WriteData;
     end
     
 endmodule

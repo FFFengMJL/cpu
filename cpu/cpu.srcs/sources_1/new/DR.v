@@ -26,6 +26,8 @@ module DR(
         output reg [31:0] DROut
     );
     
+//    initial DROut = 8'h00000000;
+    
     always @(posedge CLK) begin
         DROut = DRIn;
     end

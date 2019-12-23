@@ -31,7 +31,7 @@ module ALU(
     );
         
     assign zero = result == 0 ? 1 : 0;
-    assign sign = result[31] == 0 ? 0 : 1;
+    assign sign = result[31];
 
     always @(*) begin
         case (ALUOpCode)
@@ -44,7 +44,7 @@ module ALU(
             3'b110: begin
                         if(rega[31] == regb[31] && rega < regb) result = 1;
                         else if(rega[31] == 1 && regb[31] == 0) result = 0;
-                        else if(rega[31] == 0 && regb[31] == 1) result = 1;
+//                        else if(rega[31] == 0 && regb[31] == 1) result = 1;
                         else result = 0;
                      end
             3'b111: result = rega ^ regb;
