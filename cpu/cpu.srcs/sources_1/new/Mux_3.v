@@ -33,7 +33,7 @@ module Mux_3(
         case(RegDst)
             2'b00:Out = In1;
             2'b01:Out = In2;
-            2'b10:Out=In3;
+            2'b10:Out = In3;
             default: Out = In3; 
         endcase
     end

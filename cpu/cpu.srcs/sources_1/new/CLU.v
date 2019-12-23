@@ -66,7 +66,7 @@ module CLU(
     initial PCWre = 0;
 //    initial PCSrc = 2'b00;
     
-    always@(OpCode or zero or sign or statusOut or PC) begin
+    always@(OpCode or zero or sign or statusOut or statusIn or PC) begin
         PCWre = (statusIn == 3'b000) ? 1 : 0;
         IRWre = (statusOut == 3'b000) ? 1 : 0;
 
@@ -111,8 +111,7 @@ module CLU(
                      OpCode == 6'b110001 || OpCode == 6'b111010) ? 0 : 1;
                      
         RegDst[0] = (OpCode == 6'b000010 || OpCode == 6'b010001 || OpCode == 6'b010010 ||
-                     OpCode == 6'b010011 || OpCode == 6'b100110 || 
-                     OpCode == 6'b110001 || OpCode == 6'b111010) ? 1 : 0;
+                     OpCode == 6'b010011 || OpCode == 6'b100110 || OpCode == 6'b110001) ? 1 : 0;
         
         // ALUOP
         if (statusOut == 3'b010 || 

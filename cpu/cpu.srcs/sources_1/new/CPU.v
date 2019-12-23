@@ -42,7 +42,7 @@ module CPU(
     (* dont_touch = "true" *) wire [31:0] PCIn, PCOut, Extend;
     wire [31:0] iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
     wire [31:0]  ReadData1, ReadData2, ALUDataA, ALUDataB, jumpOut;
-    wire [31:0] AIRIn, AIROut, BDRIn, BDROut, DBDRIn, DBDROut, ALUDRIn, ALUDROut, WriteData, IRIn, IROut;
+    wire [31:0] ADRIn, ADROut, BDRIn, BDROut, DBDRIn, DBDROut, ALUDRIn, ALUDROut, WriteData, IRIn, IROut;
     wire [4:0] WriteReg;
     
     assign PCNowOut = PCOut;
