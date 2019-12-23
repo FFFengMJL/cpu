@@ -41,10 +41,15 @@ module CLU(
         output reg [1:0] RegDst,//写REG的rt，写REG的rd
         output reg ExtSel,// 0拓展，1符号拓展
         output reg [1:0] PCSrc,
-        output reg [2:0] ALUOp
+        output reg [2:0] ALUOp,
+        output [2:0] thisStatus,
+        output [2:0] nextStatus
     );
     
     wire [2:0] statusIn, statusOut;
+    
+    assign thisStatus = statusOut;
+    assign nextStatus = statusIn;
     
     Dtrigger DT(
         .RST(RST),
@@ -54,7 +59,7 @@ module CLU(
         .DOut(statusOut)
     );
     
-    NextStatus nextStatus(
+    NextStatus NextStatus(
         .thisStatus(statusOut),
         .OpCode(OpCode),
         
@@ -67,8 +72,9 @@ module CLU(
 //    initial PCSrc = 2'b00;
     
     always@(OpCode or zero or sign or statusOut or statusIn or PC) begin
-        PCWre = (statusIn == 3'b000) ? 1 : 0;
+        PCWre = (statusIn == 3'b000 && OpCode != 6'b111111) ? 1 : 0;
         IRWre = (statusOut == 3'b000) ? 1 : 0;
+//        if (OpCode == 6'b111111) IRWre = 0;
 
 //        if (statusOut == 3'b000 || statusOut == 3'b010 || statusOut == 3'b110)
 //            PCWre = 0;

@@ -31,13 +31,15 @@ module CPU(
     output [4:0] RtAddr,
     output [31:0] RtData,
     output [31:0] ALUout,
-    output [31:0] DBOut
+    output [31:0] DBOut,
+    output [2:0] thisStatus,
+    output [2:0] nextStatus
     );
     wire zero, sign, PCWre, InsMemRW;
     wire RegWre, IRWre;
     wire ALUSrcA, ALUSrcB, ExtSel, mRD, mWR, DBDataSrc;
     wire [1:0] PCSrc, RegDst;
-    wire [2:0] ALUOp;
+    wire [2:0] ALUOp,statusOut, statusIn;
     wire [25:0] jumpIn;
     (* dont_touch = "true" *) wire [31:0] PCIn, PCOut, Extend;
     wire [31:0] iDataOut, DB, ALUOut, DataOut, PC4, iDataIn, nextPCIn, nextPCOut;
@@ -53,6 +55,8 @@ module CPU(
     assign RtData = ReadData2;
     assign ALUout = ALUOut; 
     assign DBOut = DataOut;
+    assign thisStatus = statusOut;
+    assign nextStatus = statusIn;
     
     PC pc(
         .CLK(CLK),
@@ -175,6 +179,7 @@ module CPU(
         .zero(zero),
         .sign(sign),
         .CLK(CLK),
+        .PC(PCOut),
         
         .PCWre(PCWre),
         .ExtSel(ExtSel),
@@ -189,7 +194,9 @@ module CPU(
         .DBDataSrc(DBDataSrc),
         .InsMemRW(InsMemRW),
         .WrRegDSrc(WrRegDSrc),
-        .IRWre(IRWre)
+        .IRWre(IRWre),
+        .thisStatus(statusOut),
+        .nextStatus(statusIn)
     );
     
     Jump jump(

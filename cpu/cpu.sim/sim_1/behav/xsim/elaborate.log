@@ -4,7 +4,7 @@ Running: D:/vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4682e309e1
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'RST' is not connected on this instance [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:173]
+WARNING: [VRFC 10-5021] port 'RST' is not connected on this instance [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:177]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

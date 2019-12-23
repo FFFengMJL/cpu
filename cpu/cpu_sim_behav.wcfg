@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="95172000fs"></ZoomStartTime>
-      <ZoomEndTime time="154324409fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <ZoomStartTime time="48699950fs"></ZoomStartTime>
+      <ZoomEndTime time="170260011fs"></ZoomEndTime>
+      <Cursor1Time time="99100000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="139"></NameColumnWidth>
-      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+      <ValueColumnWidth column_width="67"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/basys_sim/test/cpu/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -37,6 +37,7 @@
    <wvobject fp_name="group221" type="group">
       <obj_property name="label">IR</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/basys_sim/test/cpu/InsReg/CLK" type="logic">
          <obj_property name="ElementShortName">CLK</obj_property>
          <obj_property name="ObjectShortName">CLK</obj_property>
@@ -52,25 +53,6 @@
       <wvobject fp_name="/basys_sim/test/cpu/InsReg/IROut" type="array">
          <obj_property name="ElementShortName">IROut[31:0]</obj_property>
          <obj_property name="ObjectShortName">IROut[31:0]</obj_property>
-      </wvobject>
-   </wvobject>
-   <wvobject fp_name="group183" type="group">
-      <obj_property name="label">status</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/basys_sim/test/cpu/control_unit/nextStatus/OpCode" type="array">
-         <obj_property name="ElementShortName">OpCode[5:0]</obj_property>
-         <obj_property name="ObjectShortName">OpCode[5:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/basys_sim/test/cpu/control_unit/nextStatus/thisStatus" type="array">
-         <obj_property name="ElementShortName">thisStatus[2:0]</obj_property>
-         <obj_property name="ObjectShortName">thisStatus[2:0]</obj_property>
-         <obj_property name="Radix">BINARYRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/basys_sim/test/cpu/control_unit/nextStatus/nextStatus" type="array">
-         <obj_property name="ElementShortName">nextStatus[2:0]</obj_property>
-         <obj_property name="ObjectShortName">nextStatus[2:0]</obj_property>
-         <obj_property name="Radix">BINARYRADIX</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group187" type="group">
@@ -185,7 +167,6 @@
    <wvobject fp_name="group838" type="group">
       <obj_property name="label">Register Write</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/basys_sim/test/cpu/regfile/RegWre" type="logic">
          <obj_property name="ElementShortName">RegWre</obj_property>
          <obj_property name="ObjectShortName">RegWre</obj_property>
@@ -621,7 +602,6 @@
    <wvobject fp_name="group244" type="group">
       <obj_property name="label">mux3</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/basys_sim/test/cpu/mux3/In1" type="array">
          <obj_property name="ElementShortName">In1[4:0]</obj_property>
          <obj_property name="ObjectShortName">In1[4:0]</obj_property>

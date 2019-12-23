@@ -26,7 +26,7 @@ module NextStatus(
         output reg [2:0] nextStatus
     );
     
-    initial nextStatus = 3'b000;
+    initial nextStatus = 3'b001;
     
     always@(thisStatus) begin
         case (thisStatus)
