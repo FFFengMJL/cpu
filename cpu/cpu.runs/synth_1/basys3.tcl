@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -41,9 +43,9 @@ read_verilog -library xil_defaultlib {
   D:/cpu/cpu/cpu.srcs/sources_1/new/IR.v
   D:/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v
   D:/cpu/cpu/cpu.srcs/sources_1/new/Jump.v
-  D:/cpu/cpu/cpu.srcs/sources_1/new/LeftShift_2.v
   D:/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v
   D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v
+  D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_3.v
   D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v
   D:/cpu/cpu/cpu.srcs/sources_1/new/NextStatus.v
   D:/cpu/cpu/cpu.srcs/sources_1/new/PC.v

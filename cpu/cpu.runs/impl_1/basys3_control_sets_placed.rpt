@@ -1,0 +1,179 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Mon Dec 23 22:49:32 2019
+| Host         : LAPTOP-QTCGESHO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file basys3_control_sets_placed.rpt
+| Design       : basys3
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   101 |
+|    Minimum number of control sets                        |   101 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   101 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    62 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    37 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             122 |           55 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              78 |           21 |
+| Yes          | No                    | No                     |            1528 |          802 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+--------------------------------------+--------------------------+------------------+----------------+
+|      Clock Signal      |             Enable Signal            |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------------+--------------------------------------+--------------------------+------------------+----------------+
+| ~clk_sys_BUFG          |                                      |                          |                1 |              1 |
+|  BasysCLK_IBUF_BUFG    |                                      |                          |                4 |              5 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[2]_rep__0_2[0]   |                          |                5 |              8 |
+| ~clk_sys_BUFG          | timeMux/p_0_in                       |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[1]_5[0]          |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[1]_4[0]          |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_6[0]          |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_7[0]          |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[1]_0[0]          |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[1]_1[0]          |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_9[0]          |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_8[0]          |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_11[0]         |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[1]_6[0]          |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_10[0]         |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[1]_2[0]          |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_1[0]          |                          |                7 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[1]_3[0]          |                          |                7 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_12[0]         |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_0[0]          |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_5[0]          |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_3[0]          |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[2]_rep__0_1[0]   |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_13[0]         |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_2[0]          |                          |                7 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_14[0]         |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[0]_4[0]          |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[2]_rep__0_3[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[2]_rep__0_4[0]   |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__0_3[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_8[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_9[0]   |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep_1[0]      |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_6[0]   |                          |                7 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep_3[0]      |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__0_5[0]   |                          |                8 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__0_4[0]   |                          |                7 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[4]_rep__1_1[0]   |                          |                7 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[4]_rep__1_2[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[4]_rep__1_3[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep_2[0]      |                          |                2 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_1[0]   |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_2[0]   |                          |                8 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_3[0]   |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_4[0]   |                          |                7 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__0_1[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__0_2[0]   |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_5[0]   |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep_4[0]      |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__0_0[0]   |                          |                8 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[3]_rep__1_7[0]   |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[4]_rep__1_5[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_3[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_10[0]  |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/E[0]                       |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_2[0]   |                          |                7 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_4[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_7[0]   |                          |                6 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_1[0]   |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_8[0]   |                          |                3 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_5[0]   |                          |                4 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_9[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[5]_rep__0_6[0]   |                          |                5 |              8 |
+| ~keyboard_clk/CLK_BUFG | cpu/ALUDR/DROut_reg[4]_rep__1_4[0]   |                          |                7 |              8 |
+|  BasysCLK_IBUF_BUFG    |                                      | keyboard_clk/button_edge |                6 |             21 |
+|  BasysCLK_IBUF_BUFG    |                                      | time_div/clear           |                7 |             26 |
+| ~clk_sys_BUFG          |                                      | timeMux/i[31]_i_1_n_0    |                8 |             31 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_5[0]          |                          |               16 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_26[0]         |                          |               19 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_8[0]          |                          |               16 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_6[0]          |                          |               18 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_24[0]         |                          |               14 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_25[0]         |                          |               17 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_27[0]         |                          |               12 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/IROut_reg[20]_2[0]        |                          |               16 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/IROut_reg[17]_0[0]        |                          |               10 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_30[0]         |                          |               14 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/RST_0[0]                  |                          |               18 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/RST[0]                    |                          |               18 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/RST_2[0]                  |                          |               12 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/RST_3[0]                  |                          |               16 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/RST_5[0]                  |                          |               10 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_32            |                          |               20 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/RST_4[0]                  |                          |               19 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/control_unit/DT/E[0]             |                          |               11 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_29            |                          |               14 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_28            |                          |               17 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_33            |                          |               15 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/E[0]                      |                          |               14 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_12            |                          |               12 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_31            |                          |               10 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_11[0]         |                          |               18 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2][0]            |                          |               16 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_10[0]         |                          |               17 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_16[0]         |                          |               14 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/RST_1[0]                  |                          |               17 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_9[0]          |                          |               12 |             32 |
+|  keyboard_clk/CLK_BUFG | cpu/control_unit/DT/DOut_reg[2]_7[0] | cpu/pc/PCOut[31]_i_1_n_0 |               10 |             32 |
+| ~keyboard_clk/CLK_BUFG | cpu/InsReg/DOut_reg[2]_7[0]          |                          |               12 |             32 |
+|  keyboard_clk/CLK_BUFG | cpu/control_unit/DT/IRWre            |                          |               24 |             40 |
+|  keyboard_clk/CLK_BUFG |                                      |                          |               50 |            116 |
++------------------------+--------------------------------------+--------------------------+------------------+----------------+
+
+

@@ -25,7 +25,7 @@ module basys_sim(
     );
     reg CLK, RST;
     reg CLKButton;
-    reg [1:0] SW;
+    reg [2:0] SW;
     
     basys3 test(
         .BasysCLK(CLK),

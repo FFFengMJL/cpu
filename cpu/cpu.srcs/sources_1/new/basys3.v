@@ -24,7 +24,7 @@ module basys3(
         input CLKButton,
         input BasysCLK,
         input RST,
-        input [1:0] SW_in,
+        input [2:0] SW_in,
         
         output [7:0] segOut,
         output [3:0] bits
@@ -40,6 +40,7 @@ module basys3(
     wire [15:0] muxOut;
     wire CLK_r;
     wire CPUCLK;
+    wire [2:0] thisStatus, nextStatus;
     
     keyboard_clk keyboard_clk(
         .Button(CLKButton),
@@ -63,7 +64,9 @@ module basys3(
         .RsAddr(RsAddr),
         .RtAddr(RtAddr),
         .ALUout(ALUout),
-        .DBOut(DBOut)
+        .DBOut(DBOut),
+        .thisStatus(thisStatus),
+        .nextStatus(nextStatus)
     );
     
     SegLED LED(
@@ -71,11 +74,12 @@ module basys3(
         .dispcode(segOut)
     );
     
-    MUX_4_r mux(
+    MUX_5_r mux(
         .In1({PCNowOut[7:0], PC4Out[7:0]}),
         .In2({3'b000, RsAddr[4:0], RsData[7:0]}),
         .In3({3'b000, RtAddr[4:0], RtData[7:0]}),
         .In4({ALUout[7:0], DBOut[7:0]}),
+        .In5({5'b00000, thisStatus, 5'b00000, nextStatus}),
         
         .mode(SW_in),
         

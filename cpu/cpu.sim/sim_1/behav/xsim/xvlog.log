@@ -22,7 +22,7 @@ INFO: [VRFC 10-311] analyzing module IRAM
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/Jump.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Jump
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MUX_4_r
+INFO: [VRFC 10-311] analyzing module MUX_5_r
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Mux_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_3.v" into library xil_defaultlib

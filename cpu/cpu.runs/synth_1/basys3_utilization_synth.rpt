@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
-| Date         : Fri Dec 20 00:53:21 2019
+| Date         : Mon Dec 23 22:46:28 2019
 | Host         : LAPTOP-QTCGESHO running 64-bit major release  (build 9200)
 | Command      : report_utilization -file basys3_utilization_synth.rpt -pb basys3_utilization_synth.pb
 | Design       : basys3
@@ -30,14 +30,14 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  217 |     0 |     20800 |  1.04 |
-|   LUT as Logic          |  217 |     0 |     20800 |  1.04 |
+| Slice LUTs*             | 3229 |     0 |     20800 | 15.52 |
+|   LUT as Logic          | 3229 |     0 |     20800 | 15.52 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  156 |     0 |     41600 |  0.38 |
-|   Register as Flip Flop |  156 |     0 |     41600 |  0.38 |
+| Slice Registers         | 1760 |     0 |     41600 |  4.23 |
+|   Register as Flip Flop | 1760 |     0 |     41600 |  4.23 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                |   30 |     0 |     16300 |  0.18 |
-| F8 Muxes                |    0 |     0 |      8150 |  0.00 |
+| F7 Muxes                |  496 |     0 |     16300 |  3.04 |
+| F8 Muxes                |   64 |     0 |      8150 |  0.79 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 0     |          Yes |         Set |            - |
-| 156   |          Yes |       Reset |            - |
+| 5     |          Yes |         Set |            - |
+| 1755  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   17 |     0 |       106 | 16.04 |
+| Bonded IOB                  |   18 |     0 |       106 | 16.98 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -149,17 +149,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  156 |        Flop & Latch |
-| LUT6     |   91 |                 LUT |
-| LUT1     |   87 |                 LUT |
-| MUXF7    |   30 |               MuxFx |
-| CARRY4   |   29 |          CarryLogic |
-| LUT4     |   16 |                 LUT |
-| LUT2     |   15 |                 LUT |
+| LUT6     | 2424 |                 LUT |
+| FDRE     | 1755 |        Flop & Latch |
+| LUT5     |  575 |                 LUT |
+| MUXF7    |  496 |               MuxFx |
+| LUT3     |  180 |                 LUT |
+| LUT2     |  163 |                 LUT |
+| LUT4     |  149 |                 LUT |
+| MUXF8    |   64 |               MuxFx |
+| CARRY4   |   57 |          CarryLogic |
+| LUT1     |   20 |                 LUT |
 | OBUF     |   12 |                  IO |
-| LUT5     |   10 |                 LUT |
-| LUT3     |    6 |                 LUT |
-| IBUF     |    5 |                  IO |
+| IBUF     |    6 |                  IO |
+| FDSE     |    5 |        Flop & Latch |
 | BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 

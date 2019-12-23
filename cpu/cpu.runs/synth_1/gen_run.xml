@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1576774354" LaunchWriteIncrSynthDcp="true">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1577112327" LaunchWriteIncrSynthDcp="true">
   <File Type="PA-TCL" Name="basys3.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="basys3_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="basys3_reports.tcl"/>
   <File Type="RDS-RDS" Name="basys3.vds"/>
   <File Type="RDS-UTIL" Name="basys3_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="basys3_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="basys3.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="basys3_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="basys3_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/7_SegLED.v">
@@ -85,13 +88,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/LeftShift_2.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/MUX_4_r.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -100,6 +96,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/Mux_2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux_3.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -169,6 +172,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/LeftShift_2.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/CPU/Instructions.mem">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../Instructions.mem"/>
@@ -201,7 +212,7 @@
     <File Path="$PSRCDIR/utils_1/imports/impl_1/basys3_routed.dcp">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PRUNDIR/impl_1/basys3_routed.dcp"/>
-        <Attr Name="ImportTime" Val="1574259515"/>
+        <Attr Name="ImportTime" Val="1577112045"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedInSteps" Val="impl_1"/>

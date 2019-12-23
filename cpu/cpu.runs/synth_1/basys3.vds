@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Fri Dec 20 00:52:38 2019
-# Process ID: 1744
+# Start of session at: Mon Dec 23 22:45:30 2019
+# Process ID: 8220
 # Current directory: D:/cpu/cpu/cpu.runs/synth_1
 # Command line: vivado.exe -log basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3.tcl
 # Log file: D:/cpu/cpu/cpu.runs/synth_1/basys3.vds
@@ -16,9 +16,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4080 
+INFO: Helper process launched with PID 24652 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 835.387 ; gain = 234.578
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 835.711 ; gain = 234.016
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'basys3' [D:/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:23]
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:34]
@@ -28,7 +28,7 @@ INFO: [Synth 8-6155] done synthesizing module 'keyboard_clk' (1#1) [D:/cpu/cpu/c
 INFO: [Synth 8-6157] synthesizing module 'timeDiv' [D:/cpu/cpu/cpu.srcs/sources_1/new/timeDiv.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'timeDiv' (2#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/timeDiv.v:23]
 INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:23]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:42]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:44]
 INFO: [Synth 8-6157] synthesizing module 'PC' [D:/cpu/cpu/cpu.srcs/sources_1/new/PC.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/PC.v:23]
 INFO: [Synth 8-6157] synthesizing module 'IRAM' [D:/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:23]
@@ -36,15 +36,17 @@ INFO: [Synth 8-3876] $readmem data file 'Instructions.mem' is read successfully 
 INFO: [Synth 8-6155] done synthesizing module 'IRAM' (4#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/IRAM.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/cpu/cpu/cpu.srcs/sources_1/new/Adder.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Adder' (5#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Adder.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Mux_2' [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Mux_2' (6#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_3' [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_3' (6#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_3.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Register' [D:/cpu/cpu/cpu.srcs/sources_1/new/Register.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Register' (7#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Register.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Extend' [D:/cpu/cpu/cpu.srcs/sources_1/new/Extend.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Extend' (8#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux_2' [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_2' (9#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_2.v:23]
 INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/cpu/cpu/cpu.srcs/sources_1/new/ALU.v:23]
 INFO: [Synth 8-226] default block is never used [D:/cpu/cpu/cpu.srcs/sources_1/new/ALU.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (10#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/ALU.v:23]
 INFO: [Synth 8-6157] synthesizing module 'RAM' [D:/cpu/cpu/cpu.srcs/sources_1/new/RAM.v:23]
 WARNING: [Synth 8-4767] Trying to implement RAM 'data_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
@@ -52,46 +54,131 @@ Reason is one or more of the following :
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "data_reg" dissolved into registers
-INFO: [Synth 8-6155] done synthesizing module 'RAM' (10#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/RAM.v:23]
-INFO: [Synth 8-6157] synthesizing module 'LeftShift_2' [D:/cpu/cpu/cpu.srcs/sources_1/new/LeftShift_2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'LeftShift_2' (11#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/LeftShift_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (11#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/RAM.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Mux_4' [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v:23]
+WARNING: [Synth 8-567] referenced signal 'Ins1' should be on the sensitivity list [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v:38]
+WARNING: [Synth 8-567] referenced signal 'Ins2' should be on the sensitivity list [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v:38]
+WARNING: [Synth 8-567] referenced signal 'Ins3' should be on the sensitivity list [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v:38]
+WARNING: [Synth 8-567] referenced signal 'Ins4' should be on the sensitivity list [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v:38]
 INFO: [Synth 8-6155] done synthesizing module 'Mux_4' (12#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v:23]
 INFO: [Synth 8-6157] synthesizing module 'CLU' [D:/cpu/cpu/cpu.srcs/sources_1/new/CLU.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Dtrigger' [D:/cpu/cpu/cpu.srcs/sources_1/new/Dtrigger.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Dtrigger' (13#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Dtrigger.v:23]
 INFO: [Synth 8-6157] synthesizing module 'NextStatus' [D:/cpu/cpu/cpu.srcs/sources_1/new/NextStatus.v:23]
+INFO: [Synth 8-226] default block is never used [D:/cpu/cpu/cpu.srcs/sources_1/new/NextStatus.v:32]
+WARNING: [Synth 8-567] referenced signal 'OpCode' should be on the sensitivity list [D:/cpu/cpu/cpu.srcs/sources_1/new/NextStatus.v:31]
 INFO: [Synth 8-6155] done synthesizing module 'NextStatus' (14#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/NextStatus.v:23]
-WARNING: [Synth 8-567] referenced signal 'statusOut' should be on the sensitivity list [D:/cpu/cpu/cpu.srcs/sources_1/new/CLU.v:64]
 INFO: [Synth 8-6155] done synthesizing module 'CLU' (15#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/CLU.v:23]
-WARNING: [Synth 8-7023] instance 'control_unit' of module 'CLU' has 19 connections declared, but only 18 given [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:164]
 INFO: [Synth 8-6157] synthesizing module 'Jump' [D:/cpu/cpu/cpu.srcs/sources_1/new/Jump.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Jump' (16#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/Jump.v:23]
 INFO: [Synth 8-6157] synthesizing module 'IR' [D:/cpu/cpu/cpu.srcs/sources_1/new/IR.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'IR' (17#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/IR.v:23]
 INFO: [Synth 8-6157] synthesizing module 'DR' [D:/cpu/cpu/cpu.srcs/sources_1/new/DR.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'DR' (18#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/DR.v:23]
-WARNING: [Synth 8-689] width (1) of port connection 'DROut' does not match port width (32) of module 'DR' [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:202]
-WARNING: [Synth 8-689] width (1) of port connection 'DROut' does not match port width (32) of module 'DR' [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:208]
-WARNING: [Synth 8-689] width (1) of port connection 'DROut' does not match port width (32) of module 'DR' [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:214]
-WARNING: [Synth 8-3848] Net DBDRIn in module/entity CPU does not have driver. [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:136]
 INFO: [Synth 8-6155] done synthesizing module 'CPU' (19#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/CPU.v:23]
 INFO: [Synth 8-6157] synthesizing module 'SegLED' [D:/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v:22]
 INFO: [Synth 8-226] default block is never used [D:/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v:28]
 INFO: [Synth 8-6155] done synthesizing module 'SegLED' (20#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/7_SegLED.v:22]
-INFO: [Synth 8-6157] synthesizing module 'MUX_4_r' [D:/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'MUX_4_r' (21#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX_5_r' [D:/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_5_r' (21#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/MUX_4_r.v:23]
 INFO: [Synth 8-6157] synthesizing module 'mux4_r2' [D:/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v:23]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v:37]
 INFO: [Synth 8-6155] done synthesizing module 'mux4_r2' (22#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/mux4_r2.v:23]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cpu'. This will prevent further optimization [D:/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:55]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux'. This will prevent further optimization [D:/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:74]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cpu'. This will prevent further optimization [D:/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:56]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux'. This will prevent further optimization [D:/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:77]
 INFO: [Synth 8-6155] done synthesizing module 'basys3' (23#1) [D:/cpu/cpu/cpu.srcs/sources_1/new/basys3.v:23]
-WARNING: [Synth 8-3331] design NextStatus has unconnected port thisStatus[2]
-WARNING: [Synth 8-3331] design NextStatus has unconnected port thisStatus[1]
-WARNING: [Synth 8-3331] design NextStatus has unconnected port thisStatus[0]
-WARNING: [Synth 8-3331] design CLU has unconnected port sign
-WARNING: [Synth 8-3331] design CLU has unconnected port zero
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[27]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[26]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[25]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[24]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[23]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[22]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[21]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[20]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[19]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[18]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[17]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[16]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[15]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[14]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[13]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[12]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[11]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[10]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[9]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[8]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[7]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[6]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[5]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[4]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[3]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[2]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[1]
+WARNING: [Synth 8-3331] design Jump has unconnected port In1[0]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[31]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[30]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[29]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[28]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[27]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[26]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[25]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[24]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[23]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[22]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[21]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[20]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[19]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[18]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[17]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[16]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[15]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[14]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[13]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[12]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[11]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[10]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[9]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[8]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[7]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[6]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[5]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[4]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[3]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[2]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[1]
+WARNING: [Synth 8-3331] design CLU has unconnected port PC[0]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[31]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[30]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[29]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[28]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[27]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[26]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[25]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[24]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[23]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[22]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[21]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[20]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[19]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[18]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[17]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[16]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[15]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[14]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[13]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[12]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[11]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[10]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[9]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[8]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[7]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[6]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[5]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[4]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[3]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[2]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[1]
+WARNING: [Synth 8-3331] design Mux_4 has unconnected port PC[0]
 WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[31]
 WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[30]
 WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[29]
@@ -100,33 +187,9 @@ WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[27]
 WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[26]
 WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[25]
 WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[24]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[23]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[22]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[21]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[20]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[19]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[18]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[17]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[16]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[15]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[14]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[13]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[12]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[11]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[10]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[9]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[8]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[7]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[6]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[5]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[4]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[3]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[2]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[1]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[0]
-WARNING: [Synth 8-3331] design IRAM has unconnected port rw
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 907.375 ; gain = 306.566
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 908.320 ; gain = 306.625
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -139,12 +202,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 907.375 ; gain = 306.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 908.320 ; gain = 306.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 907.375 ; gain = 306.566
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 908.320 ; gain = 306.625
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 907.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 908.320 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -155,35 +218,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1021.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1025.293 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1021.012 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1025.293 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1021.012 ; gain = 420.203
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1025.293 ; gain = 423.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1021.012 ; gain = 420.203
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1025.293 ; gain = 423.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1021.012 ; gain = 420.203
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1025.293 ; gain = 423.598
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "Ins" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Ins" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Ins" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Ins" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'Out_reg' [D:/cpu/cpu/cpu.srcs/sources_1/new/Mux_4.v:37]
-WARNING: [Synth 8-327] inferring latch for variable 'nextStatus_reg' [D:/cpu/cpu/cpu.srcs/sources_1/new/NextStatus.v:31]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1021.012 ; gain = 420.203
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1025.293 ; gain = 423.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -197,7 +254,8 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 4     
-	   3 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
@@ -208,22 +266,22 @@ Detailed RTL Component Info :
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 42    
 	   4 Input     32 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
-	 129 Input      8 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 35    
 	   2 Input      8 Bit        Muxes := 57    
+	   4 Input      5 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   9 Input      3 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 94    
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 121   
 	   5 Input      1 Bit        Muxes := 46    
-	   4 Input      1 Bit        Muxes := 17    
-	   8 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 16    
 	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -246,23 +304,28 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 1     
 Module IRAM 
 Detailed RTL Component Info : 
-+---Muxes : 
-	 129 Input      8 Bit        Muxes := 4     
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
 Module Adder 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-Module Mux_2 
+Module Mux_3 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
 Module Register 
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 31    
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 31    
+	   2 Input     32 Bit        Muxes := 36    
+	   2 Input      1 Bit        Muxes := 62    
 Module Extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux_2 
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
@@ -273,8 +336,6 @@ Detailed RTL Component Info :
 	   3 Input     32 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
 Module RAM 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -290,7 +351,6 @@ Module Mux_4
 Detailed RTL Component Info : 
 +---Muxes : 
 	   4 Input     32 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
 Module Dtrigger 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -298,18 +358,15 @@ Detailed RTL Component Info :
 Module NextStatus 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   9 Input      3 Bit        Muxes := 1     
 Module CLU 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      3 Bit       Adders := 1     
 +---Muxes : 
 	   7 Input      3 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 1     
 Module IR 
 Detailed RTL Component Info : 
@@ -319,10 +376,16 @@ Module DR
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 1     
-Module MUX_4_r 
+Module CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+Module MUX_5_r 
 Detailed RTL Component Info : 
 +---Muxes : 
 	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
 Module mux4_r2 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -352,274 +415,29 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3936] Found unconnected internal register 'ADR/DROut_reg' and it is trimmed from '32' to '1' bits. [D:/cpu/cpu/cpu.srcs/sources_1/new/DR.v:30]
-WARNING: [Synth 8-3936] Found unconnected internal register 'BDR/DROut_reg' and it is trimmed from '32' to '1' bits. [D:/cpu/cpu/cpu.srcs/sources_1/new/DR.v:30]
-WARNING: [Synth 8-3331] design CLU has unconnected port sign
-WARNING: [Synth 8-3331] design CLU has unconnected port zero
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[31]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[30]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[29]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[28]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[27]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[26]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[25]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[24]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[23]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[22]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[21]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[20]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[19]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[18]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[17]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[16]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[15]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[14]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[13]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[12]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[11]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[10]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[9]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[8]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[7]
-WARNING: [Synth 8-3331] design RAM has unconnected port daDdr[6]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[31]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[30]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[29]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[28]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[27]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[26]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[25]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[24]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[23]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[22]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[21]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[20]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[19]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[18]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[17]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[16]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[15]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[14]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[13]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[12]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[11]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[10]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[9]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[8]
-WARNING: [Synth 8-3331] design IRAM has unconnected port Iaddr[7]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[31]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[30]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[29]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[28]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[27]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[26]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[25]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[24]
-WARNING: [Synth 8-3331] design IRAM has unconnected port iDataIn[23]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/control_unit/\DT/DOut_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/control_unit/\DT/DOut_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/control_unit/\DT/DOut_reg[2] )
-INFO: [Synth 8-3886] merging instance 'cpu/ADR/DROut_reg[0]' (FD) to 'cpu/BDR/DROut_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\BDR/DROut_reg[0] )
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[50][4]' (FDE_1) to 'cpu/datamem/data_reg[50][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[49][4]' (FDE_1) to 'cpu/datamem/data_reg[49][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[48][4]' (FDE_1) to 'cpu/datamem/data_reg[48][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[47][4]' (FDE_1) to 'cpu/datamem/data_reg[47][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[46][4]' (FDE_1) to 'cpu/datamem/data_reg[46][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[45][4]' (FDE_1) to 'cpu/datamem/data_reg[45][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[44][4]' (FDE_1) to 'cpu/datamem/data_reg[44][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[43][4]' (FDE_1) to 'cpu/datamem/data_reg[43][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[42][4]' (FDE_1) to 'cpu/datamem/data_reg[42][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[41][4]' (FDE_1) to 'cpu/datamem/data_reg[41][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[40][4]' (FDE_1) to 'cpu/datamem/data_reg[40][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[39][4]' (FDE_1) to 'cpu/datamem/data_reg[39][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[38][4]' (FDE_1) to 'cpu/datamem/data_reg[38][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[37][4]' (FDE_1) to 'cpu/datamem/data_reg[37][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[36][4]' (FDE_1) to 'cpu/datamem/data_reg[36][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[35][4]' (FDE_1) to 'cpu/datamem/data_reg[35][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[2][4]' (FDE_1) to 'cpu/datamem/data_reg[2][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[1][4]' (FDE_1) to 'cpu/datamem/data_reg[1][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[0][4]' (FDE_1) to 'cpu/datamem/data_reg[0][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[60][4]' (FDE_1) to 'cpu/datamem/data_reg[60][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[59][4]' (FDE_1) to 'cpu/datamem/data_reg[59][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[58][4]' (FDE_1) to 'cpu/datamem/data_reg[58][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[57][4]' (FDE_1) to 'cpu/datamem/data_reg[57][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[56][4]' (FDE_1) to 'cpu/datamem/data_reg[56][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[55][4]' (FDE_1) to 'cpu/datamem/data_reg[55][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[54][4]' (FDE_1) to 'cpu/datamem/data_reg[54][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[53][4]' (FDE_1) to 'cpu/datamem/data_reg[53][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[52][4]' (FDE_1) to 'cpu/datamem/data_reg[52][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[51][4]' (FDE_1) to 'cpu/datamem/data_reg[51][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[34][4]' (FDE_1) to 'cpu/datamem/data_reg[34][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[33][4]' (FDE_1) to 'cpu/datamem/data_reg[33][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[32][4]' (FDE_1) to 'cpu/datamem/data_reg[32][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[31][4]' (FDE_1) to 'cpu/datamem/data_reg[31][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[30][4]' (FDE_1) to 'cpu/datamem/data_reg[30][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[29][4]' (FDE_1) to 'cpu/datamem/data_reg[29][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[28][4]' (FDE_1) to 'cpu/datamem/data_reg[28][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[27][4]' (FDE_1) to 'cpu/datamem/data_reg[27][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[26][4]' (FDE_1) to 'cpu/datamem/data_reg[26][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[25][4]' (FDE_1) to 'cpu/datamem/data_reg[25][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[24][4]' (FDE_1) to 'cpu/datamem/data_reg[24][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[23][4]' (FDE_1) to 'cpu/datamem/data_reg[23][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[22][4]' (FDE_1) to 'cpu/datamem/data_reg[22][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[21][4]' (FDE_1) to 'cpu/datamem/data_reg[21][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[20][4]' (FDE_1) to 'cpu/datamem/data_reg[20][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[19][4]' (FDE_1) to 'cpu/datamem/data_reg[19][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[18][4]' (FDE_1) to 'cpu/datamem/data_reg[18][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[17][4]' (FDE_1) to 'cpu/datamem/data_reg[17][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[16][4]' (FDE_1) to 'cpu/datamem/data_reg[16][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[15][4]' (FDE_1) to 'cpu/datamem/data_reg[15][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[14][4]' (FDE_1) to 'cpu/datamem/data_reg[14][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[13][4]' (FDE_1) to 'cpu/datamem/data_reg[13][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[12][4]' (FDE_1) to 'cpu/datamem/data_reg[12][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[11][4]' (FDE_1) to 'cpu/datamem/data_reg[11][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[10][4]' (FDE_1) to 'cpu/datamem/data_reg[10][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[9][4]' (FDE_1) to 'cpu/datamem/data_reg[9][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[8][4]' (FDE_1) to 'cpu/datamem/data_reg[8][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[7][4]' (FDE_1) to 'cpu/datamem/data_reg[7][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[6][4]' (FDE_1) to 'cpu/datamem/data_reg[6][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[5][4]' (FDE_1) to 'cpu/datamem/data_reg[5][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[4][4]' (FDE_1) to 'cpu/datamem/data_reg[4][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[3][4]' (FDE_1) to 'cpu/datamem/data_reg[3][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[50][0]' (FDE_1) to 'cpu/datamem/data_reg[50][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[49][0]' (FDE_1) to 'cpu/datamem/data_reg[49][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[48][0]' (FDE_1) to 'cpu/datamem/data_reg[48][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[47][0]' (FDE_1) to 'cpu/datamem/data_reg[47][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[46][0]' (FDE_1) to 'cpu/datamem/data_reg[46][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[45][0]' (FDE_1) to 'cpu/datamem/data_reg[45][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[44][0]' (FDE_1) to 'cpu/datamem/data_reg[44][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[43][0]' (FDE_1) to 'cpu/datamem/data_reg[43][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[42][0]' (FDE_1) to 'cpu/datamem/data_reg[42][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[41][0]' (FDE_1) to 'cpu/datamem/data_reg[41][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[40][0]' (FDE_1) to 'cpu/datamem/data_reg[40][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[39][0]' (FDE_1) to 'cpu/datamem/data_reg[39][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[38][0]' (FDE_1) to 'cpu/datamem/data_reg[38][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[37][0]' (FDE_1) to 'cpu/datamem/data_reg[37][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[36][0]' (FDE_1) to 'cpu/datamem/data_reg[36][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[35][0]' (FDE_1) to 'cpu/datamem/data_reg[35][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[2][0]' (FDE_1) to 'cpu/datamem/data_reg[2][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[1][0]' (FDE_1) to 'cpu/datamem/data_reg[1][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[0][0]' (FDE_1) to 'cpu/datamem/data_reg[0][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[60][0]' (FDE_1) to 'cpu/datamem/data_reg[60][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[59][0]' (FDE_1) to 'cpu/datamem/data_reg[59][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[58][0]' (FDE_1) to 'cpu/datamem/data_reg[58][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[57][0]' (FDE_1) to 'cpu/datamem/data_reg[57][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[56][0]' (FDE_1) to 'cpu/datamem/data_reg[56][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[55][0]' (FDE_1) to 'cpu/datamem/data_reg[55][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[54][0]' (FDE_1) to 'cpu/datamem/data_reg[54][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[53][0]' (FDE_1) to 'cpu/datamem/data_reg[53][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[52][0]' (FDE_1) to 'cpu/datamem/data_reg[52][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[51][0]' (FDE_1) to 'cpu/datamem/data_reg[51][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[34][0]' (FDE_1) to 'cpu/datamem/data_reg[34][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[33][0]' (FDE_1) to 'cpu/datamem/data_reg[33][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[32][0]' (FDE_1) to 'cpu/datamem/data_reg[32][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[31][0]' (FDE_1) to 'cpu/datamem/data_reg[31][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[30][0]' (FDE_1) to 'cpu/datamem/data_reg[30][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[29][0]' (FDE_1) to 'cpu/datamem/data_reg[29][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[28][0]' (FDE_1) to 'cpu/datamem/data_reg[28][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[27][0]' (FDE_1) to 'cpu/datamem/data_reg[27][7]'
-INFO: [Synth 8-3886] merging instance 'cpu/datamem/data_reg[26][0]' (FDE_1) to 'cpu/datamem/data_reg[26][7]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[50][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[49][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[48][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[47][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[46][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[45][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[44][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[43][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[42][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[41][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[40][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[39][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[38][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[37][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[36][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[35][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[2][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[1][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[0][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[60][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[59][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[58][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[57][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[56][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[55][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[54][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[53][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[52][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[51][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[34][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[33][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[32][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[31][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[30][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[29][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[28][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[27][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[26][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[25][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[24][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[23][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[22][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[21][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[20][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[19][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[18][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[17][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[16][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[15][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[14][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[13][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[12][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[11][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[10][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[9][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[8][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[7][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[6][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[5][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[4][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/datamem/\data_reg[3][3] )
-WARNING: [Synth 8-3332] Sequential element (Out_reg[31]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[30]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[29]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[28]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[27]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[26]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[25]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[24]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[23]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[22]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[21]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[20]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[19]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[18]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[17]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[16]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[15]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[14]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[13]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[12]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[11]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[10]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[9]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[8]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[7]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[6]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[5]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[4]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[3]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[2]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[1]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (Out_reg[0]) is unused and will be removed from module Mux_4.
-WARNING: [Synth 8-3332] Sequential element (nextStatus/nextStatus_reg[2]) is unused and will be removed from module CLU.
-WARNING: [Synth 8-3332] Sequential element (nextStatus/nextStatus_reg[1]) is unused and will be removed from module CLU.
-WARNING: [Synth 8-3332] Sequential element (nextStatus/nextStatus_reg[0]) is unused and will be removed from module CLU.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1021.012 ; gain = 420.203
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1025.293 ; gain = 423.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|IRAM        | p_0_out    | 128x8         | LUT            | 
+|IRAM        | p_0_out    | 128x8         | LUT            | 
+|IRAM        | p_0_out    | 128x8         | LUT            | 
+|IRAM        | p_0_out    | 128x8         | LUT            | 
+|CPU         | p_0_out    | 128x8         | LUT            | 
+|CPU         | p_0_out    | 128x8         | LUT            | 
+|CPU         | p_0_out    | 128x8         | LUT            | 
+|CPU         | p_0_out    | 128x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -631,13 +449,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1021.012 ; gain = 420.203
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1025.293 ; gain = 423.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1021.012 ; gain = 420.203
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1025.293 ; gain = 423.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -649,7 +467,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1021.012 ; gain = 420.203
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1105.520 ; gain = 503.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -673,13 +491,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1024.145 ; gain = 423.336
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1110.512 ; gain = 508.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1024.145 ; gain = 423.336
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1110.512 ; gain = 508.816
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -698,25 +516,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1024.145 ; gain = 423.336
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1110.512 ; gain = 508.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1024.145 ; gain = 423.336
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1110.512 ; gain = 508.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1024.145 ; gain = 423.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1110.512 ; gain = 508.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1024.145 ; gain = 423.336
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1110.512 ; gain = 508.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -733,57 +551,68 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    29|
-|3     |LUT1   |    87|
-|4     |LUT2   |    15|
-|5     |LUT3   |     6|
-|6     |LUT4   |    16|
-|7     |LUT5   |    10|
-|8     |LUT6   |    91|
-|9     |MUXF7  |    30|
-|10    |FDRE   |   156|
-|11    |IBUF   |     5|
-|12    |OBUF   |    12|
+|2     |CARRY4 |    57|
+|3     |LUT1   |    20|
+|4     |LUT2   |   163|
+|5     |LUT3   |   180|
+|6     |LUT4   |   149|
+|7     |LUT5   |   575|
+|8     |LUT6   |  2424|
+|9     |MUXF7  |   496|
+|10    |MUXF8  |    64|
+|11    |FDRE   |  1755|
+|12    |FDSE   |     5|
+|13    |IBUF   |     6|
+|14    |OBUF   |    12|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------------+-------------+------+
-|      |Instance       |Module       |Cells |
-+------+---------------+-------------+------+
-|1     |top            |             |   459|
-|2     |  cpu          |CPU          |   198|
-|3     |    InsReg     |IR           |   130|
-|4     |    pc         |PC           |    33|
-|5     |    pc4_adder  |Adder        |     8|
-|6     |  mux          |MUX_4_r      |    16|
-|7     |  LED          |SegLED       |     7|
-|8     |  keyboard_clk |keyboard_clk |    40|
-|9     |  timeMux      |mux4_r2      |    66|
-|10    |  time_div     |timeDiv      |    41|
-+------+---------------+-------------+------+
++------+-----------------+-------------+------+
+|      |Instance         |Module       |Cells |
++------+-----------------+-------------+------+
+|1     |top              |             |  5908|
+|2     |  cpu            |CPU          |  5705|
+|3     |    ADR          |DR           |    96|
+|4     |    ALUDR        |DR_0         |   324|
+|5     |    BDR          |DR_1         |   168|
+|6     |    DBDR         |DR_2         |    32|
+|7     |    InsReg       |IR           |  1517|
+|8     |    alu          |ALU          |    20|
+|9     |    control_unit |CLU          |   218|
+|10    |      DT         |Dtrigger     |   218|
+|11    |    datamem      |RAM          |  1352|
+|12    |    pc           |PC           |    33|
+|13    |    pc4_adder    |Adder        |    40|
+|14    |    regfile      |Register     |  1824|
+|15    |  mux            |MUX_5_r      |    29|
+|16    |  LED            |SegLED       |     7|
+|17    |  keyboard_clk   |keyboard_clk |    40|
+|18    |  timeMux        |mux4_r2      |    66|
+|19    |  time_div       |timeDiv      |    41|
++------+-----------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1024.145 ; gain = 423.336
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1110.512 ; gain = 508.816
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 125 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1024.145 ; gain = 309.699
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1024.145 ; gain = 423.336
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1110.512 ; gain = 391.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1110.512 ; gain = 508.816
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1036.242 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1122.895 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 617 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1040.520 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1122.895 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-238 Infos, 146 Warnings, 0 Critical Warnings and 0 Errors encountered.
+69 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 1040.520 ; gain = 733.555
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1040.520 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1122.895 ; gain = 816.953
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1122.895 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/cpu/cpu/cpu.runs/synth_1/basys3.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file basys3_utilization_synth.rpt -pb basys3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 20 00:53:21 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 23 22:46:28 2019...

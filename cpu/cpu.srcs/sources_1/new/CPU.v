@@ -180,6 +180,7 @@ module CPU(
         .sign(sign),
         .CLK(CLK),
         .PC(PCOut),
+        .RST(Reset),
         
         .PCWre(PCWre),
         .ExtSel(ExtSel),
